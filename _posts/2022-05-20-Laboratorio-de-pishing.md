@@ -59,7 +59,7 @@ vim index.html
 # :q
 ```
 
-Luego lo formateamos con tidy
+Luego lo formateamos con [tidy](https://www.html-tidy.org/)
 ```bash
 tidy -indent --indent-spaces 2 --quiet --tidy-mark no index.html.bkp > index.html
 ```
