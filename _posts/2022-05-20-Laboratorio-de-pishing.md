@@ -18,7 +18,7 @@ sudo apt install
 ```
 
 ## Método manual
-
+Esto es manual
 ### WGet
 -E
 --adjust-extension
