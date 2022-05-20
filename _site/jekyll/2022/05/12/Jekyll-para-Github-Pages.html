@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#151515">
+<meta name="msapplication-navbutton-color" content="#151515">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Jekyll para Github Pages</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Jekyll para Github Pages" />
+<meta name="author" content="Fredy Rosero" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Abstract." />
+<meta property="og:description" content="Abstract." />
+<link rel="canonical" href="http://localhost:4000/jekyll/2022/05/12/Jekyll-para-Github-Pages.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/2022/05/12/Jekyll-para-Github-Pages.html" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-05-12T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Jekyll para Github Pages" />
+<script type="application/ld+json">
+{"headline":"Jekyll para Github Pages","dateModified":"2022-05-12T00:00:00-05:00","datePublished":"2022-05-12T00:00:00-05:00","description":"Abstract.","url":"http://localhost:4000/jekyll/2022/05/12/Jekyll-para-Github-Pages.html","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/2022/05/12/Jekyll-para-Github-Pages.html"},"author":{"@type":"Person","name":"Fredy Rosero"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/">
+          <h1></h1>
+        </a>
+        <h2></h2>
+
+        <section id="downloads">
+          
+          <a href="" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <small>12 May 2022</small>
+<h1>Jekyll para Github Pages</h1>
+
+<p class="view">by Fredy Rosero</p>
+
+<p><img src="/assets/github%20pages%20%2B%20jekyll.jpg" alt="github pages + jekyll" /></p>
+
+<p>Abstract.
+ <!--more--></p>
+
+<h2 id="instación-de-ruby-con-rbenv">Instación de Ruby con RBEnv</h2>
+
+<h3 id="paso-1-dependencias">Paso 1: Dependencias</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>git curl autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev
+</code></pre></div></div>
+<h3 id="paso-2-rbenv">Paso 2: RBEnv</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-fsSL</span> https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
+</code></pre></div></div>
+
+<p>Agregamos <code class="language-plaintext highlighter-rouge">$HOME/.rbenv/bin</code> a la variable de entorno <strong>PATH</strong>. Para <em>bash</em> es:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s1">'export PATH="$HOME/.rbenv/bin:$PATH"'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+<span class="nb">echo</span> <span class="s1">'eval "$(rbenv init -)"'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+<span class="nb">source</span> ~/.bashrc
+</code></pre></div></div>
+
+<p>Verfificamos con</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rbenv <span class="nt">-v</span>
+</code></pre></div></div>
+
+<h3 id="paso-3-ruby-27">Paso 3: Ruby 2.7</h3>
+<blockquote>
+  <p>Github-Pages uses Jekyll 3.9, which isn’t compatible with Ruby 3. Downgrading to Ruby 2.7 should avoid the problem.</p>
+</blockquote>
+
+<p>https://talk.jekyllrb.com/t/error-no-implicit-conversion-of-hash-into-integer/5890/2</p>
+
+<p>Verificamos la versión cercana a <code class="language-plaintext highlighter-rouge">2.7</code> con <code class="language-plaintext highlighter-rouge">rbenv install -l</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rbenv <span class="nb">install </span>2.7.6
+</code></pre></div></div>
+
+<p>Definimos la versión local de Ruby con la opción <a href="https://github.com/rbenv/rbenv#rbenv-local"><code class="language-plaintext highlighter-rouge">local</code></a></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rbenv <span class="nb">local </span>2.7.6
+</code></pre></div></div>
+
+<p>Comprobamos con</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby <span class="nt">-v</span>
+</code></pre></div></div>
+<h2 id="posts">Posts</h2>
+
+<p>https://jekyllrb.com/docs/posts/</p>
+
+<h3 id="drafts">Drafts</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll serve <span class="nt">--drafts</span>
+</code></pre></div></div>
+
+<h2 id="front-matter">Front Matter</h2>
+
+<p>https://jekyllrb.com/docs/front-matter/</p>
+
+
+
+  <small>tags: <em>jekyll</em> - <em>GitHub</em> - <em>GitHub-pages</em></small>
+
+
+      </section>
+    </div>
+  </body>
+</html>
