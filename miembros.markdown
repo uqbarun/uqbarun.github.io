@@ -10,3 +10,5 @@ Nombre - correo - usuario github:
 - Nicolás Gómez - [nigomezgu@unal.edu.co](mailto:nigomezgu@unal.edu.co) - Nigogu
 - Juan David Guarnizo - jguarnizog@unal.edu.co - JuanDGU1108
 - Diego Quintero - [dquinterogo@unal.edu.co](mailto:dquinterogo@unal.edu.co) - dfquintero
+- David Rativa - [drativa@unal.edu.co](mailto:drativa@unal.edu.co) - DraTeZ
+
