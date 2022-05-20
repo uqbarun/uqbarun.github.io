@@ -2,4 +2,4 @@
 title: "Miembros"
 layout: default
 ---
-hola uqbar
+Fredy Rosero - faroseroc@unal.edu.co
