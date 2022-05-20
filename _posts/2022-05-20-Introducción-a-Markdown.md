@@ -11,6 +11,16 @@ excerpt_separator: <!--more-->
 
 Abstract.
  <!--more-->
+ 
+## Previsualizar con joeyespo@Grip
+Repositorio: https://github.com/joeyespo/grip
+Uso:
+```bash
+pip install grip
+cd myrepo
+grip . 0.0.0.0:8080
+```
+Abrir http://127.0.0.1:8080/README.md
 
 ## Framentos de código
 Los fragmentos de código pueden ser insertados de dos maneras
