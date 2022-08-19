@@ -2,7 +2,13 @@
 permalink: /404.html
 layout: base
 ---
+  <span class="console-input" data-prompt="uqbar@col:~$ ">cat .<span id="pathname">404.html</span></span>    
   <span class="console-output">
     > Exit code: 127<br>
     > <span id="prompt">█</span>
   </span>  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => { 
+      document.getElementById('pathname').textContent = location.pathname;
+    }, false);
+  </script>    
