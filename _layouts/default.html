@@ -31,11 +31,11 @@
 
     <div class="container">
       <section id="main_content">
-        <span class="console-input" data-prompt="uqbar@col:~$ ">echo "./{{ page.title }}"</span>    
+        <span class="console-input" data-prompt="uqbar@col:~$ ">cat ./{{ page.path }}</span>    
         <span class="console-output">
-          * Connected to uqbarunal.github.io (<span id="ip-host">loading...</span>)<br>
-          > GET / HTTP/1.1<br>
-          > Accept: */*<br>
+          * Connected to {{ site.url }}<br>
+          > Accepts: text/markdown <br>
+          > Date: {{ site.time }}<br>
           > Content:
         </span>
         <br>
@@ -52,7 +52,6 @@
         const IP = res.join('\n');
         document.querySelectorAll(".console-input").forEach( el => el.setAttribute('data-prompt', `uqbar@${IP}:~$ `));
       }); 
-      document.getElementById('ip-host').textContent = location.host;
     }, false);
   </script>      
 </html>
