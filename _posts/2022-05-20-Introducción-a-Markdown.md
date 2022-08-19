@@ -4,7 +4,7 @@ author: Fredy Rosero
 tags: [tag1, tag2]
 date: 2022-05-20'
 layout: post
-categories: [category]
+categories: [basics]
 excerpt_separator: <!--more-->
 ---
 ![thumbnail]()

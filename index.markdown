@@ -2,7 +2,15 @@
 layout: default
 title: inicio
 ---
-<span>test</span>
+<span class="console-input" data-prompt="uqbar@col:~$ ">ls -al /categories</span>   
+<ul class="categories-list">
+{% for category in site.categories %}
+    <li>
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <a name="{{ category_name | slugize }}">{{ category_name }}</a>
+    </li>
+{% endfor %}
+</ul>
 <span class="console-input" data-prompt="uqbar@col:~$ ">ls -al /posts</span>   
 <div class="posts">
   {% for post in site.posts %}

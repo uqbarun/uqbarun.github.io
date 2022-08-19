@@ -4,7 +4,7 @@ author: FredyRosero
 tags: [Terminal, Shell, TTY, Console]
 date: 2022-07-06
 layout: post
-categories: [category]
+categories: [basics]
 excerpt_separator: <!--more-->
 ---
 
