@@ -33,7 +33,7 @@
       <section id="main_content">
         <span class="console-input" data-prompt="uqbar@col:~$ ">cat .{{ page.url }}</span>    
         <span class="console-output">
-          -rwxrwxr-x  1 root root  {{ page.date | date: "%b %d" }}  {{ page.path }} <br>  
+          -rwxr-xr--  1 {{ page.author | downcase }} uqbar {{ page.date | date: "%b %d %y" }}  {{ page.path }} <br>  
           > Content:
         </span>
         <br>

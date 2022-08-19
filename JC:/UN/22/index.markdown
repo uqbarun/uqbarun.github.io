@@ -1,3 +1,6 @@
+---
+date: 2022-10-25
+---
 # 3ra Jornada de Ciberseguridad Universidad Nacional  - #JCUN2019
 Conferencias, Talleres prácticos, Competencia CTF, exposición de posters,  concursos y más...
 23, 24 y 25 de Octubre
