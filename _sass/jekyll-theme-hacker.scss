@@ -275,7 +275,8 @@ hr {
   background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8));
 }
 
-.btn .icon {
+.btn .icon,
+.btn i {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -284,6 +285,11 @@ hr {
 }
 
 .btn-github .icon {
+  opacity: 0.6;
+  background: url("../images/blacktocat.png") 0 0 no-repeat;
+}
+
+.btn-JCUN22 .icon {
   opacity: 0.6;
   background: url("../images/blacktocat.png") 0 0 no-repeat;
 }
