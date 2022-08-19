@@ -31,11 +31,10 @@
 
     <div class="container">
       <section id="main_content">
-        <span class="console-input" data-prompt="uqbar@col:~$ ">cat ./{{ page.path }}</span>    
+        <span class="console-input" data-prompt="uqbar@col:~$ ">cat .{{ page.url }}</span>    
         <span class="console-output">
-          * Connected to {{ site.url }}<br>
-          > Accepts: text/markdown <br>
-          > Date: {{ site.time }}<br>
+          -rwxrwxr-x  1 root root  {{ page.date | date: "%b %d" }}  {{ page.path }} <br>
+          * Connected to {{ site.url }}<br>        
           > Content:
         </span>
         <br>
