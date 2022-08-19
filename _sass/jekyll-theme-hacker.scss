@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
-$body-background: $cod-grey !default;
+$body-background: $cod-grey!default;
 $body-foreground: $gallery !default;
-$header: $conifer !default;
+$header: $magenta !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
 $container-max-width: 1000px;
@@ -19,7 +19,8 @@ $container-max-width: 1000px;
 body {
   margin: 0;
   padding: 0;
-  background: $body-background url("../images/bkg.png") 0 0;
+  /* background: $body-background url("../images/bkg.png") 0 0; */
+  background: $body-background;
   color: $body-foreground;
   font-size: 16px;
   line-height: 1.5;
@@ -69,7 +70,7 @@ body {
 
 /* Prompt para linea de consolla*/
 .console-input:before {
-  color: $conifer;//$header;  
+  color: $magenta;//$header;  
   /* content: "uqbar@col:~$ ";   */
   content: attr(data-prompt);
 }
@@ -103,7 +104,7 @@ li {
 header {
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  border-bottom: 1px dashed $conifer; //header;
+  border-bottom: 1px dashed $magenta; //header;
   padding: 10px 0;
   margin: 0 0 20px 0;
 }
@@ -114,7 +115,7 @@ header h1 {
   margin: 0 0 0 -40px;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $conifer;//$header;
+  color: $cian;//$header;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
                0 0 10px rgba(181, 232, 83, 0.1);
@@ -157,7 +158,7 @@ section img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $header;
+  color: $cian;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
