@@ -47,7 +47,7 @@ excerpt_separator: <!--more-->
     [comando]
     ```
 10. Finalizar proceso (o programa en ejecución) en primer plano de la sesión de la shell instanciada:  
-    Ctrl + C
+    <kbd>Ctrl</kbd> + <kbd>C</kbd>
 
 11. Lanzar programa en segundo plano en la sesión de la shell instanciada: 
     ```bash
@@ -58,7 +58,7 @@ excerpt_separator: <!--more-->
     jobs
     ```
 13. Parar proceso en primer plano en la sesión de la shell instanciada: 
-    Ctrl + Z
+    <kbd>Ctrl</kbd> + <kbd>Z</kbd>
 
 14. Poner en primer plano un proceso parado en la sesión de la shell instanciada: 
     ```bash
@@ -133,7 +133,7 @@ excerpt_separator: <!--more-->
     [comando] | tail -n %N
     ```
 32. Cambiar a 3ra TTY: 
-    Ctrl + Alt + F3
+    <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F3</kbd>
 
 33. Mostrar resumen procesos en ejecución: top ó htop
     ```bash
@@ -156,8 +156,8 @@ excerpt_separator: <!--more-->
     systemctl restart [servicio]
     ```
 38. Reiniciar entorno de escritorio GNOME shell #Ubuntu : 
-    Alt + F2 + r + enter
-
+    <kbd>Alt</kbd> + <kbd>F2</kbd> + <kbd>r</kbd> + <kbd>enter</kbd>
+    
 39. Reiniciar GNOME Display Manager #Ubuntu:
     ```bash
     sudo service gdm3 restart
