@@ -47,9 +47,9 @@ body {
 .console-output{
   /* font-family: 'VT323', monospace; */
   /* font-family: 'Ubuntu Mono', monospace; */
-  display:inline;
+  display:block;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-
+  font-size: 10px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
                0 0 10px rgba(181, 232, 83, 0.1);

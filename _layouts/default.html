@@ -31,10 +31,8 @@
 
     <div class="container">
       <section id="main_content">
-        <span class="console-input" data-prompt="uqbar@col:~$ ">cat .{{ page.url }}</span>    
-        <span class="console-output">
-          -rwxr-xr--  1 {{ page.author | downcase }} uqbar {{ page.date | date: "%b %d %y" }}  {{ page.path }}            
-        </span>
+        <span class="console-input" data-prompt="uqbar@col:~$ ">print $PAGE 2>/dev/null</span>    
+        <span class="console-output">-rwxr-xr--  1 {{ page.author | downcase }} uqbar {{ page.date | date: "%b %d %y" }} "{{ page.title }}"</span>
         {{ content }}
         <br>        
         <span class="console-output">> Exit code: 1</span>    
@@ -45,7 +43,8 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => { 
       getIPs().then(res => {
-        const IP = res.join('\n');
+        console.log("getIPs response:",res);
+        const IP = res.at(-1);
         document.querySelectorAll(".console-input").forEach( el => el.setAttribute('data-prompt', `uqbar@${IP}:~$ `));
       }); 
     }, false);
