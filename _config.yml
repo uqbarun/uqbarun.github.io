@@ -23,7 +23,7 @@ email: Uqbar@unal.edu.co
 description: >- # this means to ignore newlines until "baseurl:"
   Semillero de investigación interinstitucional en ciberseguridad Uqbar.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://uqbarunal.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: uqbarunal
 github_username:  uqbarunal
 github: [metadata]
