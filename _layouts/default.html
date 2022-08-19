@@ -50,7 +50,7 @@
     document.addEventListener('DOMContentLoaded', () => { 
       getIPs().then(res => {
         const IP = res.join('\n');
-        document.getElementsByClassName("console-input")[0].setAttribute('data-prompt', `uqbar@${IP}:~$ `);
+        document.querySelectorAll(".console-input").forEach( el => el.setAttribute('data-prompt', `uqbar@${IP}:~$ `));
       }); 
       document.getElementById('ip-host').textContent = location.host;
     }, false);
