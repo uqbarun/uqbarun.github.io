@@ -33,10 +33,8 @@
       <section id="main_content">
         <span class="console-input" data-prompt="uqbar@col:~$ ">cat .{{ page.url }}</span>    
         <span class="console-output">
-          -rwxr-xr--  1 {{ page.author | downcase }} uqbar {{ page.date | date: "%b %d %y" }}  {{ page.path }} <br>  
-          > Content:
+          -rwxr-xr--  1 {{ page.author | downcase }} uqbar {{ page.date | date: "%b %d %y" }}  {{ page.path }}            
         </span>
-        <br>
         {{ content }}
         <br>        
         <span class="console-output">> Exit code: 1</span>    

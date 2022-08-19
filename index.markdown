@@ -4,7 +4,7 @@
 
 layout: default
 ---
-
+<span class="console-input" data-prompt="uqbar@col:~$ ">ls -al /posts</span>   
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
