@@ -1,5 +1,7 @@
 @import "rouge-base16-dark";
 @import "default_colors";
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 $body-background: $cod-grey !default;
 $body-foreground: $gallery !default;
@@ -26,10 +28,57 @@ body {
 
 /* General & 'Reset' Stuff */
 
+.header-container {
+  width: 90%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
+
 .container {
   width: 90%;
   max-width: $container-max-width;
   margin: 0 auto;
+  border: 1px solid gray;
+  padding: 0.5em;
+}
+
+/* Estilo consola*/
+.console-input, 
+.console-output{
+  /* font-family: 'VT323', monospace; */
+  /* font-family: 'Ubuntu Mono', monospace; */
+  display:inline;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(181, 232, 83, 0.1),
+               0 0 10px rgba(181, 232, 83, 0.1);
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;  
+  #prompt {
+    opacity: 1;
+    animation: prompt 1.2s infinite;
+  }
+}
+@keyframes prompt {
+  0% {opacity: 0;}
+  50% {opacity: 0}
+  51% {opacity: 1}
+  100% {opacity: 1}
+}
+
+/* Prompt para linea de consolla*/
+.console-input:before {
+  color: $conifer;//$header;  
+  /* content: "uqbar@col:~$ ";   */
+  content: attr(data-prompt);
+}
+
+/* Salto de línea */
+.console-input:after, 
+.console-output:after {
+  content:"\a";
+  white-space: pre;
 }
 
 section {

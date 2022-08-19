@@ -31,28 +31,8 @@
 
     <div class="container">
       <section id="main_content">
-        <span class="console-input" data-prompt="uqbar@col:~$ ">echo "./{{ page.title }}"</span>    
-        <span class="console-output">
-          * Connected to uqbarunal.github.io (<span id="ip-host">loading...</span>)<br>
-          > GET / HTTP/1.1<br>
-          > Accept: */*<br>
-          > Content:
-        </span>
-        <br>
         {{ content }}
-        <br>        
-        <span class="console-output">> Exit code: 1</span>    
-        <span class="console-input" data-prompt="uqbar@col:~$ "><span id="prompt">█</span></span> 
       </section>
     </div>
   </body>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => { 
-      getIPs().then(res => {
-        const IP = res.join('\n');
-        document.getElementsByClassName("console-input")[0].setAttribute('data-prompt', `uqbar@${IP}:~$ `);
-      }); 
-      document.getElementById('ip-host').textContent = location.host;
-    }, false);
-  </script>      
 </html>
