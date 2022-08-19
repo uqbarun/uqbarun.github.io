@@ -5,7 +5,7 @@
 
 $body-background: $cod-grey!default;
 $body-foreground: $gallery !default;
-$header: $magenta !default;
+$header: $conifer !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
 $container-max-width: 1000px;
@@ -70,7 +70,7 @@ body {
 
 /* Prompt para linea de consolla*/
 .console-input:before {
-  color: $magenta;//$header;  
+  color: $conifer;//$header;  
   /* content: "uqbar@col:~$ ";   */
   content: attr(data-prompt);
 }
@@ -115,7 +115,7 @@ header h1 {
   margin: 0 0 0 -40px;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $cian;//$header;
+  color: $conifer;//$header;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
                0 0 10px rgba(181, 232, 83, 0.1);
@@ -158,7 +158,7 @@ section img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $cian;
+  color: $conifer;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
