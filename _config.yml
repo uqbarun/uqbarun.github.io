@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Uqbar_UNal
-email: UqbarUN@unal.edu.co
+title: Uqbar
+email: Uqbar@unal.edu.co
 description: >- # this means to ignore newlines until "baseurl:"
   Semillero de investigación interinstitucional en ciberseguridad Uqbar.
 baseurl: "" # the subpath of your site, e.g. /blog
