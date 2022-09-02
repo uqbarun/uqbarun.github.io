@@ -9,6 +9,8 @@ $header: $conifer !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
 $container-max-width: 1000px;
+$font-size: 16px;
+$console-font-size: 10px;
 
 @mixin media-max-width($max-width) {
   @media (max-width: $max-width) {
@@ -22,7 +24,7 @@ body {
   /* background: $body-background url("../images/bkg.png") 0 0; */
   background: $body-background;
   color: $body-foreground;
-  font-size: 16px;
+  font-size: $font-size;
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
@@ -38,7 +40,7 @@ body {
 .container {
   width: 90%;
   max-width: $container-max-width;
-  margin: 0 auto;
+  margin: 50px auto;
   border: 1px solid gray;
   padding: 0.5em;
 }
@@ -50,12 +52,13 @@ body {
   /* font-family: 'Ubuntu Mono', monospace; */
   display:block;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 10px;
+  font-size: $console-font-size;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
                0 0 10px rgba(181, 232, 83, 0.1);
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;  
+  display: flex;
   #prompt {
     opacity: 1;
     animation: prompt 1.2s infinite;
@@ -73,6 +76,7 @@ body {
   color: $conifer;//$header;  
   /* content: "uqbar@col:~$ ";   */
   content: attr(data-prompt);
+  margin-right: 0.75em;
 }
 
 /* Salto de línea */
@@ -80,6 +84,21 @@ body {
 .console-output:after {
   content:"\a";
   white-space: pre;
+}
+
+/* Input prompt */
+input#prompt-input, 
+input#prompt-input:focus-visible
+{
+  background: none;
+  border:none;
+  color: $body-foreground;
+  outline: none !important;
+  box-shadow: none;
+  flex-grow: 1;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-size: $console-font-size;
+
 }
 
 section {
