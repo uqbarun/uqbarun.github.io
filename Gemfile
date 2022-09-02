@@ -20,7 +20,6 @@ group :jekyll_plugins do
   gem 'jekyll-archives'
   gem 'jekyll-sitemap'
   gem 'jekyll-spaceship'
-  gem 'jekyll-scholar'
   gem 'jekyll-tagging'
 end
 
