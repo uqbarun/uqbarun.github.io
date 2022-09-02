@@ -7,7 +7,7 @@ title: inicio
 {% for category in site.categories %}
     <li>
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    <a name="{{ category_name | slugize }}">{{ category_name }}</a>
+    <a name="{{ category_name | slugize }}" href="/category/{{ category_name }}">{{ category_name }}</a>
     </li>
 {% endfor %}
 </ul>
@@ -16,8 +16,8 @@ title: inicio
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{post.categories}}: {{ post.title }}</a></h1>
+      <img src="{{ post.image }}">
       <div class="entry">
         {{ post.excerpt }}
       </div>

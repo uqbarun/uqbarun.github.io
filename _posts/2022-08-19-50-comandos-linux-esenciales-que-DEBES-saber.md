@@ -155,9 +155,9 @@ excerpt_separator: <!--more-->
     ```bash
     systemctl restart [servicio]
     ```
-38. Reiniciar entorno de escritorio GNOME shell #Ubuntu : 
+38. Reiniciar entorno de escritorio GNOME shell #Ubuntu: 
     <kbd>Alt</kbd> + <kbd>F2</kbd> + <kbd>r</kbd> + <kbd>enter</kbd>
-    
+
 39. Reiniciar GNOME Display Manager #Ubuntu:
     ```bash
     sudo service gdm3 restart

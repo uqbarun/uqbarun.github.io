@@ -25,7 +25,7 @@
             <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
           {% endif %}
           <a href="https://github.com/uqbarunal" class="btn btn-github"><span class="icon"></span>GitHub de Uqbar</a>
-          <a href="\JC:\UN\22" class="btn btn-JCUN22"><i class="fa-solid fa-hat-cowboy"></i>JC:\UN\22</a>
+          <a href="/JC@UN:~/22#" class="btn btn-JCUN22"><i class="fa-solid fa-hat-cowboy"></i>JC@UN:~/22#</a>
         </section>
       </div>
     </header>
@@ -33,7 +33,7 @@
     <div class="container">
       <section id="main_content">
         <span class="console-input" data-prompt="uqbar@col:~$ ">print $PAGE 2>/dev/null</span>    
-        <span class="console-output">-rwxr-xr--  1 {{ page.author | downcase }} uqbar {{ page.date | date: "%b %d %y" }} "{{ page.title }}"</span>
+        <span class="console-output">-rwxr-xr--  1 {{ page.author | downcase }} uqbar {{ page.date | date: "%b %d %y" }} "{{ page.url }}"</span>
         {{ content | remove: '<p>' | remove: '</p>' }}
         <br>     
         <br>   

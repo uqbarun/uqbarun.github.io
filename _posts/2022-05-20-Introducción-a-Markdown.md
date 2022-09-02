@@ -63,4 +63,3 @@ se renderizará resaltado la sintáxis de javascript
 var num;
 console.log(num)
 ```
-

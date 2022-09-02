@@ -1,5 +1,6 @@
 ---
 date: 2022-11-17
+permalink: 'JC@UN:~/22' 
 ---
 # 3ra Jornada de Ciberseguridad Universidad Nacional  - #JCUN2019
 Conferencias, Talleres prácticos, Competencia CTF, exposición de posters,  concursos y más...
