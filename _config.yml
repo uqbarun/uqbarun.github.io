@@ -64,19 +64,3 @@ defaults:
     values:
       layout: "default"
       author: uqbar
-
-# https://www.rubydoc.info/gems/jekyll-scholar/7.1.0
-scholar:
-  style: modern-language-association
-
-# https://github.com/pattex/jekyll-tagging
-tag_page_layout: tag_page
-tag_page_dir: tag
-
-# https://github.com/jekyll/jekyll-archives/blob/master/docs/configuration.md#default-configuration
-jekyll-archives:
-  enabled:
-  - categories
-  layout: archive
-  permalinks:
-    category: '/category/:name/'
