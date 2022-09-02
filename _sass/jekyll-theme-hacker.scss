@@ -45,6 +45,18 @@ body {
   padding: 0.5em;
 }
 
+svg.logo-svg {
+  display: inline-block;
+  width: 140px;
+  margin-bottom: -25px;
+  path {
+    fill: $conifer;//$header;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+                 0 0 5px rgba(181, 232, 83, 0.1),
+                 0 0 10px rgba(181, 232, 83, 0.1);
+  }
+}
+
 /* Estilo consola*/
 .console-input, 
 .console-output{

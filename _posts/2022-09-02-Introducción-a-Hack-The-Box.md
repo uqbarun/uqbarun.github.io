@@ -4,7 +4,7 @@ author:
 tags: [HTB, hack the box]
 date: 2022-09-02
 layout: post
-categories: [sesión, basics]
+categories: [sesiones]
 excerpt_separator: <!--more-->
 ---
 
