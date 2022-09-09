@@ -1,16 +1,23 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
+title: inicio
 ---
-
+<span class="console-input" data-prompt="uqbar@col:~$ ">ls -al /categories</span>   
+<ul class="categories-list">
+{% for category in site.categories %}
+    <li>
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <a name="{{ category_name | slugize }}" href="/category/{{ category_name }}">{{ category_name }}</a>
+    </li>
+{% endfor %}
+</ul>
+<span class="console-input" data-prompt="uqbar@col:~$ ">ls -al /posts</span>   
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">[{{ post.categories | join: ", "}}] {{ post.title }}</a></h1>
+      <img src="{{ post.image }}">
       <div class="entry">
         {{ post.excerpt }}
       </div>
