@@ -3,14 +3,19 @@ layout: empty
 ---
 {{ content }}
 <script>
-const url = '/';
-const input = document.getElementById('prompt-input');
-function onChangePrompt(e) {
-    let valor = e.target.value.toLowerCase();       
-    if (valor == "s" || valor == "si") {
-        window.location.href = url;
-    }    
-}
-input.onchange = onChangePrompt;
-input.onkeyup = onChangePrompt;
+    const url = '/';
+    const input = document.getElementById('prompt-input');
+    function onChangePrompt(e) {
+        let valor = e.target.value.toLowerCase();
+        if (valor == "s" || valor == "si") {
+            window.location.href = url;
+        }
+    }
+    setTimeout(function () {
+        input.focus();
+        input.click();
+    }, 1);
+    input.onchange = onChangePrompt;
+    input.onkeyup = onChangePrompt;
+
 </script>
