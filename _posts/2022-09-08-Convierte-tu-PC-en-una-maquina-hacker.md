@@ -26,4 +26,4 @@ comando linux 1
 comando linux 2
 ```
 
-3. Esta sección a sido editada desde https://hackmd.io/team/uqbarunal
+3. Esta sección ha sido editada desde https://hackmd.io/team/uqbarunal
