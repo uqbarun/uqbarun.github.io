@@ -64,3 +64,10 @@ defaults:
     values:
       layout: "default"
       author: uqbar
+  - 
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts      
+      image: /assets/images/default-banner.jpg           

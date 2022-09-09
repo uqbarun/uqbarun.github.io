@@ -5,10 +5,9 @@ tags: [Terminal, Shell, TTY, Console]
 date: 2022-07-06
 layout: post
 categories: [basics]
+image: "/assets/images/Terminal%20Vs.%20Shell%20Vs.%20Console%20(Instagram%20story)_thumbnail.jpg"
 excerpt_separator: <!--more-->
 ---
-
-![thumbnail del post](/assets/images/Terminal%20Vs.%20Shell%20Vs.%20Console%20(Instagram%20story)_thumbnail.jpg)
 
 Abstract: poner un resumen de pocas lineas acá.
 <!--more-->
