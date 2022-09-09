@@ -21,7 +21,9 @@ Aprende como configurar tu máquina con las herramientas escenciales para el mun
 comando linux 1
 ```
 
-1. segundo...
+2. segundo...
 ```bash
 comando linux 2
 ```
+
+3. Esta sección a sido editada desde https://hackmd.io/team/uqbarunal
