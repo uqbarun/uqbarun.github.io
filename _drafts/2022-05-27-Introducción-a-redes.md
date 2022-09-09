@@ -7,9 +7,6 @@ layout: post
 categories: [redes]
 excerpt_separator: <!--more-->
 ---
-
-![thumbnail del post](assets/default-banner.jpg)
-
 Abstract: poner un resumen de pocas lineas acá.
 <!--more-->
 
