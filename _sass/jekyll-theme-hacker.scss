@@ -1,5 +1,6 @@
 @import "rouge-base16-dark";
 @import "default_colors";
+@import "tags";
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
@@ -115,11 +116,12 @@ input#prompt-input:focus-visible
 
 section {
   display: block;
+  width: 100%;
   margin: 0 0 8px 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 20px 0 10px 0;
+  margin: 20px 0 0px 0;
 }
 
 li {
@@ -182,8 +184,52 @@ header h2 {
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
-section img {
-  max-width: 100%
+section div.posts img {
+  display: block;
+  width: 100%;  
+  margin-top: 15px;
+}
+
+section div.post {
+  margin-bottom: 2em;
+}
+
+
+div.tag {
+  display: inline-block;
+  background-color: hsla(0deg, 100%, 100%, 15%);
+  border: 0.1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  padding: 0 0.4em;
+  margin-bottom: 10px;
+}
+
+div.author-card {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;  
+  border: 0.5px solid $dove-grey;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  img {
+    height: 100px;
+    width: 100px;    
+    border-radius: 50px;
+    margin: 10px;
+  }
+  div.author-card-list {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    small {
+      display: inline-block;
+      max-width: 220px;
+    }
+    a {
+      display: block;
+      /* margin-left: 110px; */
+    }
+  }
 }
 h1, h3, h4, h5, h6 {
   color: $conifer;  
