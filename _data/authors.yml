@@ -1,3 +1,13 @@
 FredyRosero:
-  picture: https://github.com/FredyRosero.png
-  twitter: FredyAndresRo
+  name: Fredy Rosero
+  description: Estudiante de Ingeniería de Sistemas
+  twitter: FredyAndresRo  
+  github: FredyRosero
+  email: faroseroc@unal.edu.co
+
+UqbarUN:
+  name: Uqnar UN
+  description: Semillero de investigación interinstitucional en ciberseguridad Uqbar
+  twitter: UqbarUN  
+  github: UqbarUnal
+  email: uqbar@unal.edu.co

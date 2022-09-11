@@ -57,17 +57,19 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# Valores por defecto si no están definidos en el frontmatter
 defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
     values:
-      layout: "default"
-      author: uqbar
+      layout: "default" # Plantilla por defecto
+      author: 
+      - UqbarUN # Author por defecto de todas las paǵinas
   - 
     scope:
       path: ""      # empty string for all files
       type: posts   # limit to posts
     values:
-      is_post: true # automatically set is_post=true for all posts      
-      image: /assets/images/default-banner.jpg           
+      is_post: true # para marcar posts 
+      image: /assets/images/default-banner.jpg # Thumbnail por defecto

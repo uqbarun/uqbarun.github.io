@@ -3,9 +3,26 @@ layout: default
 ---
 <span class="console-output">> Content:</span>
 <h1>{{ page.title }}</h1>
-
+{% if page.tags %}{% include tag_cards.html tags=page.tags%}{% endif %}
+<img src="{{ page.image }}">
+<br><br>
 {{content}}
+<span class="console-input" data-prompt="uqbar@col:~$ ">AUTHOR=$(stat -c '%U' ./)</span>
+<span class="console-output">> Authors::</span>
+{% for author in page.author %}
+{% assign a = site.data.authors[author] %}
+<div class="author-card">
+  <img src="{{ 'https://github.com/' | append: a.github | append: '.png?size=200'}}">
+  <div class="author-card-list">
+    <h4>{{a.name}}</h4>
+    <small>{{a.description}}</small>
+    <a rel="author"
+      href="https://twitter.com/{{ a.twitter }}"
+      title="{{ a.name }}">@{{ a.twitter }}</a>
+    <a rel="author"
+      href="mailto:{{ a.email }}"
+      title="{{ a.email }}">{{ a.email }}</a>  
+    </div>
+</div>
+{% endfor %}
 
-{% if page.tags %}
-  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %}
