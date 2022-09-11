@@ -1,0 +1,5 @@
+{% if include.tags %}
+  {% for tag in include.tags %}
+  <div class="tag {{tag}}">#{{tag}}</div>
+  {% endfor %}
+{% endif %}

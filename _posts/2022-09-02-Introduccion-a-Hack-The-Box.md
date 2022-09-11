@@ -1,7 +1,10 @@
 ---
 title: Introducción a Hack The Box
-author: 
-tags: [HTB, hack the box]
+author: FredyRosero
+tags: 
+- HTB
+- hackthebox
+- sesion
 date: 2022-09-02
 layout: post
 categories: [sesiones]

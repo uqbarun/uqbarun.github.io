@@ -1,11 +1,10 @@
 ---
 title: 50 comandos linux esenciales que DEBES saber
 author: FredyRosero
-tags: [linux, basic]
+tags: [linux, fundamentos]
 date: 2022-08-19
 layout: post
-categories: [basics]
-excerpt_separator: <!--more-->
+categories: [fundamentos]
 ---
 50 comandos linux esenciales que DEBES saber para desenvolverte como pez en el agua.
 <!--more-->

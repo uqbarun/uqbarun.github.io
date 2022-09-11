@@ -1,17 +1,14 @@
 ---
 title: Introducción a virtualización
 author: 
-tags: [basics, virtualización]
+- UqbarUN
+- FredyRosero
+tags: [fundamentos, virtualización]
 date: 2022-09-09
 layout: post
-categories: [Basics]
-excerpt_separator: <!--more-->
+categories: [fundamentos]
 ---
-Abstract: poner un resumen de pocas lineas acá.
-<!--more-->
-
-## Concepto
-La **virtualización** o ***v12n*** (un *numeronym* donde 12 es el número de letras omitidas) es uno de los grandes avances de la informática, porque nos permite representar sistemas de hardware a nivel de software.
+La **virtualización** o ***v12n*** (un *numeronym* donde 12 es el número de letras omitidas) es uno de los grandes avances de la informática, porque nos permite representar sistemas de hardware a nivel de software. Seguramente has escuchado de VirtualBox, de Docker o hasta de WSL como herramientas de virtualización, pero el método o tipo de virtualización de estas son diferentes, a continuación te explicamos.
 
 ## Capa de compatibildad
 Cuando hablamos de capa de compatibilidad no hablamos de virtualización o emulación. La capa de compatibilidad se trata de una interfaz que traduce llamadas de sistema foráneas a llamadas de sistema nativas. Vale la pena mencionar este tema porque muchas personas confunden WSL-1 como una virtualización de Linux en Windows, cuando en realidad WSL-1 no implementa virtualización. 
@@ -21,7 +18,7 @@ Cuando hablamos de capa de compatibilidad no hablamos de virtualización o emula
 
 
 ## Tipos de virtualización
-1. Hardware virtualization
+1. Virtualización de Hardware
    1. **Full Virtualization** o **Emulation**: El SO huésped (sin modificar) no sabe que ha sido virtualizado
       1. **Hardware-assisted Virtualization (Virtualization technology)**: *Hypervisor Type 1* o *native hypervisor* o *bare metal hypervisor*. Usa Intel Virtualization Technology (VT-x) y AMD-V para utilizar directamente el hardware en sus procesos de emulación.
          - Microsoft Hyper-V
@@ -46,6 +43,8 @@ Cuando hablamos de capa de compatibilidad no hablamos de virtualización o emula
        - Docker 
        - Solaris containers
        - AIX WPAR
+2. Virtualizacin de dispositivos
+3. Virtualizacin de redes
 
 [1]: https://docs.microsoft.com/es-mx/archive/blogs/wsl/wsl-file-system-support
 [2]: https://www.unixarena.com/2017/12/para-virtualization-full-virtualization-hardware-assisted-virtualization.html/

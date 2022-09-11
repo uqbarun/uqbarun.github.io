@@ -1,11 +1,9 @@
 ---
 title: Convierte tu PC en una maquina hacker
-author: 
-tags: [basics]
+tags: [fundamentos]
 date: 2022-09-08
 layout: post
 categories: [sesiones]
-excerpt_separator: <!--more-->
 ---
 Aprende como configurar tu máquina con las herramientas escenciales para el mundo del hacking
 <!--more-->

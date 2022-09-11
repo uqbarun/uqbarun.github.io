@@ -1,14 +1,14 @@
 ---
 title: Laboratorio de pishing
-author: Fredy Rosero
-tags: [laboratorio, pishing]
+author: FredyRosero
+tags: 
+ - laboratorio
+ - pishing
+ - redteam
 date: 2022-05-20'
 layout: post
 categories: [laboratorios]
-excerpt_separator: <!--more-->
 ---
-![thumbnail]()
-
 Abstract.
  <!--more-->
 

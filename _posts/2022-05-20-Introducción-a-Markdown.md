@@ -1,14 +1,12 @@
 ---
-title: Introducció a Markdown
+title: Introducción a Markdown
 author: Fredy Rosero
-tags: [tag1, tag2]
+tags: 
+- 'markdown'
 date: 2022-05-20'
 layout: post
-categories: [basics]
-excerpt_separator: <!--more-->
+categories: [fundamentos]
 ---
-![thumbnail]()
-
 Abstract.
  <!--more-->
 
@@ -63,3 +61,6 @@ se renderizará resaltado la sintáxis de javascript
 var num;
 console.log(num)
 ```
+
+## Práctica
+https://commonmark.org/

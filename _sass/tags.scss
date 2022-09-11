@@ -1,0 +1,19 @@
+/* La única forma de personalizar el color de la etiquetas del post es 
+asínando un clase a cada etiqueta*/
+
+.tag.redteam {
+    background-color: hsla(0deg, 100%, 50%, 15%) !important;
+}
+.tag.blueteam {
+    background-color: hsla(240deg, 100%, 50%, 15%) !important;
+}
+.tag.fundamentos {
+    background-color: hsla(80deg, 100%, 50%, 15%) !important;
+}
+
+.tag.laboratorio {
+    background-color: hsla(130deg, 100%, 50%, 15%) !important;
+}
+.tag.sesion {
+    background-color: hsla(180deg, 100%, 50%, 15%) !important;
+}
