@@ -1,3 +1,6 @@
+/**
+ * Este script permite renderizar los datos de los eventos registrados en el Google Calendar de Uqbar UN
+ */
 function reqListener() {    
     console.log("Google Calendar API: Eventos de calendario",URL,this.response.items);
     var ul = document.createElement("ul");
@@ -9,9 +12,15 @@ function reqListener() {
         a.innerText = "Agregar a mi Calendario de Google";
         a.target = "_blank";
         ul.appendChild(li);
-        li.appendChild(document.createTextNode(event.summary));
+        var b = document.createElement("b");
+        b.appendChild(document.createTextNode(event.summary));
+        li.appendChild(b);
         var date = new Date(event.start.dateTime).toLocaleString('en-CO',{ timeZone: event.start.timeZone });
-        li.appendChild(document.createTextNode(" - "+date+" - "));
+        li.appendChild(document.createTextNode(": "+event.description));
+        li.appendChild(document.createElement("br"));
+        var i = document.createElement("i");
+        i.appendChild(document.createTextNode(date+". "));
+        li.appendChild(i);
         li.appendChild(a);        
     });
     
