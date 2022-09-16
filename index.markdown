@@ -5,7 +5,7 @@ title: inicio
 <!-- Calendario -->
 <span class="console-input" data-prompt="uqbar@col:~$ ">ls -al /sessions</span>   
 <div id="events-container"></div>
-Ver calendario de sesiones en <a href="https://calendar.google.com/calendar/embed?src=c_d6ub97gmdvq9k9ien2t74r2gp4%40group.calendar.google.com&ctz=America%2FBogota&mode=AGENDA" target="_blank"> Google Calendar</a>
+Ver calendario de sesiones en <a href="https://calendar.google.com/calendar/embed?src=c_kqf6qho59uo9p87b7div6ffv9k%40group.calendar.google.com&ctz=America%2FBogota&mode=AGENDA" target="_blank"> Google Calendar</a>
 <script src="/assets/js/getEventsCalendar.js"></script>
 <br><br>
 <!-- Categorías -->

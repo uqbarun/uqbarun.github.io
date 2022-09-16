@@ -8,11 +8,8 @@ tags:
 date: 2022-09-02
 layout: post
 categories: [sesiones]
-excerpt_separator: <!--more-->
 ---
-
 Abstract: poner un resumen de pocas lineas acá.
-<!--more-->
 
 ## Section 1
 Recuerda definir la variable `GIT_USER` en el perfil de tu shell

@@ -1,6 +1,7 @@
 function reqListener() {    
+    console.log("Google Calendar API: Eventos de calendario",URL,this.response.items);
     var ul = document.createElement("ul");
-    ec.appendChild(ul);    
+    eventsContainer.appendChild(ul);    
     this.response.items.forEach(event => {        
         var li = document.createElement("li");
         var a = document.createElement("a");
@@ -15,12 +16,27 @@ function reqListener() {
     });
     
 }
-const ec = document.getElementById("events-container");
+const eventsContainer = document.getElementById("events-container");
 // XHR Request a la API de Google CalendaR
 const req = new XMLHttpRequest();
 req.addEventListener("load", reqListener);
-req.open("GET", "https://www.googleapis.com/calendar/v3/calendars/c_d6ub97gmdvq9k9ien2t74r2gp4%40group.calendar.google.com/events?key=AIzaSyBdU9wjzrLP3dOdWfiKvow1PjU2QTbHLdU");
+/**
+ * Google Cloud Proyect: unal.edu.co/'Blog Uqbar UN'
+ * API Key: AIzaSyBdU9wjzrLP3dOdWfiKvow1PjU2QTbHLdU
+ * CLient ID: 541299082882-ilupp7s0rd7nat97po164u7r46ac7a4a.apps.googleusercontent.com
+ * 
+ * Uqbar UN Calendar ID
+ * c_kqf6qho59uo9p87b7div6ffv9k@group.calendar.google.com
+ * 
+ */
+const APIkey = 'AIzaSyBdU9wjzrLP3dOdWfiKvow1PjU2QTbHLdU'
+const calendarID = 'c_kqf6qho59uo9p87b7div6ffv9k@group.calendar.google.com';
+const URL = `https://www.googleapis.com/calendar/v3/calendars/${calendarID}/events?key=${APIkey}`;
+// Petición GET para los eventos del calendario Uqbar
+req.open("GET", URL);
+// Encabezado para respueseta JSON
 req.setRequestHeader("Accept", 'application/json');
+// Específicar el tipo de respuesta a JSON
 req.responseType = 'json';
 req.overrideMimeType("application/json");  
 req.send();
