@@ -22,16 +22,16 @@ Primero debemos conocer los permisos actuales del archivo, esto lo podemos logra
 ?UUUGGGOOO   00  UUUUUU GGGGGG ####    MON DD XX:XX FILENAME
 ^ ^  ^  ^     ^      ^      ^    ^      ^            ^  
 | |  |  |     |      |      |    |      |            |
-| |  |  |     |      |      |    |      |            \- Nombre de archivo.
-| |  |  |     |      |      |    |      \-------------- Última modificación
-| |  |  |     |      |      |    \--------------------- Por lo geneal tamaño en bytes
-| |  |  |     |      |      \-------------------------- Grupo del archivo
-| |  |  |     |      \--------------------------------- Usuario dueño del archivo
-| |  |  |     \---------------------------------------- Cantidad de enlaces
-| |  |  \---------------------------------------------- Triadas de bits de modo de acceso para otros usuarios
-| |  \------------------------------------------------- Triadas de bits de modo de acceso para el grupo del archivo
-| \---------------------------------------------------- Triadas de bits de modo de acceso para el usuario dueño
-\------------------------------------------------------ Tipo de archivo  
+| |  |  |     |      |      |    |      |            ┖- Nombre de archivo.
+| |  |  |     |      |      |    |      ┖-------------- Última modificación
+| |  |  |     |      |      |    ┖--------------------- Por lo geneal tamaño en bytes
+| |  |  |     |      |      ┖-------------------------- Grupo del archivo
+| |  |  |     |      ┖--------------------------------- Usuario dueño del archivo
+| |  |  |     ┖---------------------------------------- Cantidad de enlaces
+| |  |  ┖---------------------------------------------- Triadas de bits de modo de acceso para otros usuarios
+| |  ┖------------------------------------------------- Triadas de bits de modo de acceso para el grupo del archivo
+| ┖---------------------------------------------------- Triadas de bits de modo de acceso para el usuario dueño
+┖------------------------------------------------------ Tipo de archivo  
 ```
 
 ### Tipo de archivo
@@ -74,7 +74,7 @@ Agregar permiso de ejecucion a todos
 chmod a+x myfile
 ```
 
-### Opciones con 
+### Opciones con notación simbolica
 Users can Read, Write and eXecute (111=7), Group can Read and eXecute (101=5) and others can Read (100=4)
 ```
 chmod  754 myfile
