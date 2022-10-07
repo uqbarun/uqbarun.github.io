@@ -46,5 +46,51 @@ Cuando hablamos de capa de compatibilidad no hablamos de virtualización o emula
 2. Virtualizacin de dispositivos
 3. Virtualizacin de redes
 
+
+## IOU
+https://drive.google.com/file/d/11E3-sfzvyHAzWQmjhsk9_rqRCdN6l1q4/view?usp=sharing
+
+
+
+## Qemu
+Descargamos la imagen `kali-linux-2022.3-installer-amd64.iso` en https://www.kali.org/get-kali/#kali-installer-images
+
+
+```bash
+sudo apt update && sudo apt install virt-manager -y
+```
+
+```
+virsh list --all
+```
+
+
+Mas info en https://www.kali.org/docs/virtualization/install-qemu-guest-vm/
+## Docker
+### Alpine
+```
+docker run --tty --interactive alpine
+```
+
+### Kali
+```bash
+docker pull kalilinux/kali-rolling
+```
+Mas info en https://www.kali.org/docs/containers/official-kalilinux-docker-images/
+
+```
+docker run --tty --interactive kalilinux/kali-rolling
+```
+Mas info en https://www.kali.org/docs/containers/using-kali-podman-images/
+
+```
+apt update
+apt -y install iproute2 tcpdump
+```
+
+
 [1]: https://docs.microsoft.com/es-mx/archive/blogs/wsl/wsl-file-system-support
 [2]: https://www.unixarena.com/2017/12/para-virtualization-full-virtualization-hardware-assisted-virtualization.html/
+
+## GNS3
+[NPCap vs WinPCap](https://npcap.com/vs-winpcap.html)

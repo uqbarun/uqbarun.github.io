@@ -1,5 +1,5 @@
 ---
-title: Laboratorio de HTTP y FTP sniffing
+title: Laboratorio de HTTP sniffing
 author: 
 - UqbarUN
 - 
@@ -11,10 +11,33 @@ tags: [http, sniffing, wireshark]
 Abstract: poner un resumen de pocas lineas acá.
 <!--more-->
 
-## Entorno virtual
+## Requisitos
+* Plantilla de router con Imagen IOU L3 [`i86bi-linux-l3-adventerprisek9-15.4.1T.bin`](https://drive.google.com/file/d/0B35cvHMiBThNaERiaUNtWjctcXc/view?resourcekey=0-UCnBqKJOfAF2UTIXfuWu_w)  
+* 
+
+### DHCP, Dynamic Host Configuration Protocol 
+```
+enable
+config terminal
+show running-config
+interface ethernet 0/0
+ip address dhcp
+no shutdown
+interface ethernet 0/1
+ip address 192.168.244.1 255.255.255.0
+no shutdown
+end 
+wr
+show ip interface brief
+```
+
+En PC
+```
+ip addr add 192.168.244.2/24 brd + dev eth0
+```
 
 ### NAT forwarding (aka "virtual networks")
-GNS3 en linux utiliza `libvirt` para virtualizar redes. Mas exactamente para crear un switch de red virutal<sup>[1]</sup>. Listemos los dispositivos virtuales de red que `libvirt` tenga configurados:
+GNS3 en linux utiliza `libvirt` para virtualizar redes. Mas exactamente para crear un switch de red virutal<sup>[1]</sup>. Por defecto todos las VM de libvirt se conectan a la misma red virutal **default**<sup>[2]</sup>. Listemos los dispositivos virtuales de red que `libvirt` tenga configurados:
 
 ```bash
 virsh net-list --all
@@ -102,3 +125,4 @@ php -S 0.0.0.0:8000
 
 
 [1]: https://wiki.libvirt.org/page/VirtualNetworking
+[2]: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_virtualization/configuring-virtual-machine-network-connections_configuring-and-managing-virtualization#virtual-networking-default-configuration_understanding-virtual-networking-overview
