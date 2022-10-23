@@ -20,12 +20,30 @@ Abstract: poner un resumen de pocas lineas acá.
 enable
 config terminal
 show running-config
+
 interface ethernet 0/0
+ip nat outside
 ip address dhcp
 no shutdown
+
 interface ethernet 0/1
+ip nat inside
 ip address 192.168.244.1 255.255.255.0
 no shutdown
+exit
+
+ip route 0.0.0.0 0.0.0.0 192.168.122.118
+ip domain-lookup
+ip name-server 8.8.8.8
+router ospf 1
+network 192.168.244.0 0.0.0.255 area 0
+default-information originate
+exit
+
+ip nat inside source list 1 interface ethernet 0/1 overload
+access-list 1 permit 192.168.244.0 0.0.0.255 
+end
+
 end 
 wr
 show ip interface brief

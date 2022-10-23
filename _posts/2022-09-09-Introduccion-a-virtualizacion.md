@@ -88,6 +88,22 @@ apt update
 apt -y install iproute2 tcpdump
 ```
 
+```
+graph TD
+    v[Virutalización]
+    h[Hardware]
+    Q[QEMU]
+    D[Docker]
+    k[KVM: Kernel-based Virtual Machine]
+    v --- h --- pv[Para-virtualization] & fv[Full-virtualization]
+    fv --- hav[Hardware-assisted Full-virtualization<br>Virtualization technology]
+    fv --- sav[Software-assisted Full-virtualization<br>Binary traslation]
+    hav --- h1[Hypervisor Typo 1] 
+    sav --- h2[Hypervisor Typo 2]
+    pv --- lxc[LinuX Containers]
+    h1 --- h1a[Microsoft Hyper V] & h1b[VMware ESX/ESXi] & k
+    h2 --- h2a[VMware Workstation] & h2b[VMware Player] & h2c[VirtualBox]
+```
 
 [1]: https://docs.microsoft.com/es-mx/archive/blogs/wsl/wsl-file-system-support
 [2]: https://www.unixarena.com/2017/12/para-virtualization-full-virtualization-hardware-assisted-virtualization.html/
