@@ -25,4 +25,6 @@ Nombre - correo - usuario github
 - David Rativa - [drativa@unal.edu.co](mailto:drativa@unal.edu.co) - DraTeZ
 - Santiago Hernandez - [dcruzhe@unal.edu.co](mailto:dcruzhe@unal.edu.co) - SaninfomaxUN
 - Diego Ospina - [diospinal@unal.edu.co](mailto:diospinal@unal.edu.co) - DOspinalUN23
-
+- Alvaro Torres - [alvtorresro@unal.edu.co](mailto:alvtorresro@unal.edu.co) - actorresr
+- Jose Cordobah - [jacordobah@unal.edu.co](mailto:jacordobah@unal.edu.co) - JoseCorH
+- Felipe Silva - [dfsilvav@unal.edu.co](dfsilvav@unal.edu.co) - dfsilvav
