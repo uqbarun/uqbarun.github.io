@@ -24,4 +24,4 @@ Nombre - correo - usuario github
 - Diego Quintero - [dquinterogo@unal.edu.co](mailto:dquinterogo@unal.edu.co) - dfquintero
 - David Rativa - [drativa@unal.edu.co](mailto:drativa@unal.edu.co) - DraTeZ
 - Santiago Hernandez - [dcruzhe@unal.edu.co](mailto:dcruzhe@unal.edu.co) - SaninfomaxUN
-
+- Juan Wilches -  [jwilchesc@unal.edu.co](mailto:jwilchesc@unal.edu.co) - MadLies
