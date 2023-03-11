@@ -13,7 +13,7 @@ drativa@unal.edu.co
 darianos@unal.edu.co
 -->
 
-Nombre - correo - usuario github:
+Nombre - correo - usuario github
 
 - Fredy Rosero - [faroseroc@unal.edu.co](mailto:faroseroc@unal.edu.co) - FredyRosero
 - Alejandro Alejo - [alsalejopa@unal.edu.co](mailto:alsalejopa@unal.edu.co) - Alejosebasp
@@ -24,3 +24,5 @@ Nombre - correo - usuario github:
 - Diego Quintero - [dquinterogo@unal.edu.co](mailto:dquinterogo@unal.edu.co) - dfquintero
 - David Rativa - [drativa@unal.edu.co](mailto:drativa@unal.edu.co) - DraTeZ
 - Jose Cordoba - [jacordobah@unal.edu.co](mailto:jacordobah@unal.edu.co) - JoseCor
+- Santiago Hernandez - [dcruzhe@unal.edu.co](mailto:dcruzhe@unal.edu.co) - SaninfomaxUN
+- Felipe Silva - [dfsilvav@unal.edu.co](dfsilvav@unal.edu.co) - dfsilvav
