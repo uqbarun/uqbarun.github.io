@@ -11,6 +11,7 @@ jguarnizog@unal.edu.co
 dquinterogo@unal.edu.co 
 drativa@unal.edu.co 
 darianos@unal.edu.co
+halfonsoh@unal.edu.co
 -->
 
 Nombre - correo - usuario github
@@ -28,4 +29,5 @@ Nombre - correo - usuario github
 - Diego Ospina - [diospinal@unal.edu.co](mailto:diospinal@unal.edu.co) - DOspinalUN23
 - Alvaro Torres - [alvtorresro@unal.edu.co](mailto:alvtorresro@unal.edu.co) - actorresr
 - Jose Cordoba - [jacordobah@unal.edu.co](mailto:jacordobah@unal.edu.co) - JoseCorH
-- Felipe Silva - [dfsilvav@unal.edu.co](dfsilvav@unal.edu.co) - dfsilvav
+- Felipe Silva - [dfsilvav@unal.edu.co](mailto:dfsilvav@unal.edu.co) - dfsilvav
+- Héctor Alfonso - [halfonsoh@unal.edu.co](mailto:halfonsoh@unal.edu.co) - hectorhernandezalfonso
