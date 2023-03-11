@@ -23,5 +23,6 @@ Nombre - correo - usuario github
 - Juan David Guarnizo - jguarnizog@unal.edu.co - JuanDGU1108
 - Diego Quintero - [dquinterogo@unal.edu.co](mailto:dquinterogo@unal.edu.co) - dfquintero
 - David Rativa - [drativa@unal.edu.co](mailto:drativa@unal.edu.co) - DraTeZ
+- Jose Cordoba - [jacordobah@unal.edu.co](mailto:jacordobah@unal.edu.co) - JoseCor
 - Santiago Hernandez - [dcruzhe@unal.edu.co](mailto:dcruzhe@unal.edu.co) - SaninfomaxUN
 - Felipe Silva - [dfsilvav@unal.edu.co](dfsilvav@unal.edu.co) - dfsilvav
