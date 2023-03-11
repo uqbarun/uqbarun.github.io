@@ -25,3 +25,6 @@ Nombre - correo - usuario github:
 - David Rativa - [drativa@unal.edu.co](mailto:drativa@unal.edu.co) - DraTeZ
 - Santiago Hernandez - [dcruzhe@unal.edu.co](mailto:dcruzhe@unal.edu.co) - SaninfomaxUN
 
+
+
+- Jose Cordobah - [jacordobah@unal.edu.co](mailto:jacordobah@unal.edu.co) - JoseCorH
