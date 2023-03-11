@@ -11,6 +11,7 @@ jguarnizog@unal.edu.co
 dquinterogo@unal.edu.co 
 drativa@unal.edu.co 
 darianos@unal.edu.co
+halfonsoh@unal.edu.co
 -->
 
 Nombre - correo - usuario github
@@ -24,4 +25,5 @@ Nombre - correo - usuario github
 - Diego Quintero - [dquinterogo@unal.edu.co](mailto:dquinterogo@unal.edu.co) - dfquintero
 - David Rativa - [drativa@unal.edu.co](mailto:drativa@unal.edu.co) - DraTeZ
 - Santiago Hernandez - [dcruzhe@unal.edu.co](mailto:dcruzhe@unal.edu.co) - SaninfomaxUN
+- Héctor Alfonso - [halfonsoh@unal.edu.co](mailto:halfonsoh@unal.edu.co) - hectorhernandezalfonso
 
