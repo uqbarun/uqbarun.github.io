@@ -11,3 +11,4 @@ A continuación presentamos las 40 herramientas que debes conocer si estas en el
  <!--more-->
 
 # Nmap
+Es una herramienta GNU que permite hacer escaneos de red
