@@ -1,5 +1,5 @@
 ---
-title: Terminal vs. Shell vs. Console
+title: Terminal vs. Shell vs. Console vs TTY
 author: FredyRosero
 tags: [Terminal, Shell, TTY, Console]
 date: 2022-07-06
@@ -10,34 +10,45 @@ image: "/assets/images/Terminal%20Vs.%20Shell%20Vs.%20Console%20(Instagram%20sto
 Abstract: poner un resumen de pocas lineas acá.
 <!--more-->
 
-## Section 1
-Recuerda definir la variable `GIT_USER` en el perfil de tu shell
-```bash
-echo export GIT_USER=MyGithubUser >> ~/.bashrc
-source ~/.bash_profile
-```
+# ¿Sabes cuál es la diferencia entre Terminal vs. Shell vs. Console vs TTY?
 
-o de manera temporal
-```bash
-GIT_USER=MyGithubUser
-echo $GIT_USER
-```
+## Terminal físico (80's)
+Antes, había un mainframe y sus TTYs. Las TTYs o terminales o consolas eran la interfaz física (separada) que contienía los 
+instrumentos para el control y operación del mainframe.
 
-### Subsection 1.1
-Body of Section 1.1   
+![](https://i.imgur.com/BnMEsnC.jpg)
 
-![Terminal vs. Shell vs. Console](/assets/images/Terminal%20Vs.%20Shell%20Vs.%20Console%20(Instagram%20story).png)
 
-## Section 2
-Cuerpo de la sección 2 $\mathrm{e} = \sum_{n=0}^{\infty} \dfrac{1}{n!}$ con ecuación en línea.
-A continuación un bloque de ecuaciones alineadas:
-$$
-\begin{align}
-Then,\ (x+z)+t & = x+(z+t)\ (\because Rule2) \\
-& = x+0_V \\
-& = x\ (\because Rule3) \\
-\end{align}
-$$
+El subsistema interno TTY se encargaba de enrutar la entrada y salida de la terminal física, con el proceso activo (en primer plano) del mainframe como la shell, la cual recibe comandos de texto simple para su interpretación y ejecución.
+
+![](https://i.imgur.com/aXjc03E.png)
+
+## TTY virtual o TTY en kernel
+
+Con el nacimiento de las Personal computers ya no existía un mainframe y sus terminales, sino un solo dispositivo.
+
+![](https://i.imgur.com/99yLQwd.jpg)
+
+
+Así que la interfaz dejó de estar separada del “mainframe” y se convirtió en una terminal “virtual” dentro del “mainframe”
+para simplemente convertirse en un PC.
+
+![](https://i.imgur.com/0TWRO1s.png)
+
+
+## Pseudo TTY (PTY) o TTY en espacio de usuario (UNIX 98)
+![](https://i.imgur.com/ismwTcN.jpg)
+
+Con el surgimiento de los desktop enviroments (DE) y ventanas, y como aún se necesitaba ingresar comandos de texto, fue necesario “emular” una terminal de ventana.
+
+![](https://i.imgur.com/g897cnC.png)
+
+
+## Infografía
+
+
+![](https://i.imgur.com/Mj2Ooq5.jpg)
+
 
 ## FAQs
 
