@@ -76,3 +76,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 ```
 
+# Autores
+
+Los autores deben poner su información en el archivo de `_data/authors.yml`
