@@ -41,29 +41,37 @@ Con el surgimiento de los desktop enviroments (DE) y ventanas, y como aún se ne
 
 ## Infografía
 
-![PDF de Infogarfía Terminal vs. Shell vs. Console vs TTY](https://drive.google.com/file/d/1IEZf1ltqvXqtWHz53PzRDh2iA64L0kR9/view?usp=share_link)
+![:link: PDF de Infogarfía Terminal vs. Shell vs. Console vs TTY](https://drive.google.com/file/d/1IEZf1ltqvXqtWHz53PzRDh2iA64L0kR9/view?usp=share_link)
 ![Infogarfía Terminal vs. Shell vs. Console vs TTY](https://i.imgur.com/Mj2Ooq5.jpg)
 
 ## FAQs
 
-1. ¿Cuál fue el primer terminal que se baso en ASCII?
-1. Which terminal encodings are default on Linux, and which are most common? 
 1. How can I hook on to one terminal's output from another terminal?
-https://unix.stackexchange.com/questions/72320/how-can-i-hook-on-to-one-terminals-output-from-another-terminal
-cat /dev/pts/1
+    * cat /dev/pts/1 [^1]
 
-## Sources
+1. ¿Cuál fue el primer terminal que se baso en ASCII?
+	* IBM 2260, lanzado en 1964 [^2]
 
-* The TTY demystified - http://www.linusakesson.net/programming/tty/
-* Terminal under the hood, TTY & PTY - https://yakout.io/blog/terminal-under-the-hood/
-* Linux terminals, tty, pty and shell - https://dev.to/napicella/linux-terminals-tty-pty-and-shell-192e
-* Section 4: The Unix Shell - https://fsl.fmrib.ox.ac.uk/fslcourse/unix_intro/shell.html
-* Linux TTY - https://kb.novaordis.com/index.php/Linux_TTY
-* TTY: under the hood - https://www.yabage.me/2016/07/08/tty-under-the-hood/
-* The Devpts Filesystem - https://www.kernel.org/doc/html/latest/filesystems/devpts.html
-* Digital's Video Terminals - https://vt100.net/dec/vt_history
-* Teletype Model 33 ASR - https://www.curiousmarc.com/mechanical/teletype-asr-33
-* (ASCII) ASA standard X3.4-1963 - https://www.sr-ix.com/Archive/CharCodeHist/X3.4-1963/index.html
-* DEC Terminals - https://invisible-island.net/archives/shuford/terminal/dec.html
-* NCD 88k/19c Specific notes - https://web-docs.gsi.de/~kraemer/COLLECTION/NCD/ncd19c.html
+1. ¿Cuáles son las codificaciones de terminal predeterminadas en Linux?
+	* UTF-8 [^3]
 
+
+## Bibliografía
+
+* The TTY demystified - <http://www.linusakesson.net/programming/tty/>
+* Terminal under the hood, TTY & PTY - <https://yakout.io/blog/terminal-under-the-hood/>
+* Linux terminals, tty, pty and shell - <https://dev.to/napicella/linux-terminals-tty-pty-and-shell-192e>
+* Section 4: The Unix Shell - <https://fsl.fmrib.ox.ac.uk/fslcourse/unix_intro/shell.html>
+* Linux TTY - <https://kb.novaordis.com/index.php/Linux_TTY>
+* TTY: under the hood - <https://www.yabage.me/2016/07/08/tty-under-the-hood/>
+* The Devpts Filesystem - <https://www.kernel.org/doc/html/latest/filesystems/devpts.html>
+* Digital's Video Terminals - <https://vt100.net/dec/vt_history>
+* Teletype Model 33 ASR - <https://www.curiousmarc.com/mechanical/teletype-asr-33>
+* (ASCII) ASA standard X3.4-1963 - <https://www.sr-ix.com/Archive/CharCodeHist/X3.4-1963/index.html>
+* DEC Terminals - <https://invisible-island.net/archives/shuford/terminal/dec.html>
+* NCD 88k/19c Specific notes - <https://web-docs.gsi.de/~kraemer/COLLECTION/NCD/ncd19c.html>
+
+## Referencias
+[^1]: <https://unix.stackexchange.com/questions/72320/how-can-i-hook-on-to-one-terminals-output-from-another-terminal>
+[^2]: <https://retrocomputing.stackexchange.com/questions/15516/when-did-ibm-start-to-use-ascii>
+[^3]: <https://unix.stackexchange.com/questions/112216/which-terminal-encodings-are-default-on-linux-and-which-are-most-common>
