@@ -194,6 +194,11 @@ section div.post {
   margin-bottom: 2em;
 }
 
+section img {
+  max-width: 100%;
+  display: block;
+  margin: 20px auto;  
+}
 
 div.tag {
   display: inline-block;
