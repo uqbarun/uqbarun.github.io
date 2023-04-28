@@ -10,7 +10,7 @@ image: "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/imag
 
 # Notas curso Linux Fundamentals HTB academy
 
-Las notas que aquí se encuentran son un resumen/interpretación/traducción del curso de fundamentos de Linux que se puede encontrar de forma gratuita en: https://academy.hackthebox.com/course/preview/linux-fundamentals
+Las notas que aquí se encuentran son un resumen/interpretación/traducción del curso de fundamentos de Linux que se puede encontrar de forma gratuita [aqui](https://academy.hackthebox.com/course/preview/linux-fundamentals).
 
 <!--more--> 
 
