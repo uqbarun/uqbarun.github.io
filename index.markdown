@@ -2,7 +2,6 @@
 layout: default
 title: inicio
 ---
-{% include calendar.html%}
 <!-- Categorías -->
 <span class="console-input" data-prompt="uqbar@col:~$ ">ls -al /categories</span>   
 <ul class="categories-list">
