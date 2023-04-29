@@ -5,14 +5,17 @@ topnav:
   items:
     - title: GitHub
       external_url: https://github.com/uqbarun
-    - title: News
-      url: /news
+    - title: Blog
+      url: /
+    - title: Moodle
+      external_url: https://uqbarun.milaulas.com/ 
 
 #Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: Jekyll Help
+
+    - title: Notas de estudio
       folderitems:
         - title: Jekyll Talk
           external_url: https://talk.jekyllrb.com
@@ -22,7 +25,8 @@ topnav_dropdowns:
           external_url: http://stackoverflow.com/questions/tagged/jekyll
         - title: Jekyll on my blog
           external_url: http://idratherbewriting.com/category-jekyll/
-    - title: Products
+    
+    - title: Redes sociales
       folderitems:
         - title: Jekyll Documentation Theme
           url: /mydoc_introduction.html

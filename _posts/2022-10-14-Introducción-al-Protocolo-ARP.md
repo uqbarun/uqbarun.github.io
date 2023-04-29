@@ -2,7 +2,7 @@
 title: Introducción al Protocolo ARP
 author: 
 - UqbarUN
-- 
+- FredyRosero
 date: 2022-10-14
 layout: post
 categories: [category]

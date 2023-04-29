@@ -19,8 +19,10 @@
       {% include topnav.html %}
     </div>
   </header>
-
   <div class="container">
+    <div class="sidebar_content col-md-3" id="tg-sb-sidebar">
+      {% include sidebar.html %}
+    </div>        
     <section id="main_content">
       <span class="console-input" data-prompt="uqbar@col:~$ ">print $PAGE 2>/dev/null</span>
       <span class="console-output">-rwxr-xr-- 1 {{ page.author | downcase }} uqbar {{ page.date | date: "%b %d %y" }}

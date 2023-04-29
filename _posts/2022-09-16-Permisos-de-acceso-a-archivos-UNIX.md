@@ -18,7 +18,7 @@ El comando `id` mueastra el ID del usuario actual y los ID's de los grupos a los
 Primero debemos conocer los permisos actuales del archivo, esto lo podemos lograr con `ls`. El comando `ls` lista la información acerca de los archivos<sup>[2]</sup> si agregamos la banera `-l` utlizará el formato largo. En muchos sistemas el comando `ll` es un alias para `ls -l`. Puedes obtener mas información con `info coreutils 'ls invocation'` o `man ls`. El listado de formato largo imprimirá los siguientes atributos:
 
 ```
--rwxrw-r--   10    root   root 2048    Jan 13 07:11 afile.exe
+-rwxrw-r--   10    root   root 2048    Jan 13 07:11 afile.sh
 ?UUUGGGOOO   00  UUUUUU GGGGGG ####    MON DD XX:XX FILENAME
 ^ ^  ^  ^     ^      ^      ^    ^      ^            ^  
 | |  |  |     |      |      |    |      |            |

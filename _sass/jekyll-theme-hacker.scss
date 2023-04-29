@@ -9,7 +9,7 @@ $body-foreground: $gallery !default;
 $header: $conifer !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
-$container-max-width: 1000px;
+$container-max-width: 1200px;
 $font-size: 16px;
 $console-font-size: 10px;
 
@@ -113,12 +113,82 @@ nav{
   }
 }
 
+/* Sidebar */
+$sidebar_width: 250px;
+div.sidebar_content {
+  max-width: $sidebar_width;
+}
+$primary-hover: #52565daa;
+$primary-bg: #4d515821;
+$primary-a-bg: #3c363621;
+
+.sidebar-menu,
+.sidebar-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar-menu {
+  float: left;
+  padding-bottom: 20px;
+  margin: 10px auto;
+  font-size: 16px;
+  color: #ffffff;
+  width: calc(#{$sidebar_width} - 50px);
+  background: $primary-bg;
+  li {
+    a {
+      position: relative;
+      display: block;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 5px 10px;
+      >span{
+        margin-right: 30px;
+      }    
+    }
+    &.have-children {
+      position: relative;
+      >a {
+        color: $conifer;
+      }
+      &:after {
+        right: 15px;
+        top: 3px;
+        border: solid transparent;
+        content: "\f054";
+        color: $conifer;
+        position: absolute;
+        pointer-events: none;
+        transition: all 0.2s ease;
+        font-family: 'FontAwesome';
+      }
+      a:hover {
+        background: $primary-hover;
+      }
+    }
+		ul {
+			display: none;
+			a {
+				background: $primary-a-bg;
+				padding-left: 15px;
+			}
+		}
+  }
+  .active:after {
+    transform: rotate(90deg);
+  }
+}
+
+
 .container {
-  width: 90%;
   max-width: $container-max-width;
   margin: 5px auto;
-  border: 0.5px solid gray;
+  //border: 0.5px solid gray;
   padding: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
 }
 
 svg.logo-svg {
@@ -131,6 +201,7 @@ svg.logo-svg {
                  0 0 10px rgba(181, 232, 83, 0.1);
   }
 }
+
 
 /* Estilo consola*/
 .console-input, 
@@ -251,7 +322,9 @@ header h2 {
 */
 
 #main_content {
-  width: 100%;
+  //width: 100%;
+  float: left;
+  width: calc(100% - #{$sidebar_width});
   -webkit-font-smoothing: antialiased;
 }
 section div.posts img {
@@ -358,7 +431,7 @@ dt {
   font-weight: bold;
 }
 
-ul li {
+div.container #main_content ul li {
   list-style-image:url('../images/bullet.png');
 }
 
@@ -458,7 +531,7 @@ hr {
    a, a:hover, a:visited
 */
 
-div.container a {
+div.container section#main_content a {
   color: #63c0f5;
   text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
 }
