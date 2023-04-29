@@ -1,6 +1,7 @@
 ---
 layout: default
 title: inicio
+topnav: topnav
 ---
 <!-- Categorías -->
 <span class="console-input" data-prompt="uqbar@col:~$ ">ls -al /categories</span>   

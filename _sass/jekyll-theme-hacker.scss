@@ -38,17 +38,92 @@ body {
   margin: 0 auto;
 }
 
+/* navgoco sidebar styles (customized) */
+/* Sass Variables and Mixins */
+@mixin testborder{ border: 1px solid magenta; }
+@mixin reset{ margin: 0; padding: 0; }
+@mixin shadow($x, $y, $fuzz, $color){
+  box-shadow: $x $y $fuzz $color;
+}
+@mixin subtle-gradient($c1, $c2){
+  background: linear-gradient(135deg, $c1 0%,$c2 100%);
+}
+$nav-color: #000000;
+$nav-drop-color: #000000;
+$line-height: 3em;
+$nav-padding: .75em;
+$a-hover: #ffffff;
+/* Reset */
+/* Dropdown */
+nav{
+  height: $line-height;
+  display: flex;
+  align-items: center;  
+  flex-direction: row;
+  justify-content: space-between;  
+  a{
+    color: $conifer;
+    padding-left: $nav-padding;
+    padding-right: $nav-padding;
+    font-size: 13px;
+    line-height: 2.5em;
+    text-decoration: none;
+    &:hover{
+      color: $a-hover;
+    }
+  }
+  #a-title {
+    display: inline-block;
+  }
+  ul{
+    @include reset;
+    a {
+      border-right: 1px solid darken($nav-color, 5%);
+    }
+    li{
+      float: left;
+      position: relative;
+      list-style: none;
+      line-height: 2.7;
+      ul{ 
+        display: none;
+        position: absolute;
+        overflow: auto;
+        width: 17em; /* fix this */
+        background-color: $nav-drop-color;
+        border-bottom: 1px solid darken($nav-drop-color, 20%);
+        border-left: 1px solid darken($nav-drop-color, 20%);
+        border-right: 1px solid darken($nav-drop-color, 20%);
+        @include shadow(2px, 2px, 0px, rgba(0,0,0,.25));
+        @include subtle-gradient(lighten($nav-drop-color, 3%), $nav-drop-color);
+        li{
+          float: none;
+          border-bottom: 1px solid darken($nav-drop-color, 2%);
+        }
+      }
+      &:hover ul{ display: block; }
+    }
+  }
+  input#search-input {
+    border: none;
+    background: #292525;
+    color: white;
+    padding: 7px;
+    margin-left:10px;
+  }
+}
+
 .container {
   width: 90%;
   max-width: $container-max-width;
-  margin: 50px auto;
-  border: 1px solid gray;
+  margin: 5px auto;
+  border: 0.5px solid gray;
   padding: 0.5em;
 }
 
 svg.logo-svg {
   display: inline-block;
-  margin-bottom: -25px;
+  //margin-bottom: -25px;
   path {
     //fill: $conifer;//$header;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
@@ -138,8 +213,10 @@ header {
   width: 100%;
   border-bottom: 1px dashed $magenta; //header;
   padding: 10px 0;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
+
+
 
 header h1 {
   font-size: 30px;
@@ -156,12 +233,6 @@ header h1 {
   @include media-max-width($container-max-width) {
     margin-left: 0;
   }
-}
-
-
-header h1:before {
-  content: "./ ";
-  font-size: 24px;
 }
 
 header h2 {
@@ -387,7 +458,7 @@ hr {
    a, a:hover, a:visited
 */
 
-a {
+div.container a {
   color: #63c0f5;
   text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
 }
@@ -407,6 +478,4 @@ a {
   zoom:1;
 }
 
-#a-title {
-  text-decoration: none;
-}
+
