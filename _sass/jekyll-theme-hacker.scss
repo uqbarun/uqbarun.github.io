@@ -68,6 +68,9 @@ nav{
     font-size: 13px;
     line-height: 2.5em;
     text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+      0 0 5px rgba(181, 232, 83, 0.1),
+      0 0 10px rgba(181, 232, 83, 0.1);         
     &:hover{
       color: $a-hover;
     }
@@ -79,6 +82,7 @@ nav{
     @include reset;
     a {
       border-right: 1px solid darken($nav-color, 5%);
+ 
     }
     li{
       float: left;
@@ -132,7 +136,7 @@ $primary-a-bg: #3c363621;
   float: left;
   padding-bottom: 20px;
   margin: 10px auto;
-  font-size: 16px;
+  font-size: 14px;
   color: #ffffff;
   width: calc(#{$sidebar_width} - 50px);
   background: $primary-bg;
@@ -140,7 +144,7 @@ $primary-a-bg: #3c363621;
     a {
       position: relative;
       display: block;
-      color: #ffffff;
+      color: rgb(182, 182, 182);
       text-decoration: none;
       padding: 5px 10px;
       >span{
@@ -150,7 +154,7 @@ $primary-a-bg: #3c363621;
     &.have-children {
       position: relative;
       >a {
-        color: $conifer;
+        color: rgb(182, 182, 182);
       }
       &:after {
         right: 15px;

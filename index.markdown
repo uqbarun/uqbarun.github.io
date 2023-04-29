@@ -3,16 +3,6 @@ layout: default
 title: inicio
 topnav: topnav
 ---
-<!-- Categorías -->
-<span class="console-input" data-prompt="uqbar@col:~$ ">ls -al /categories</span>   
-<ul class="categories-list">
-{% for category in site.categories %}
-    <li>
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <a name="{{ category_name | slugize }}" href="/category/{{ category_name }}">{{ category_name }}</a>
-    </li>
-{% endfor %}
-</ul>
 <!-- Etiquetas -->
 <span class="console-input" data-prompt="uqbar@col:~$ ">ls -al /tags</span>   
 {% for tag in site.tags %}
