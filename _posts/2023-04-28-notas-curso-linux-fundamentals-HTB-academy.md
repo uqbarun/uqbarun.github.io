@@ -20,7 +20,7 @@ Linux es un sistema operativo de codigo abierto como Windows, iOS o MacOS. Un si
 
 1. ### Historia
 
-    Algunos de los eventos predecesores y necesarios para que se lograra construir el **Kernel** de Linux y el sistema operativo Linux fueron:
+    Algunos de los eventos predecesores y necesarios para que se lograra construir el **Kernel** de Linux y el sistema operativo Linux fueron:  
 
     - 1970 - Creación del sistema operativo unix (Ken Thompson y Dennis Ritchie)
 
@@ -28,9 +28,9 @@ Linux es un sistema operativo de codigo abierto como Windows, iOS o MacOS. Un si
 
     - 1983 - Inicio del proyecto GNU (GNU's not Unix!) por Richard Stallman
 
-    - 1989 - Se crea la licencia GNU GPL (General Public License) gracias al trabajo de Stallman
-
-    Linux inicia como proyecto personal de Linus Torvalds en 1991 con el objetivo de crear un kernel de sistema operativo libre y gratuito, ha evolucionado bajo la licencia GPL y cuenta con más de 600 distribuciones (Sistemas operativos) basados en Linux, como Ubuntu, Debian, Fedora, Gentoo, Mint, o las distribuciones enfocadas a ciberseguridad como Kali, Parrot o BlackArch.
+    - 1989 - Se crea la licencia GNU GPL (General Public License) gracias al trabajo de Stallman  
+    
+    Linux inicia como proyecto personal de Linus Torvalds en 1991 con el objetivo de crear un kernel de sistema operativo libre y gratuito, ha evolucionado bajo la licencia GPL y cuenta con más de 600 distribuciones (Sistemas operativos) basados en Linux, como Ubuntu, Debian, Fedora, Gentoo, Mint, o las distribuciones enfocadas a ciberseguridad como Kali, Parrot o BlackArch.  
 
     Algunas características de Linux:
 
