@@ -20,7 +20,7 @@ Linux es un sistema operativo de código abierto como Windows, iOS o MacOS. Un s
 
 1. ### Historia
 
-    Algunos de los eventos predecesores y necesarios para que se lograra construir el **Kernel** de Linux y el sistema operativo Linux fueron:  
+    Algunos de los eventos predecesores y necesarios para que se lograra construir el **Kernel** de Linux y el sistema operativo Linux fueron:  <br> <br>
 
     - 1970 - Creación del sistema operativo unix (Ken Thompson y Dennis Ritchie)
 
@@ -30,9 +30,9 @@ Linux es un sistema operativo de código abierto como Windows, iOS o MacOS. Un s
 
     - 1989 - Se crea la licencia GNU GPL (General Public License) gracias al trabajo de Stallman <br> <br>
     
-    Linux inicia como proyecto personal de Linus Torvalds en 1991 con el objetivo de crear un kernel de sistema operativo libre y gratuito, ha evolucionado bajo la licencia GPL y cuenta con más de 600 distribuciones (Sistemas operativos) basados en Linux, como Ubuntu, Debian, Fedora, Gentoo, Mint, o las distribuciones enfocadas a ciberseguridad como Kali, Parrot o BlackArch.  
+    Linux inicia como proyecto personal de Linus Torvalds en 1991 con el objetivo de crear un kernel de sistema operativo libre y gratuito, ha evolucionado bajo la licencia GPL y cuenta con más de 600 distribuciones (Sistemas operativos) basados en Linux, como Ubuntu, Debian, Fedora, Gentoo, Mint, o las distribuciones enfocadas a ciberseguridad como Kali, Parrot o BlackArch.  <br> <br>
 
-    Algunas características de Linux:
+    Algunas características de Linux: <br> <br>
 
     - Se considera más seguro que otros SO
     - Menos susceptible a Malware que Windows
@@ -68,7 +68,7 @@ Linux es un sistema operativo de código abierto como Windows, iOS o MacOS. Un s
 
 4. ### Arquitectura Linux
 
-    La arquitectura de Linux se puede dividir en 4 capas ordenadas de la inferior a la superior así:
+    La arquitectura de Linux se puede dividir en 4 capas ordenadas de la inferior a la superior así: <br>
 
     1. **Hardware**:  Componentes físicos del dispositivo
     2. **Kernel**: La base de Linux, controla los recursos de hardware (CPU, Memoria, Disco)
@@ -112,4 +112,4 @@ Para el enfoque de ciberseguridad algunas de las distribuciones más populares y
 
 ### Debian
 
-Es una distribución ampliamente utilizada y respetada por su estabilidad y confiabilidad, con una herramienta de gestión de paquetes avanzada para actualizaciones de software y parches de seguridad. Aunque tiene una curva de aprendizaje más pronunciada, es altamente personalizable y proporciona un excelente control sobre el sistema, lo que la convierte en una buena opción para usuarios avanzados. Debian también es conocido por sus lanzamientos de soporte a largo plazo y su compromiso con la seguridad y la privacidad, lo que la hace atractiva para una variedad de casos de uso, incluyendo la ciberseguridad, es por ello que algunas distribuciones como Kali o ParrotOS están basadas en Debian.
+Es una distribución ampliamente utilizada y respetada por su estabilidad y confiabilidad, con una herramienta de gestión de paquetes avanzada para actualizaciones de software y parches de seguridad. Aunque tiene una curva de aprendizaje más pronunciada, es altamente personalizable y proporciona un excelente control sobre el sistema, lo que la convierte en una buena opción para usuarios avanzados. Debian también es conocido por sus lanzamientos de soporte a largo plazo y su compromiso con la seguridad y la privacidad, lo que la hace atractiva para una variedad de casos de uso, incluyendo la ciberseguridad, es por ello que algunas distribuciones como Kali o ParrotOS están basadas en Debian. <br>
