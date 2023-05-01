@@ -8,13 +8,13 @@ categories: [fundamentos]
 image: "https://uqbarun.github.io/assets/images/notasCursoLinux/linux.jpg"
 ---
 
-Las notas que aquí se encuentran son un resumen/interpretación/traducción del curso de fundamentos de Linux que se puede encontrar de forma gratuita [aqui](https://academy.hackthebox.com/course/preview/linux-fundamentals).
+Las notas que aquí se encuentran son un resumen/interpretación/traducción del curso de fundamentos de Linux que se puede encontrar de forma gratuita [aquí](https://academy.hackthebox.com/course/preview/linux-fundamentals).
 
 <!--more-->
 
 ## **ESTRUCTURA DE LINUX**
 
-Linux es un sistema operativo de codigo abierto como Windows, iOS o MacOS. Un sistema operativo se encarga de administrar todos los recursos de hardware de un computador, comunica el software con el hardware.
+Linux es un sistema operativo de código abierto como Windows, iOS o MacOS. Un sistema operativo se encarga de administrar todos los recursos de hardware de un computador, comunica el software con el hardware.
 
 ![Logo Linux ](https://uqbarun.github.io/assets/images/notasCursoLinux/memeLinux.jpeg)
 
@@ -35,7 +35,7 @@ Linux es un sistema operativo de codigo abierto como Windows, iOS o MacOS. Un si
     Algunas características de Linux:
 
     - Se considera más seguro que otros SO
-    - Menos suceptible a Malware que Windows
+    - Menos susceptible a Malware que Windows
     - Se actualiza con mucha frecuencia
     - Cualquiera puede ver o modificar el código fuente
     - Cualquiera puede distribuirlo comercialmente
@@ -49,7 +49,7 @@ Linux es un sistema operativo de codigo abierto como Windows, iOS o MacOS. Un si
     Linux sigue 5 principios:
 
     - Todo es un archivo
-    - Programas pequeños de proposito específico/único
+    - Programas pequeños de propósito específico/único
     - Capacidad para combinar los programas simples para realizar tareas complejas
     - Evitar las interfaces de usuario captivas, uso principal de la terminal
     - Datos de configuración almacenados en un archivo de texto
@@ -59,21 +59,21 @@ Linux es un sistema operativo de codigo abierto como Windows, iOS o MacOS. Un si
     Los principales componentes del SO Linux se resumen en:
 
     - **Bootloader**: inicia el SO
-    - **Kernel**: gestiona los recursos de los sispositivos E/S a nivel de hardware 
-    - **Demonios**: Servicios que corren en segudno plano
+    - **Kernel**: gestiona los recursos de los dispositivos E/S a nivel de hardware 
+    - **Demonios**: Servicios que corren en segundo plano
     - **Shell**: CLI. Interface entre el usuario y el SO
-    - **Servidor de graficos**: Permite a los programas con GUI ejecutarse
+    - **Servidor de gráficos**: Permite a los programas con GUI ejecutarse
     - **Gestor de ventanas**: La GUI del SO, como KDE, MATE, GNOME, ETC.
     - **Utilidades**: Programas adicionales al SO
 
-4. ### Architectura Linux
+4. ### Arquitectura Linux
 
-    La arquitectura de Linux se puede dividir en 4 capas ordenadas de la inferiror a la superior así:
+    La arquitectura de Linux se puede dividir en 4 capas ordenadas de la inferior a la superior así:
 
     1. **Hardware**:  Componentes físicos del dispositivo
     2. **Kernel**: La base de Linux, controla los recursos de hardware (CPU, Memoria, Disco)
     3. **Shell**: Una interfaz de linea de comandos (CLI) que le permite al usuario interactuar con el SO
-    5. **Utilidad del sistema**: Pone a dispocisión del usuario toda la funcionalidad del SO
+    5. **Utilidad del sistema**: Pone a disposición del usuario toda la funcionalidad del SO
 
 5. ### Jerarquía del sistema de archivos
     
@@ -81,12 +81,12 @@ Linux es un sistema operativo de codigo abierto como Windows, iOS o MacOS. Un si
 
     ![Sistema de archivos de Linux](https://uqbarun.github.io/assets/images/notasCursoLinux/linuxFS.png "Sistema de archivos de Linux")
 
-    - **/**: Directorio raiz, contiene todos los demás directorios
+    - **/**: Directorio raíz, contiene todos los demás directorios
     - **/bin**: Archivos binarios de comandos esenciales
     - **/boot**: Contiene el gestor de arranque, el ejecutable del kernel y archivos necesarios para iniciar el SO
     - **/dev**: Archivos de los dispositivos de hardware conectados
-    - **/etc**: Archvios de configuración del sistema o aplicaciones
-    - **/home**: Cada usuario tiene un subdirectorio para alamacenamiento
+    - **/etc**: Archivos de configuración del sistema o aplicaciones
+    - **/home**: Cada usuario tiene un subdirectorio para almacenamiento
     - **/lib**: Archivos de librerías compartidas que requiere el sistema de arranque
     - **/media**: Aquí se montan dispositivos extraíbles como USBs
     - **/mnt**: Punto de montaje temporal para sistemas de archivos normales
@@ -99,6 +99,17 @@ Linux es un sistema operativo de codigo abierto como Windows, iOS o MacOS. Un si
 
 ## **DISTRIBUCIONES LINUX**
 
-Existen diferentes distribuciones de Linux 
+Existen diferentes distribuciones de Linux basadas en el kernel de Linux. Cada una tiene paquetes, interfaz de usuario, aplicaciones y características diferentes de acuerdo con el propósito para el que está diseñada (servidor, escritorio, dispositivos embebidos, seguridad, etc).
+
+Para el enfoque de ciberseguridad algunas de las distribuciones más populares y utilizadas son:
+
+- [ParrotOS](https://www.parrotsec.org/)
+- [Kali](https://www.kali.org)
+- [Debian](https://www.debian.org/)
+- [Pentoo](https://www.pentoo.ch/)
+- [BlackArch](https://www.blackarch.org/)
+- [BackBox](https://www.backbox.org/)
 
 ### Debian
+
+Es una distribución ampliamente utilizada y respetada por su estabilidad y confiabilidad, con una herramienta de gestión de paquetes avanzada para actualizaciones de software y parches de seguridad. Aunque tiene una curva de aprendizaje más pronunciada, es altamente personalizable y proporciona un excelente control sobre el sistema, lo que la convierte en una buena opción para usuarios avanzados. Debian también es conocido por sus lanzamientos de soporte a largo plazo y su compromiso con la seguridad y la privacidad, lo que la hace atractiva para una variedad de casos de uso, incluyendo la ciberseguridad, es por ello que algunas distribuciones como Kali o ParrotOS están basadas en Debian.
