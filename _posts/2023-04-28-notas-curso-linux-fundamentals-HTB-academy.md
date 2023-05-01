@@ -28,7 +28,7 @@ Linux es un sistema operativo de código abierto como Windows, iOS o MacOS. Un s
 
     - 1983 - Inicio del proyecto GNU (GNU's not Unix!) por Richard Stallman
 
-    - 1989 - Se crea la licencia GNU GPL (General Public License) gracias al trabajo de Stallman  
+    - 1989 - Se crea la licencia GNU GPL (General Public License) gracias al trabajo de Stallman <br> <br>
     
     Linux inicia como proyecto personal de Linus Torvalds en 1991 con el objetivo de crear un kernel de sistema operativo libre y gratuito, ha evolucionado bajo la licencia GPL y cuenta con más de 600 distribuciones (Sistemas operativos) basados en Linux, como Ubuntu, Debian, Fedora, Gentoo, Mint, o las distribuciones enfocadas a ciberseguridad como Kali, Parrot o BlackArch.  
 
