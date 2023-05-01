@@ -46,7 +46,7 @@ Linux es un sistema operativo de código abierto como Windows, iOS o MacOS. Un s
 
 2. ### Filosofía
 
-    Linux sigue 5 principios:
+    Linux sigue 5 principios: <br> <br>
 
     - Todo es un archivo
     - Programas pequeños de propósito específico/único
@@ -56,7 +56,7 @@ Linux es un sistema operativo de código abierto como Windows, iOS o MacOS. Un s
 
 3. ### Componentes
 
-    Los principales componentes del SO Linux se resumen en:
+    Los principales componentes del SO Linux se resumen en: <br> <br>
 
     - **Bootloader**: inicia el SO
     - **Kernel**: gestiona los recursos de los dispositivos E/S a nivel de hardware 
@@ -68,7 +68,7 @@ Linux es un sistema operativo de código abierto como Windows, iOS o MacOS. Un s
 
 4. ### Arquitectura Linux
 
-    La arquitectura de Linux se puede dividir en 4 capas ordenadas de la inferior a la superior así: <br>
+    La arquitectura de Linux se puede dividir en 4 capas ordenadas de la inferior a la superior así: <br> <br>
 
     1. **Hardware**:  Componentes físicos del dispositivo
     2. **Kernel**: La base de Linux, controla los recursos de hardware (CPU, Memoria, Disco)
@@ -99,6 +99,8 @@ Linux es un sistema operativo de código abierto como Windows, iOS o MacOS. Un s
 
 ## **DISTRIBUCIONES LINUX**
 
+<br> <br>
+
 Existen diferentes distribuciones de Linux basadas en el kernel de Linux. Cada una tiene paquetes, interfaz de usuario, aplicaciones y características diferentes de acuerdo con el propósito para el que está diseñada (servidor, escritorio, dispositivos embebidos, seguridad, etc).
 
 Para el enfoque de ciberseguridad algunas de las distribuciones más populares y utilizadas son:
@@ -112,4 +114,4 @@ Para el enfoque de ciberseguridad algunas de las distribuciones más populares y
 
 ### Debian
 
-Es una distribución ampliamente utilizada y respetada por su estabilidad y confiabilidad, con una herramienta de gestión de paquetes avanzada para actualizaciones de software y parches de seguridad. Aunque tiene una curva de aprendizaje más pronunciada, es altamente personalizable y proporciona un excelente control sobre el sistema, lo que la convierte en una buena opción para usuarios avanzados. Debian también es conocido por sus lanzamientos de soporte a largo plazo y su compromiso con la seguridad y la privacidad, lo que la hace atractiva para una variedad de casos de uso, incluyendo la ciberseguridad, es por ello que algunas distribuciones como Kali o ParrotOS están basadas en Debian. <br>
+Es una distribución ampliamente utilizada y respetada por su estabilidad y confiabilidad, con una herramienta de gestión de paquetes avanzada para actualizaciones de software y parches de seguridad. Aunque tiene una curva de aprendizaje más pronunciada, es altamente personalizable y proporciona un excelente control sobre el sistema, lo que la convierte en una buena opción para usuarios avanzados. Debian también es conocido por sus lanzamientos de soporte a largo plazo y su compromiso con la seguridad y la privacidad, lo que la hace atractiva para una variedad de casos de uso, incluyendo la ciberseguridad, es por ello que algunas distribuciones como Kali o ParrotOS están basadas en Debian. <br> <br>
