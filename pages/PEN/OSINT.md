@@ -5,4 +5,4 @@ permalink: OSINT.html
 
 # OSINT
 
-Este ess un ejemplo de nota estudio
+Este ess un ejemplo de nota estudio.
