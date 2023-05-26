@@ -331,6 +331,11 @@ header h2 {
   width: calc(100% - #{$sidebar_width});
   -webkit-font-smoothing: antialiased;
 }
+
+img.header-blog {
+ width: 100%;
+}
+
 section div.posts img {
   display: block;
   width: 100%;  

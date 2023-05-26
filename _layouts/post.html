@@ -4,7 +4,7 @@ layout: default
 <span class="console-output">> Content:</span>
 <h1>{{ page.title }}</h1>
 {% if page.tags %}{% include tag_cards.html tags=page.tags%}{% endif %}
-<img src="{{ page.image }}">
+<img class="header-blog" src="{{ page.image }}">
 <br><br>
 {{content}}
 <span class="console-input" data-prompt="uqbar@col:~$ ">AUTHOR=$(stat -c '%U' ./)</span>
