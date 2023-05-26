@@ -376,6 +376,36 @@ div.tag {
   margin-bottom: 10px;
 }
 
+div.cheatsheet-container {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  -moz-column-gap: 10px;
+  -webkit-column-gap: 10px;
+  column-gap: 10px;
+  width: 100%;
+  //height: 500px;
+  div.cheatsheet-card {
+    display: inline-block;
+    box-sizing: border-box;    
+    margin: 10px 0;
+    padding: 0.7em;
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);  
+    border: 0px solid #000000;  
+    background-color: #292525;
+    h3 {
+      margin: 0;
+    }
+    div.row {
+      font-size: smaller;
+    }
+  }
+}
+
+
+
 div.author-card {
   display: inline-flex;
   flex-direction: row;

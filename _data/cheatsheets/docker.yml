@@ -1,0 +1,9 @@
+name: Docker básico
+platform: Docker
+items:
+  - name: listar contenedores
+    code: docker ps
+    syntax: bash
+  - name: hola mundo
+    code: print("Hola mundo")
+    syntax: python    

@@ -1,0 +1,16 @@
+<h2> Cheat sheets </h2>
+<div class="cheatsheet-container">
+{% for cheatsheet in page.cheatsheets %}
+	{% assign cs = site.data.cheatsheets[cheatsheet] %}
+<div class="cheatsheet-card">
+	<h3>{{cs.name}}</h3>
+	<span class="console-input" data-prompt="uqbar@col:~$ " style="margin: 3px;">man {{cs.platform}}</span>
+	{% for item in cs.items %}
+	<div class="row">
+		<span class="name">{{item.name}}</span>
+		<code class="language-plaintext highlighter-rouge">{{item.code}}</code>		
+	</div>
+	{% endfor %}
+</div>	
+{% endfor %}
+</div>

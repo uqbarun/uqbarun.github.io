@@ -9,6 +9,10 @@ layout: default
 {{content}}
 <span class="console-input" data-prompt="uqbar@col:~$ ">AUTHOR=$(stat -c '%U' ./)</span>
 <span class="console-output">> Authors::</span>
+
+{% if page.cheatsheets %}{% include cheatsheets.html cheatsheet=page.cheatsheets%}{% endif %}
+
+<h2>Autor(@s)</h2>
 {% for author in page.author %}
 {% assign a = site.data.authors[author] %}
 <div class="author-card">
