@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
 ```
 
 # Imagen previa
-En el campo `image` front matter del post define la URL la imagen
+En el campo `image` del front matter del post, se define la URL la imagen carga en <https://imgur.com/upload>
 ```md
 ---
 title: Título
@@ -86,7 +86,7 @@ image: "https://i.imgur.com/aXjc03E.png"
 ---
 # Título
 ```
-El tamaño ideal de la imagen sería de apróximadamente 780 x 340 px
+El tamaño ideal de la imagen sería de apróximadamente 900 x 190 px
 
 # Autores
 

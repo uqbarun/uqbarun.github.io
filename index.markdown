@@ -17,7 +17,7 @@ topnav: topnav
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">[{{ post.categories | join: ", "}}] {{ post.title }}</a></h1>            
-      <img src="{{ post.image }}">
+      <div class="img-post-preview" style="background-image: url({{ post.image }})"></div>
       {% include tag_cards.html tags=post.tags%}      
       <div class="entry">
         {{ post.excerpt }}

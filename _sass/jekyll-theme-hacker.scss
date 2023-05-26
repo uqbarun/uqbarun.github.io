@@ -332,14 +332,29 @@ header h2 {
   -webkit-font-smoothing: antialiased;
 }
 
-img.header-blog {
- width: 100%;
+
+div.img-post-header {
+  width: 100%;
+  height: 30vh;
+  max-height: 340px;
+  background-position: center;
+  background-size: cover;
+}
+
+div.img-post-preview {
+  width: 100%;
+  height: 30vh;
+  max-height: 340px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 7px;
 }
 
 section div.posts img {
   display: block;
   width: 100%;  
   margin-top: 15px;
+  max-height: 25 wvb;
 }
 
 section div.post {
