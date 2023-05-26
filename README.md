@@ -76,6 +76,23 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 ```
 
+# Imagen previa
+En el campo `image` front matter del post define la URL la imagen
+```md
+---
+title: Título
+layout: post
+image: "https://i.imgur.com/aXjc03E.png"
+---
+# Título
+```
+El tamaño ideal de la imagen sería de apróximadamente 780 x 340 px
+
 # Autores
 
 Los autores deben poner su información en el archivo de `_data/authors.yml`
+
+# Jekyll local
+```bash
+bundle exec jekyll serve --watch
+```
