@@ -1,0 +1,16 @@
+name: Básico de Linux
+platform: Linux
+items:
+  - name: Listar directorio incluyendo archivos ocultos
+    code: ls -a $directorio
+  - name: Mover archivo o directorio
+    code: mv $origen $destino    
+  - name: Borrar archivo o directorio
+    code: rm -r $directorio
+  - name: Extraer archivo bzip
+    code: tar xjf $comprimido-bz2
+  - name:
+  - name: Resaltar texto en el historial de shell
+    code: history | grep -z $texto
+  - name: Buscar la ruta o enlace de un programa
+    code: which $programaexit

@@ -1,7 +1,0 @@
-name: Permisos
-platform: Linux
-items:
-  - name: listar directorio con permisos
-    code: ls -al
-  - name: Agregar permisos de escritura
-    code: chmod +x
