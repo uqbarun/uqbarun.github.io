@@ -5,7 +5,7 @@
   <meta charset='utf-8'>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  {% include head-base.html %}
   {% include head-custom.html %}
   {% include head-home.html %}
 
@@ -20,19 +20,21 @@
     </div>
   </header>
   <div class="container">
-    <div class="sidebar_content col-md-3" id="tg-sb-sidebar">
-      {% include sidebar.html %}
-    </div>        
-    <section id="main_content">
-      <span class="console-input" data-prompt="uqbar@col:~$ ">print $PAGE 2>/dev/null</span>
-      <span class="console-output">-rwxr-xr-- 1 {{ page.author | downcase }} uqbar {{ page.date | date: "%b %d %y" }}
-        "{{ page.url }}"</span>
-      {{ content | remove: '<p>' | remove: '</p>' }}
-      <br>
-      <br>
-      <span class="console-output">> Exit code: 1</span>
-      <span class="console-input" data-prompt="uqbar@col:~$ "><span id="prompt">█</span></span>
-    </section>
+    <div class="row">
+      <div id="tg-sb-sidebar" class="sidebar_content col-md-3" >
+        {% include sidebar.html %}
+      </div>        
+      <div id="tg-sb-content" class="col-md-3">
+        <span class="console-input" data-prompt="uqbar@col:~$ ">print $PAGE 2>/dev/null</span>
+        <span class="console-output">-rwxr-xr-- 1 {{ page.author | downcase }} uqbar {{ page.date | date: "%b %d %y" }}
+          "{{ page.url }}"</span>
+        {{ content | remove: '<p>' | remove: '</p>' }}
+        <br>
+        <br>
+        <span class="console-output">> Exit code: 1</span>
+        <span class="console-input" data-prompt="uqbar@col:~$ "><span id="prompt">█</span></span>
+      </div>
+    </div>
   </div>
 </body>
 <script>
