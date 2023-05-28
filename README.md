@@ -94,5 +94,5 @@ Los autores deben poner su información en el archivo de `_data/authors.yml`
 
 # Jekyll local
 ```bash
-bundle exec jekyll serve --watch
+bundle exec jekyll serve --livereload --host 0.0.0.0
 ```
