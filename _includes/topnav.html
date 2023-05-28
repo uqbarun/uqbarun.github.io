@@ -1,10 +1,13 @@
 <!-- Navigation -->
 <nav>
-	<a id="a-title" href="{{ '/' | relative_url }}">
-        {% include logo.html %}                   
-    </a>	
+	<div class="navbar-header">
+		<a id="a-title" href="{{ '/' | relative_url }}">
+			{% include logo.html %}                   
+		</a>	
+	</div>
 
-	<ul class="navbar-right">
+	<div class="navbar-collapse">
+		<ul class="navbar-right">
 		<!-- toggle sidebar button -->
 		<li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
 		<!-- entries without drop-downs appear here -->
@@ -67,4 +70,5 @@
 			<!--end search-->
 		</li>
 	</ul>
+	</div>
 </nav>

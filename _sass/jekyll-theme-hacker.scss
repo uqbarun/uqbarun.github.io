@@ -67,10 +67,10 @@ $a-hover: #ffffff;
 /* Dropdown */
 nav {
   //height: $line-height;
-  display: flex;
+  /* display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; */
 
   a {
     color: $conifer;
@@ -94,11 +94,6 @@ nav {
 
   ul {
     @include reset;
-
-    a {
-      border-right: 1px solid darken($nav-color, 5%);
-
-    }
 
     li {
       float: left;
@@ -140,6 +135,13 @@ nav {
   }
 }
 
+div.navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;  
+}
+
 /* Sidebar */
 $sidebar_width: 250px;
 
@@ -164,7 +166,7 @@ $primary-a-bg: #3c363621;
 
 .sidebar-menu {
   /* float: left; */
-  padding-bottom: 20px;
+  padding: 10px 5px 20px 5px;
   margin: 10px auto;
   font-size: 14px;
   color: #ffffff;
