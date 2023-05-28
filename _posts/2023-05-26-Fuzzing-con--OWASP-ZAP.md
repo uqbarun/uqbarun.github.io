@@ -9,7 +9,8 @@ tags: [tag1, tag2]
 cheatsheets:
 - docker
 - docker2
-- linux_fundamentals
+- linux-basicos
+- permisos-linux
 
 ---
 Abstract: poner un resumen de pocas lineas acá. `code`
