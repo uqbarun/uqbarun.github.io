@@ -5,3 +5,4 @@ _site
 vendor
 uqbarunal.github.io.code-workspace
 .vscode/*
+.github/*
