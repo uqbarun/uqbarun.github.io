@@ -1,25 +1,38 @@
 ---
 title: Anonimizar OWASP ZAP con TOR
-author: 
-- FredyRosero
+author: FredyRosero
 date: 2023-05-26
 layout: post
 categories: [web]
 tags: [web, zap, owazp-zap, owasp, tor, proxychains]
-image: https://i.imgur.com/mk3zsxU.jpg
 ---
 # Anonimizar OWASP ZAP con TOR
-Cómo proteger tu tráfico y mantener tu identidad oculta. Aprende a configurar y utilizar Proxychains para enrutar el tráfico de OWASP ZAP a través de TOR, garantizando una capa adicional de anonimato y seguridad en tus pruebas de ciberseguridad
+![](https://i.imgur.com/mk3zsxU.jpg)
+Cómo proteger tu tráfico y mantener tu identidad oculta. Aprende a configurar y utilizar Proxychains para enrutar el tráfico de OWASP ZAP a través de TOR, garantizando una capa adicional de anonimato y seguridad en tus pruebas de ciberseguridad.  
 <!--more-->
-[TOC]
+
+***
+
+- [Anonimizar OWASP ZAP con TOR](#anonimizar-owasp-zap-con-tor)
+  * [Requisitos](#requisitos)
+  * [1. Instalar TOR](#1-instalar-tor)
+  * [2. Verificar TOR](#2-verificar-tor)
+  * [3. Verificar IP con `chromium`](#3-verificar-ip-con--chromium-)
+  * [4. Instalar Proxychains](#2-instalar-proxychains)
+  * [5. Configurar Proxychains](#3-configurar-proxychains)
+  * [6. Prueba proxychain](#4-prueba-proxychain)
+  * [7. Instalar OWASP ZAP](#5-instalar-owasp-zap)
+  * [8. Iniciar ZAP](#6-iniciar-zap)
+  * [Referencias](#referencias)
+
 ## Requisitos
 * tor
 * proxychain
 * zap
 
-## 1. Instalar TOR[^tor]
+## 1. Instalar TOR
 
-Asegúrate de tener instalado y ejecutando el cliente TOR en tu máquina. 
+Asegúrate de tener instalado y ejecutando el cliente TOR[^tor] en tu máquina. 
 
 ```bash!
 sudo apt-get install tor
@@ -83,5 +96,5 @@ Esto iniciará OWASP ZAP y enrutará su tráfico a través del proxy TOR configu
 
 ## Referencias
 [^tor]: Tor https://help.ubuntu.com/community/Tor?action=show&redirect=TOR
-[^1]: Editing config on Proxychains | Ubuntu for Windows Linux Sub System https://askubuntu.com/questions/1008425/editing-config-on-proxychains-ubuntu-for-windows-linux-sub-system
+[^1]: Editing config on Proxychains Ubuntu for Windows Linux Sub System https://askubuntu.com/questions/1008425/editing-config-on-proxychains-ubuntu-for-windows-linux-sub-system
 [^2]: How does Chrome bypass proxychains proxying? https://superuser.com/a/1317801/1249289
