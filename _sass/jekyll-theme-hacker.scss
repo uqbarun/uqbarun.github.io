@@ -628,6 +628,12 @@ dt {
   width: 100%;  
 }
 
+/* Para el TOC de los posts */
+.post-mark ~ ul:first-of-type a {
+  text-decoration: none;
+  color: $azul-O2;
+}
+
 blockquote {
   color: $blockquote-color;
   padding-left: 10px;

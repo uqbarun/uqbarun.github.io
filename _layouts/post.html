@@ -4,7 +4,11 @@ layout: default
 <span class="console-output">> Content:</span>
 {% if page.tags %}{% include tag_cards.html tags=page.tags%}{% endif %}
 <br>
+
+<div class="post-mark"></div><!-- para estilo de TOC de posts -->
+
 {{content}}
+
 <span class="console-input" data-prompt="uqbar@col:~$ ">AUTHOR=$(stat -c '%U' ./)</span>
 <span class="console-output">> Authors::</span>
 

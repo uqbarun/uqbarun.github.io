@@ -11,6 +11,8 @@ topnav:
       external_url: https://uqbarun.milaulas.com/ 
     - title: Sesiones
       url: /      
+    - title: Podcast
+      url: /            
 
 #Topnav dropdowns
 topnav_dropdowns:

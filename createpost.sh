@@ -13,18 +13,46 @@ Create() {
     FILENAME="$2"
     BODY="---
 title: ${title}
-author: 
-- UqbarUN
+author: [UqbarUN]
 date: ${date}
 layout: post
 categories: [category]
 tags: [tag1, tag2]
 excerpt_separator: <!--more-->
 ---
-Abstract: poner un resumen de pocas lineas acá.
+
+# ${title}
+![](https://placehold.co/900x190)  
+
+Abstract: poner un resumen de pocas lineas acá.  
+
 <!--more-->
 
-## Section 1
+***
+
+- [Plantilla de blog](#plantilla-de-blog)
+  * [Sección 1](#secci-n-1)
+  * [Sección 2](#secci-n-2)
+  * [Referencias](#referencias)
+
+<!-- Generar tabla de contenidos con https://ecotrust-canada.github.io/markdown-toc/ -->
+
+## Sección 1
+Texto de `código`[^1].
+
+```python
+print('hola mundo')
+```
+
+## Sección 2
+```mermaid
+graph
+A-->B
+```
+
+## Referencias
+[^1]: Cita 1 www.google.com
+
 "
 
     if [ "$3" -eq 0 ]
