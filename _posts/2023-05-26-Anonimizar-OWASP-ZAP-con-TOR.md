@@ -6,9 +6,13 @@ layout: post
 categories: [web]
 tags: [web, zap, owazp-zap, owasp, tor, proxychains]
 ---
+
 # Anonimizar OWASP ZAP con TOR
+
 ![](https://i.imgur.com/mk3zsxU.jpg)
+
 Cómo proteger tu tráfico y mantener tu identidad oculta. Aprende a configurar y utilizar Proxychains para enrutar el tráfico de OWASP ZAP a través de TOR, garantizando una capa adicional de anonimato y seguridad en tus pruebas de ciberseguridad.  
+
 <!--more-->
 
 ***
@@ -26,6 +30,7 @@ Cómo proteger tu tráfico y mantener tu identidad oculta. Aprende a configurar 
   * [Referencias](#referencias)
 
 ## Requisitos
+
 * tor
 * proxychain
 * zap
