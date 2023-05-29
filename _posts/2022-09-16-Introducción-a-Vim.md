@@ -7,6 +7,7 @@ layout: post
 categories: [fundamentos]
 excerpt_separator: <!--more-->
 ---
+# Introducción a Vim
 Vamos a dividir la explicación del uso de Vim en dos partes: Una de emergencia, en caso de que te hayas quedado atrapado en Vim y otra si quieres empezar a manejar Vim como tu editor favorito.
  <!--more-->
 

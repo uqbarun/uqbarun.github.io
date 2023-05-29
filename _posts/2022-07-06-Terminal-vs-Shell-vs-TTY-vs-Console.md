@@ -7,6 +7,7 @@ layout: post
 categories: [fundamentos]
 image: "https://i.imgur.com/aXjc03E.png"
 ---
+# Terminal vs. Shell vs. Console vs TTY
 ¿Sabes cuál es la diferencia entre Terminal vs. Shell vs. Console vs TTY? Una **Terminal** es una Interfaz física (80’s), o una virtual (kernel) o una de ventana (DE). Por otro lado una **Shell** es el proceseo que Interpreta y ejecuta de comandos de texto provenientes de la terminal. Te explicamos los detalles a continuación.
 
 <!--more-->

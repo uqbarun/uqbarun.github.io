@@ -8,6 +8,7 @@ date: 2022-09-09
 layout: post
 categories: [fundamentos]
 ---
+# Introducción a virtualización
 La **virtualización** o ***v12n*** (un *numeronym* donde 12 es el número de letras omitidas) es uno de los grandes avances de la informática, porque nos permite representar sistemas de hardware a nivel de software. Seguramente has escuchado de VirtualBox, de Docker o hasta de WSL como herramientas de virtualización, pero el método o tipo de virtualización de estas son diferentes, a continuación te explicamos.
 
 ## Capa de compatibildad

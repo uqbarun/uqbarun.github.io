@@ -7,7 +7,7 @@ layout: post
 categories: [fundamentos]
 image: "https://uqbarun.github.io/assets/images/notasCursoLinux/linux.jpg"
 ---
-
+# Notas curso Linux Fundamentals HTB academy
 Las notas que aquí se encuentran son un resumen/interpretación/traducción del curso de fundamentos de Linux que se puede encontrar de forma gratuita [aquí](https://academy.hackthebox.com/course/preview/linux-fundamentals).
 
 <!--more-->

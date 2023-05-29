@@ -8,6 +8,7 @@ layout: post
 categories: [category]
 tags: [tag1, tag2]
 ---
+# Laboratorio comunicación capa 2
 Abstract: poner un resumen de pocas lineas acá.
 <!--more-->
 

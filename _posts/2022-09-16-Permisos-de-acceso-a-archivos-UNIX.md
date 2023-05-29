@@ -8,6 +8,7 @@ categories: [unix]
 tags: [chmod, chown]
 tools: [chmod, chown]
 ---
+# Permisos de acceso a archivos UNIX
 Para sistemas de archivos UNIX, el *file-system permision* es un atributo de un controla la habilidad a un clase de entidad a leer, modificar, navegar o ejecutar este mismo. Te daremos una breve explicación de como cambiar los permisos de acceso a un archivo con `chown` y `chmod` en sus diferentes modos.
 <!--more-->
 

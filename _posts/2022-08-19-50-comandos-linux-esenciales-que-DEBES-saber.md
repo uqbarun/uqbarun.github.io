@@ -6,6 +6,7 @@ date: 2022-08-19
 layout: post
 categories: [fundamentos]
 ---
+# 50 comandos linux esenciales que DEBES saber
 50 comandos linux esenciales que DEBES saber para desenvolverte como pez en el agua.
 <!--more-->
 

@@ -1,7 +1,5 @@
 ---
 title: Fuzzing con  OWASP ZAP
-author: 
-- FredyRosero 
 date: 2023-05-26
 layout: post
 categories: [category]
@@ -11,18 +9,17 @@ cheatsheets:
 - docker2
 - linux-basicos
 - permisos-linux
-excerpt_separator: <!--more-->
 ---
 
 # Fuzzing con  OWASP ZAP
 
 ![](https://i.imgur.com/mk3zsxU.jpg)
 
-Abstract: poner un resumen de pocas lineas acá. `code`[^tor]
+Abstract: poner un resumen de pocas lineas acá. 
 <!--more-->
 
 ## Section 1
-
+Esto es codigo de ejemplo `code`[^tor].
 ```bash
 $ codigo ls -al
 ```
