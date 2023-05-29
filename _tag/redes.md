@@ -1,9 +1,8 @@
 ---
-title: Tag fundamentos
-tagName: fundamentos
+title: Tag redes
+tagName: redes
 search: exclude
 folder: tags
-permalink: tag/fundamentos.html
 ---
 {% include taglogic.html %}
 

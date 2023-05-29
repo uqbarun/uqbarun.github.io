@@ -80,3 +80,10 @@ defaults:
 
 include:
   - pages
+
+# Publish
+
+collections:
+  tag:
+     output: true
+     sort_by: title
