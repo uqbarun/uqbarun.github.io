@@ -75,6 +75,7 @@ defaults:
     values:
       is_post: true # para marcar posts 
       image: /assets/images/default-banner.jpg # Thumbnail por defecto
+      excerpt_separator: <!--more-->
 
 # Render
 

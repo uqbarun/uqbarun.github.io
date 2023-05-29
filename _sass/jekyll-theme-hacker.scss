@@ -608,10 +608,24 @@ dt {
 
 #tg-sb-content > img {
   display: block;
+  margin: 10px 0;
+  width: 100%;
 }
 
 #tg-sb-content ul li {
   list-style-image: url('../images/bullet.png');
+}
+
+.posts > .post {
+  margin-bottom: 40px;
+}
+.posts > .post h1 {
+  margin-top: 0px;
+}
+.post > .entry > img {
+  display: block;
+  margin: 10px 0;
+  width: 100%;  
 }
 
 blockquote {
