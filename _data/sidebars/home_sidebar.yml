@@ -154,7 +154,7 @@ entries:
     folderitems:
 
     - title: Fundamentos
-      url: /tag_fundamentos.html
+      url: /tag/fundamentos.html
       output: web
 
   - title: Cheat sheets
