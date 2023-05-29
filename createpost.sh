@@ -13,6 +13,7 @@ Create() {
     FILENAME="$2"
     BODY="---
 title: ${title}
+description: Descripción de página
 author: [UqbarUN]
 date: ${date}
 layout: post
