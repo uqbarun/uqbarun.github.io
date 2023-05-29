@@ -5,7 +5,8 @@ function reqListener() {
     console.log("Google Calendar API: Eventos de calendario",URL,this.response.items);
     var ul = document.createElement("ul");
     eventsContainer.appendChild(ul);    
-    this.response.items.forEach(event => {        
+    this.response.items.forEach(event => {   
+        if (event.status == "cancelled") return;        
         var li = document.createElement("li");
         var a = document.createElement("a");
         a.href = event.htmlLink;
@@ -14,9 +15,9 @@ function reqListener() {
         ul.appendChild(li);
         var b = document.createElement("b");
         b.appendChild(document.createTextNode(event.summary));
-        li.appendChild(b);
+        li.appendChild(b);        
         var date = new Date(event.start.dateTime).toLocaleString('en-CO',{ timeZone: event.start.timeZone });
-        li.appendChild(document.createTextNode(": "+event.description));
+        if (event.description) li.appendChild(document.createTextNode(": "+event.description));
         li.appendChild(document.createElement("br"));
         var i = document.createElement("i");
         i.appendChild(document.createTextNode(date+". "));
@@ -39,7 +40,7 @@ req.addEventListener("load", reqListener);
  * 
  */
 const APIkey = 'AIzaSyBdU9wjzrLP3dOdWfiKvow1PjU2QTbHLdU'
-const calendarID = 'c_kqf6qho59uo9p87b7div6ffv9k@group.calendar.google.com';
+const calendarID = 'c_bac1e5ebbcb8f14b7c22309678e5b8d3ceeea578d54c79fe2c81ef3d17695f10@group.calendar.google.com';
 const URL = `https://www.googleapis.com/calendar/v3/calendars/${calendarID}/events?key=${APIkey}`;
 // Petición GET para los eventos del calendario Uqbar
 req.open("GET", URL);
