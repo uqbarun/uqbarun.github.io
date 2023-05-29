@@ -606,6 +606,10 @@ dt {
   font-weight: bold;
 }
 
+#tg-sb-content > img {
+  display: block;
+}
+
 #tg-sb-content ul li {
   list-style-image: url('../images/bullet.png');
 }

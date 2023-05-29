@@ -15,11 +15,11 @@ Create() {
 title: ${title}
 author: 
 - UqbarUN
-- ${author}
 date: ${date}
 layout: post
 categories: [category]
 tags: [tag1, tag2]
+excerpt_separator: <!--more-->
 ---
 Abstract: poner un resumen de pocas lineas acá.
 <!--more-->
