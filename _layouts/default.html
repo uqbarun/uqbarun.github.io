@@ -19,12 +19,12 @@
       {% include topnav.html %}
     </div>
   </header>
-  <div class="container">
+  <div class="main">
     <div class="row">
-      <div id="tg-sb-sidebar" class="sidebar_content col-md-3" >
+      <div id="tg-sb-sidebar" class="col-md-3" >
         {% include sidebar.html %}
       </div>        
-      <div id="tg-sb-content" class="col-md-3">
+      <div id="tg-sb-content" class="col-md-9">
         <span class="console-input" data-prompt="uqbar@col:~$ ">print $PAGE 2>/dev/null</span>
         <span class="console-output">-rwxr-xr-- 1 {{ page.author | downcase }} uqbar {{ page.date | date: "%b %d %y" }}
           "{{ page.url }}"</span>
@@ -36,6 +36,7 @@
       </div>
     </div>
   </div>
+
 </body>
 <script>
   document.addEventListener('DOMContentLoaded', () => {

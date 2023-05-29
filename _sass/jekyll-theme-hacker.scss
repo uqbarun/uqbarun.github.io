@@ -6,7 +6,7 @@
 
 $body-background: $cod-grey !default;
 $body-foreground: $gallery !default;
-$header: $conifer !default;
+$header: $verde !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
 $container-max-width: 1200px;
@@ -73,7 +73,7 @@ nav {
   justify-content: space-between; */
 
   a {
-    color: $conifer;
+    color: $verde;
     padding-left: $nav-padding;
     padding-right: $nav-padding;
     font-size: 13px;
@@ -96,7 +96,7 @@ nav {
     @include reset;
 
     li {
-      float: left;
+      float: none;
       position: relative;
       list-style: none;
       line-height: 2.7;
@@ -130,24 +130,31 @@ nav {
     border: none;
     background: #292525;
     color: white;
-    padding: 7px;
     margin-left: 10px;
   }
 }
 
-div.navbar-collapse {
-  display: block !important;
-  height: auto !important;
-  padding-bottom: 0;
-  overflow: visible !important;  
+@media (min-width: 768px) {
+  nav ul > li {
+    float: left;
+  }
 }
+
+div.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border: 1px solid gray;  
+}
+
 
 /* Sidebar */
 $sidebar_width: 250px;
 
-div.sidebar_content {
-  /*max-width: $sidebar_width;*/
-}
 @media (max-width: 900px) {
   ul.sidebar-menu {
     max-width: 100%;
@@ -198,7 +205,7 @@ $primary-a-bg: #3c363621;
         top: 3px;
         border: solid transparent;
         content: "\f054";
-        color: $conifer;
+        color: $verde;
         position: absolute;
         pointer-events: none;
         transition: all 0.2s ease;
@@ -226,14 +233,11 @@ $primary-a-bg: #3c363621;
 }
 
 
-.container {
+.main {
   max-width: $container-max-width;
   margin: 5px auto;
   //border: 0.5px solid gray;
   padding: 0.5em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 svg.logo-svg {
@@ -241,7 +245,7 @@ svg.logo-svg {
 
   //margin-bottom: -25px;
   path {
-    //fill: $conifer;//$header;
+    //fill: $verde;//$header;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
       0 0 5px rgba(181, 232, 83, 0.1),
       0 0 10px rgba(181, 232, 83, 0.1);
@@ -290,7 +294,7 @@ svg.logo-svg {
 
 /* Prompt para linea de consolla*/
 .console-input:before {
-  color: $conifer; //$header;  
+  color: $verde; //$header;  
   /* content: "uqbar@col:~$ ";   */
   content: attr(data-prompt);
   margin-right: 0.75em;
@@ -339,19 +343,12 @@ li {
 header {
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  border-bottom: 1px dashed $magenta; //header;
+  border-bottom: 1px dashed $rojo; //header;
   padding: 10px 0;
   margin: 0 0 10px 0;
 }
 
-@media (max-width: 768px) {
-  nav ul li {
-    float: inherit;
-  }
-  .navbar-right {
-
-  }
-
+@media (min-width: 768px) {
   .navbar-toggle {
     display: none;
   }
@@ -363,7 +360,7 @@ customstyles.css header h1 {
   margin: 0 0 0 -40px;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $conifer; //$header;
+  color: $verde; //$header;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
     0 0 5px rgba(181, 232, 83, 0.1),
     0 0 10px rgba(181, 232, 83, 0.1);
@@ -390,11 +387,11 @@ header h2 {
 /* Main Content
 */
 
-#main_content {
-  //width: 100%;
-  float: left;
-  width: calc(100% - #{$sidebar_width});
+.main {
   -webkit-font-smoothing: antialiased;
+  a {
+    color: $azul;
+  }
 }
 
 
@@ -441,38 +438,77 @@ div.tag {
   margin-bottom: 10px;
 }
 
+/* Estilos de cheat sheets: */
+
 div.cheatsheet-container {
-  -moz-column-count: 3;
-  -webkit-column-count: 3;
-  column-count: 3;
+/*   -moz-column-count: 4;
+  -webkit-column-count: 4;
+  column-count: 4;
   -moz-column-gap: 10px;
-  -webkit-column-gap: 10px;
-  column-gap: 10px;
-  width: 100%;
+  -webkit-column-gap: 10px; 
+  column-gap: 10px; */
+  column-width: 290px;
+  margin: 10px;
 
   //height: 500px;
   div.cheatsheet-card {
     display: inline-block;
     box-sizing: border-box;
-    margin: 10px 0;
-    padding: 0.7em;
-    width: 100%;
+    width: 100%;   
     border-radius: 10px 10px 10px 10px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
     border: 0px solid #000000;
     background-color: #292525;
 
-    h3 {
+    h4 {
       margin: 0;
+      color: $azul-C1;
     }
 
-    div.row {
-      font-size: smaller;
+    a {
+      color: $azul-C2;
+    }
+
+    div.cheatsheet-row {      
+      border-top: 1px solid $gris-C2;
+      padding: 0.2em;    
+
+      .name {
+        font-size: 0.7em;
+        text-align: right;
+      }      
+      
+      code {
+        cursor: pointer;
+        padding: 4px;
+      }
+
+      i {
+        font-size: 0.7em;
+      }
+
     }
   }
 }
 
+@media (max-width: 900px) {
+  div.cheatsheet-container {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
 
+
+@media (max-width: 480px) {
+  div.cheatsheet-container {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
+/* Autor del post */
 
 div.author-card {
   display: inline-flex;
@@ -511,11 +547,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: $conifer;
+  color: $verde;
 }
 
 h2 {
-  color: $cian;
+  color: $azul;
 }
 
 h1,
@@ -536,29 +572,29 @@ h6 {
   }
 }
 
-#main_content h1 {
+.main h1 {
   font-size: 30px;
 }
 
-#main_content h2 {
+.main h2 {
   font-size: 24px;
 }
 
-#main_content h3 {
+.main h3 {
   font-size: 18px;
 }
 
-#main_content h4 {
+.main h4 {
   font-size: 14px;
 }
 
-#main_content h5 {
+.main h5 {
   font-size: 12px;
   text-transform: uppercase;
   margin: 0 0 5px 0;
 }
 
-#main_content h6 {
+.main h6 {
   font-size: 12px;
   text-transform: uppercase;
   color: #999;
@@ -570,7 +606,7 @@ dt {
   font-weight: bold;
 }
 
-div.container #main_content ul li {
+#tg-sb-content ul li {
   list-style-image: url('../images/bullet.png');
 }
 
@@ -597,7 +633,7 @@ code.highlighter-rouge {
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 0px 3px;
   margin: 0px -3px;
-  color: #aa759f;
+  color: $verde-O2;
   border-radius: 2px;
 }
 
@@ -664,15 +700,6 @@ hr {
 .btn-JCUN22 .icon {
   opacity: 0.6;
   background: url("../images/blacktocat.png") 0 0 no-repeat;
-}
-
-/* Links
-   a, a:hover, a:visited
-*/
-
-div.container section#main_content a {
-  color: #63c0f5;
-  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
 }
 
 /* Clearfix */

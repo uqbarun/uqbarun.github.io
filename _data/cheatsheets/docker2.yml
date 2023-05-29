@@ -4,6 +4,3 @@ items:
   - name: listar contenedores
     code: docker ps2
     syntax: bash
-  - name: hola mundo
-    code: print("Hola mundo")
-    syntax: python 2
