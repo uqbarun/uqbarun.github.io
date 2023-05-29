@@ -13,7 +13,7 @@ cheatsheets:
 
 # Fuzzing con  OWASP ZAP
 
-![](https://i.imgur.com/mk3zsxU.jpg)
+![](https://placehold.co/900x190)  
 
 Abstract: poner un resumen de pocas lineas acá. 
 <!--more-->
