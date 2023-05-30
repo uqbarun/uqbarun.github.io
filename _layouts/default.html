@@ -28,7 +28,7 @@
         <span class="console-input" data-prompt="uqbar@col:~$ ">print $PAGE 2>/dev/null</span>
         <span class="console-output">-rwxr-xr-- 1 {{ page.author | downcase }} uqbar {{ page.date | date: "%b %d %y" }}
           "{{ page.url }}"</span>
-        {{ content | remove: '<p>' | remove: '</p>' }}
+        {{ content }}
         <br>
         <br>
         <span class="console-output">> Exit code: 1</span>
