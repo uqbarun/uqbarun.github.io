@@ -1,162 +1,66 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
 entries:
-- title: sidebar
-  product: Jekyll Doc Theme
-  version: 6.0
+- title: Inicio
+  home:  /
   folders:
 
-  - title:
-    output: pdf
-    type: frontmatter
-    folderitems:
-    - title:
-      url: /titlepage.html
-      output: pdf
-      type: frontmatter
-    - title:
-      url: /tocpage.html
-      output: pdf
-      type: frontmatter
 
-  - title: Nosotros
+  - title: ¿Quiénes somos?
     output: web, pdf
-    url: /index.html
-    output: web, pdf
-    type: homepage
-
-  - title: Notas de estudio
-    output: web, pdf
-    folderitems:
-
-    - title: 6.0 Release notes
-      url: /mydoc_release_notes_60.html
-      output: web, pdf
-
-    - title: 5.0 Release notes
-      url: /mydoc_release_notes_50.html
-      output: web, pdf
-
-  - title: Cursos
+    url: '/#nosotros'
     output: web, pdf
 
-    folderitems:
-    - title: Pages
-      url: /mydoc_pages.html
-      output: web, pdf
-
-    - title: Posts
-      url: /mydoc_posts.html
-      output: web, pdf
-
-    - title: Lists
-      url: /mydoc_lists.html
-      output: web, pdf
-
-    - title: Conditional logic
-      url: /mydoc_conditional_logic.html
-      output: web, pdf
-
-    - title: Content reuse
-      url: /mydoc_content_reuse.html
-      output: web, pdf
-
-    - title: Collections
-      url: /mydoc_collections.html
-      output: web, pdf
-
-    - title: WebStorm editor tips
-      url: /mydoc_webstorm_text_editor.html
-      output: web, pdf
-
-    - title: Atom editor tips
-      url: /mydoc_atom_text_editor.html
-      output: web, pdf
-
-  - title: Calendario
-    output: web, pdf
-
-    folderitems:
-    - title: Sidebar navigation
-      url: /mydoc_sidebar_navigation.html
-      output: web, pdf
-
-    - title: YAML tutorial in the context of Jekyll
-      url: /mydoc_yaml_tutorial.html
-      output: web, pdf
-
-    - title: Tags
-      url: /mydoc_tags.html
-      output: web, pdf
-
-    - title: Series
-      url: /mydoc_series.html
-      output: web, pdf
-
-  - title: Formatting
-    output: web, pdf
-
-    folderitems:
-    - title: Tooltips
-      url: /mydoc_adding_tooltips.html
-      output: web, pdf
-
-    - title: Alerts
-      url: /mydoc_alerts.html
-      output: web, pdf
-
-    - title: Icons
-      url: /mydoc_icons.html
-      output: web, pdf
-
-    - title: Images
-      url: /mydoc_images.html
-      output: web, pdf
-
-    - title: Code samples
-      url: /mydoc_code_samples.html
-      output: web, pdf
-
-    - title: Labels
-      url: /mydoc_labels.html
-      output: web, pdf
-
-    - title: Links
-      url: /mydoc_hyperlinks.html
-      output: web, pdf
-
-    - title: Navtabs
-      url: /mydoc_navtabs.html
-      output: web, pdf
-
-    - title: Tables
-      url: /mydoc_tables.html
-      output: web, pdf
-
-    - title: Syntax highlighting
-      url: /mydoc_syntax_highlighting.html
-      output: web, pdf
-
-    - title: Workflow maps
-      url: /mydoc_workflow_maps.html
-      output: web, pdf
-
-  - title: Categorías
+  - title: ¿Qué hacemos?
     output: web
     folderitems:
 
-    - title: Fundamentos
-      url: /tag_fundamentos.html
+    - title: Formación
       output: web
-  
-  - title: Tags
+      subfolderitems:
+
+      - title: Tag archive pages
+        output: web
+
+      - title: Formatting pages
+        url: /tag_formatting.html
+        output: web
+
+      - title: Navigation pages
+        url: /tag_navigation.html
+        output: web
+
+    - title: Divulgación
+      url: '#divulgación'
+      output: web
+      subfolderitems:
+      
+      - title: Charlas de sensibilización
+        output: web
+
+      - title: Charlas de capacitación
+        url: /tag_formatting.html
+        output: web
+
+      - title: Navigation pages
+        url: /tag_navigation.html
+        output: web      
+
+  - title: ¿Cuándo nos reunimos?
     output: web
     folderitems:
-
-    - title: Fundamentos
-      url: /tag/fundamentos.html
+    - title: Grupo de introducción
+      url: '#introducción'
       output: web
 
-  - title: Cheat sheets
+    - title: Grupo de investigación
+      url: '#investigación'
+      output: web
+
+  - title: Grupo de investigación Tlön
     output: web
-    url: /cheatsheets.html 
+    url: https://tlon.unal.edu.co/
+
+  - title: Semillero estudiantil Orbis tertius
+    output: web
+    url: https://tlon.unal.edu.co/orbis-tertius

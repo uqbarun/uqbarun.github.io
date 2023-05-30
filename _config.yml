@@ -29,6 +29,7 @@ github_username:  uqbarun
 github: [metadata]
 
 # Build settings
+markdown: kramdown
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-feed
@@ -68,14 +69,20 @@ defaults:
       topnav: topnav
       author: 
       - UqbarUN # Author por defecto de todas las paǵinas
+      
   - 
     scope:
-      path: ""      # empty string for all files
-      type: posts   # limit to posts
+      path: "_posts"
+      type: posts   
     values:
-      is_post: true # para marcar posts 
-      image: /assets/images/default-banner.jpg # Thumbnail por defecto
       excerpt_separator: <!--more-->
+      sidebar: blog_sidebar
+
+  -
+    scope:
+      path: "_wiki"
+    values:
+      sidebar: wiki_sidebar      
 
 # Render
 
@@ -85,6 +92,18 @@ include:
 # Publish
 
 collections:
+  posts:
+    output: true
+    permalink: blog/:categories/:year/:month/:day/:title
   tag:
      output: true
      sort_by: title
+  wiki:
+     output: true
+     sort_by: title
+  lab:
+     output: true
+     sort_by: title
+  pages:
+     output: true
+     sort_by: title     

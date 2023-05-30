@@ -10,7 +10,7 @@ $header: $verde !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
 $container-max-width: 1200px;
-$font-size: 16px;
+$font-size: 14px;
 $console-font-size: 10px;
 
 @mixin media-max-width($max-width) {
@@ -76,8 +76,7 @@ nav {
     color: $verde;
     padding-left: $nav-padding;
     padding-right: $nav-padding;
-    font-size: 13px;
-    line-height: 2.5em;
+    font-size: 13px;    
     text-decoration: none;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
       0 0 5px rgba(181, 232, 83, 0.1),
@@ -99,7 +98,6 @@ nav {
       float: none;
       position: relative;
       list-style: none;
-      line-height: 2.7;
 
       ul {
         display: none;
@@ -117,6 +115,11 @@ nav {
         li {
           float: none;
           border-bottom: 1px solid darken($nav-drop-color, 2%);
+          
+          a {
+            display: inline-block;   
+            margin-bottom: 5px;
+          }
         }
       }
 
@@ -215,6 +218,10 @@ $primary-a-bg: #3c363621;
       a:hover {
         background: $primary-hover;
       }
+
+      li {
+        padding-left: 1em;
+      }
     }
 
     ul {
@@ -237,7 +244,49 @@ $primary-a-bg: #3c363621;
   max-width: $container-max-width;
   margin: 5px auto;
   //border: 0.5px solid gray;
-  padding: 0.5em;
+  padding: 1.5em;
+
+  strong {
+    color: $verde-O2;
+  }
+  #tg-sb-content {
+    ul, ol {
+      margin-top: revert;
+
+      li {
+        margin-bottom: 0.75em;
+      }
+    }
+
+    ol {
+      counter-reset: list-counter;
+      list-style: none;
+      padding-left: 40px;
+
+      li {    
+        counter-increment: list-counter;
+        position: relative;
+      }
+      li::before {
+        content: counters(list-counter, '.') " ";
+        font-weight: normal;
+        font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+        font-weight: bold;
+        position: absolute;      
+        color: $azul-O1;
+        --size: 28px;
+        left: calc(-1 * var(--size) - 10px);
+        width: var(--size);
+        height: var(--size);
+        top: 0;      
+      }
+    }
+    
+    iframe {
+      max-width: 100%;
+    }
+  }
+
 }
 
 svg.logo-svg {

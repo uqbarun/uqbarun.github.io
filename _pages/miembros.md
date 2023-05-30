@@ -1,5 +1,6 @@
 ---
-title: "Miembros"
+title: Miembros
+permalink: miembros
 ---
 <!-- 
 faroseroc@unal.edu.co

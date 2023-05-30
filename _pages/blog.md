@@ -2,12 +2,18 @@
 layout: default
 title: inicio
 topnav: topnav
+sidebar: blog_sidebar
+permalink: /blog/index.html
 ---
+# Blog
+Blog.  
+
 <!-- Etiquetas -->
+<br>
 <span class="console-input" data-prompt="uqbar@col:~$ ">ls -al /tags</span>   
 {% for tag in site.tags %}
-{% assign t = tag[0] %}
-{% include tag_cards.html tags=t %}
+  {% assign t = tag[0] %}
+  {% include tag_cards.html tags=t %}
 {% endfor %}
 <br><br>
 <!-- Publicaciones -->

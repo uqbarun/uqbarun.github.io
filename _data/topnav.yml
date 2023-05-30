@@ -6,19 +6,24 @@ topnav:
     - title: GitHub
       external_url: https://github.com/uqbarun
     - title: Blog
-      url: /
+      url: /blog
     - title: Moodle
-      external_url: https://uqbarun.milaulas.com/ 
-    - title: Sesiones
-      url: /sesiones      
+      external_url: https://uqbarun.milaulas.com/   
     - title: Podcast
-      url: /            
+      url: /podcast       
 
 #Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-
+    - title: Sesiones
+      folderitems:
+        - title: Sesiones
+          url: /sesiones      
+        - title: Material de apoyo
+          external_url: https://drive.google.com/drive/folders/1UIKbe0vUiaPXU6jpBIvc40xxQUontupu?usp=sharing
+        - title: Calendario
+          url: /calendario
     - title: Estudio
       folderitems:
         - title: Fundamentos Windows
@@ -31,11 +36,11 @@ topnav_dropdowns:
           external_url: https://talk.jekyllrb.com          
     - title: Eventos
       folderitems:
-        - title: JCUN 2018
+        - title: Primera Jornada de Ciberseguridad de la Universidad Nacional de Colombia 2018
+          url: /          
+        - title: Segunda Jornada de Ciberseguridad de la Universidad Nacional de Colombia 2019
           url: /           
-        - title: JCUN 2019
+        - title: Tercera Jornada de Ciberseguridad de la Universidad Nacional de Colombia 2023
           url: /           
-        - title: JCUN 2022
-          url: /           
-        - title: JCCE 2023
+        - title: Primera Jornada de Ciberseguridad de Colombo-Española 2024
           url: /                   
