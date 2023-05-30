@@ -1,5 +1,5 @@
-name: Docker básico
-platform: Docker
+name: Vim para programadores 💻
+platform: vim
 items:
   - name: Activar el mouse temporalmente.
     syntax: vim  

@@ -28,8 +28,14 @@ twitter_username: uqbarun
 github_username:  uqbarun
 github: [metadata]
 
-# Build settings
-markdown: kramdown
+# https://stackoverflow.com/a/62732579/11077105
+# https://github.com/kramdown/parser-gfm
+kramdown:
+  input: GFM
+  gfm_quirks: [paragraph_end]  
+  hard_wrap: true
+
+# 
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-feed

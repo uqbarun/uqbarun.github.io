@@ -1,5 +1,5 @@
-name: Docker básico
-platform: Docker
+name: Vim de emergencia 🛟
+platform: vim
 items:
   - name: salir del modo actual para ir al modo COMMAND.
     syntax: vim     
