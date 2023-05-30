@@ -1,0 +1,7 @@
+name: Análisis debinarios de Linux
+platform: Linux
+items:
+  - name: Análizar dependencias de un binario
+    code: objdump -p /bin/cat | grep NEEDED
+  - name: Análizar dependencias de un binario
+    code: objdump -p /bin/cat | grep NEEDED    

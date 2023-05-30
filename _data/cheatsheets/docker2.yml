@@ -1,6 +1,13 @@
 name: Docker avanzado
 platform: Docker
 items:
-  - name: listar contenedores
-    code: docker ps2
+
+  - name: podar imágenes no asociados a contenedores
+    code: docker image prune -a
     syntax: bash
+        
+  - name: podar contenedores parados, redes sin asociar, imágenes sueltas y cache de compilacións
+    code: docker system prune
+    syntax: bash            
+        
+  
