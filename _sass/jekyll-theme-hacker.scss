@@ -655,7 +655,10 @@ dt {
   font-weight: bold;
 }
 
-#tg-sb-content p > img {
+/* Evitar img overflow */
+#tg-sb-content p > img,
+#tg-sb-content table th > img
+{
   display: block;
   margin: 10px 0;
   width: 100%;
