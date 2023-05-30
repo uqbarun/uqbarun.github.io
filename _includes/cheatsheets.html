@@ -12,12 +12,25 @@
 				<div class="name">{{item.name}}</div>
 			</div>
 			<div class="col-7 ps-2">
+		{% if item.keys %}
+			{% for key in item.keys %}	
+				<kbd>{{ key  }}</kbd>
+				{% unless forloop.last %} + {% endunless %}
+			{% endfor %}
+		{% endif %}				
+		{% if item.code %}
+			{% for code in item.code %}	
 				<code class="cheatsheet-code language-plaintext highlighter-rouge">
-					{{item.code}}
+					{{code}}
 				</code>
+				{% unless forloop.last %}&nbsp;o{% endunless %}
+			{% endfor %}		
+		{% endif %}
+		{% if item.syntax == "shell" %}
 				<a href="https://explainshell.com/explain?cmd={{ item.code | url_encode }}" target="_blank">
 					<i id="tg-sb-icon" class="fa fa-question-circle"></i>
-				</a>									
+				</a>		
+		{% endif %}							
 			</div>
 		</div>
 	{% endfor %}

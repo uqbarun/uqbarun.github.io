@@ -96,14 +96,18 @@ collections:
     output: true
     permalink: blog/:categories/:year/:month/:day/:title
   tag:
-     output: true
-     sort_by: title
+    output: true
+    sort_by: title
   wiki:
-     output: true
-     sort_by: title
+    output: true
+    sort_by: title
   lab:
-     output: true
-     sort_by: title
+    output: true
+    sort_by: title
   pages:
-     output: true
-     sort_by: title     
+    output: true
+    sort_by: title     
+  cheatsheets:
+    output: true
+    sort_by: title     
+    permalink: cs/:title     

@@ -1,0 +1,46 @@
+name: Docker básico
+platform: Docker
+items:
+  - name: salir del modo actual para ir al modo COMMAND.
+    syntax: vim     
+    keys:
+    - Esc
+
+  - name: entrar al modo INSERT.
+    syntax: vim     
+    keys:
+    - i
+
+  - name: entrar al modo VISUAL (selección).
+    syntax: vim     
+    keys:
+    - v   
+
+  - name: deshacer cambios.
+    syntax: vim  
+    code: 
+      - :u    
+      - :undo
+    keys:
+    - u    
+
+  - name: rehacer cambios
+    syntax: vim  
+    code: 
+      - :redo    
+    keys:
+    - u        
+
+  - name: salir sin guardar.
+    syntax: vim     
+    code: :q!    
+
+  - name: guardar cambios.
+    syntax: vim     
+    code: :w        
+
+  - name: guardar cambios y salir.
+    syntax: vim     
+    code: :wq            
+
+

@@ -26,6 +26,8 @@ topnav_dropdowns:
           url: /calendario
     - title: Estudio
       folderitems:
+        - title: Cheat sheets
+          url: /cheatsheets          
         - title: Fundamentos Windows
           external_url: http://idratherbewriting.com/category-jekyll/      
         - title: Fundamentos Linux
