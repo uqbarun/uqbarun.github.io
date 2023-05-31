@@ -39,17 +39,17 @@ Abstract: poner un resumen de pocas lineas acá.
 <!-- Generar tabla de contenidos con https://ecotrust-canada.github.io/markdown-toc/ -->
 
 ## Sección 1
-Texto de `código`[^1].
+Texto de \`código\`[^1].
 
-```python
+\`\`\`python
 print('hola mundo')
-```
+\`\`\`
 
 ## Sección 2
-```mermaid
+\`\`\`mermaid
 graph
 A-->B
-```
+\`\`\`
 
 ## Referencias
 [^1]: Cita 1 www.google.com
