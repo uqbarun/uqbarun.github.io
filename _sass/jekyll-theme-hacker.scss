@@ -262,13 +262,11 @@ $primary-a-bg: #3c363621;
       counter-reset: list-counter;
       list-style: none;
       padding-left: 40px;
-
       li {    
-        counter-increment: list-counter;
         position: relative;
       }
-      li::before {
-        content: counters(list-counter, '.') " ";
+      li::before,
+      ol ol li::before  {
         font-weight: normal;
         font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
         font-weight: bold;
@@ -278,7 +276,14 @@ $primary-a-bg: #3c363621;
         left: calc(-1 * var(--size) - 10px);
         width: var(--size);
         height: var(--size);
-        top: 0;      
+        top: 0;     
+      }
+      li::before {
+        counter-increment: list-counter;
+        content: counter(list-counter) ". ";
+      }
+      ol li::before {
+        content: counters(list-counter, '.') ". ";
       }
     }
     
