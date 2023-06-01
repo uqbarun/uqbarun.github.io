@@ -9,5 +9,9 @@ Nos estamos reuniendo en el edificio 454 CyT de la Universidad Nacional de Colom
 ## Sesiones introductorias de los viernes
 Las sesiones de los viernes son perfectos para todos aquellxs interesados en iniciar en el mundo de la ciberseguridad. Los viernes nos estamos reuniendo en el salones del **4to piso del CyT** a las **4:00 PM GMT-5**. Solemos trasmitir la sesión del viernes en el Google Meet que podrás acceder [acá](/calendario) pero el micrófono donde se hace streaming no siempre captura adecuadamente las voces de todos.
 
+* [Información próxima sesión del viernes](/sesiones/viernes)
+
 ## Sesiones de investigación de los sábados
 Las sesiones de los sábados también son abiertas a todo público pero son un poco más rápidas. Este año estamos tenemos como hoja ruta la certificación de la OSCP PEN-200. De esta hoja de ruta tenemos la responsabilidad de crear todo el material académico posible. Los sábados nos estamos reuniendo en el salones del **4to piso del CyT** a las **9:00 AM GMT-5**.
+
+* [Información próxima sesión del sábado](/sesiones/sabado)
