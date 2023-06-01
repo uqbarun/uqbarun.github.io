@@ -2,7 +2,6 @@
  * Este script permite renderizar los datos de los eventos registrados en el Google Calendar de Uqbar UN
  */
 function reqListener() {
-    console.log("Google Calendar API: Eventos de calendario", URL, this.response.items);
     var ul = document.createElement("ul");
     eventsContainer.appendChild(ul);
     this.response.items.forEach(event => {
@@ -57,10 +56,7 @@ function padZero(value) {
     return value < 10 ? '0' + value : value;
 }
 
-// Example usage
 const rfc3339Date = getOffsetRFC3339Date(-2) 
-console.log("rfc3339Date:",rfc3339Date);
-
 const eventsContainer = document.getElementById("events-container");
 // XHR Request a la API de Google CalendaR
 const req = new XMLHttpRequest();
