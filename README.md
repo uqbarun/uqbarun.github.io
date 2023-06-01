@@ -114,10 +114,15 @@ document.addEventListener("DOMContentLoaded", function() {
 ```
 
 # Título
-```
+
 El tamaño ideal de la imagen sería de apróximadamente 900 x 190 px
 
 # Autores
 
 Los autores deben poner su información en el archivo de `_data/authors.yml`
 
+# TODOS
+* favicon
+* seachbar
+* sticky navbar
+* sticky

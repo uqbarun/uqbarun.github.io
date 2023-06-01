@@ -2,6 +2,7 @@
 layout: default
 title: inicio
 topnav: topnav
+sidebar:  home_sidebar
 permalink: /index.html
 ---
 # Nosotros
