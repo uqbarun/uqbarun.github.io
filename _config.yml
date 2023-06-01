@@ -71,7 +71,6 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default" # Plantilla por defecto
-      sidebar: home_sidebar
       topnav: topnav
       author: 
       - UqbarUN # Author por defecto de todas las paǵinas

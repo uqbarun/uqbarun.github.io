@@ -15,15 +15,16 @@
 <body>
   <header>
     <div class="header-container">
-
       {% include topnav.html %}
     </div>
   </header>
   <div class="main">
     <div class="row">
-      <div id="tg-sb-sidebar" class="col-md-3" >
-        {% include sidebar.html %}
+      {% if page.sidebar %}
+      <div id="tg-sb-sidebar" class="col-md-3" >        
+          {% include sidebar.html %}                            
       </div>        
+      {% endif %}          
       <div id="tg-sb-content" class="col-md-9">
         <span class="console-input" data-prompt="uqbar@col:~$ ">print $PAGE 2>/dev/null</span>
         <span class="console-output">-rwxr-xr-- 1 {{ page.author | downcase }} uqbar {{ page.date | date: "%b %d %y" }}
