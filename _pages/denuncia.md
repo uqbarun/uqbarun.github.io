@@ -3,4 +3,9 @@ title: Denunciar link sospechoso
 layout: default
 permalink: denunciar
 ---
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSec4N6aOdvMMagJd4oMnzuCRcrFoR-UORPrKv315hrLIKCfpQ/viewform?embedded=true" width="640" height="2963" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+# Denunciar link sospechoso
+Hemos dispuesto el siguiente **formulario de Google** para recibir reportes y denuncias de links sospechosos.
+
+<a class="btn btn-warning" role="button" href="https://docs.google.com/forms/d/e/1FAIpQLSec4N6aOdvMMagJd4oMnzuCRcrFoR-UORPrKv315hrLIKCfpQ/viewform?usp=sf_link">
+Denunciar link sospechoso
+</a>
