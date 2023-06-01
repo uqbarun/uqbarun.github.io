@@ -75,7 +75,6 @@ virt-install \
 --vga virtio \
 --console pty,target_type=serial \
 --boot hd
-
 ```
 
 ### Configuración dentro de la máquina
@@ -93,7 +92,7 @@ Probaremos comunicación Host-Guest ✅:
 Uqbar@local:~$ ping -c 4 192.168.122.9
 PING 192.168.122.9 (192.168.122.9) 56(84) bytes of data.
 64 bytes from 192.168.122.9: icmp_seq=1 ttl=64 time=0.389 ms
-...
+[...]
 --- 192.168.122.9 ping statistics ---
 4 packets transmitted, 4 received, 0% packet loss, time 3061ms
 rtt min/avg/max/mdev = 0.330/0.449/0.595/0.100 ms
@@ -105,11 +104,10 @@ Probamos comunicación Guest-Host ✅:
 └─$ ping -c 4 192.168.1.102
 PING 192.168.1.102 (192.168.1.102) 56(84) bytes of data.
 64 bytes from 192.168.1.102: icmp_seq=1 ttl=64 time=0.315 ms
-...
+[...]
 --- 192.168.1.102 ping statistics ---
 4 packets transmitted, 4 received, 0% packet loss, time 3054ms
 rtt min/avg/max/mdev = 0.315/0.436/0.552/0.084 ms
-
 ```
 
 ## ¿En que parte de la red queda nuestro equipo de pentesting?
@@ -123,13 +121,11 @@ $ virsh net-list --all
  Name      State    Autostart   Persistent
 --------------------------------------------
  default   active   yes         yes
-
 ```
 
 | ![Virtual switch: NAT mode](https://wiki.libvirt.org/images/Virtual_network_default_network_overview.jpg) |
 |:--:|
 | *Virtual switch: NAT mode[^2].* |
-
 
 Libvirt crea un **switch virtual** o puente de ethernet (capa 2) `virbr0` para la LAN 192.168.122.0/24
 ```bash
@@ -138,7 +134,6 @@ bridge name     bridge id               STP enabled     interfaces
 docker0         8000.0242b5ce76e5       no
 virbr0          8000.525400e57960       yes             virbr0-nic
                                                         vnet0
-
 ```
 
 ```bash
@@ -159,7 +154,6 @@ $ virsh net-dumpxml default
     </dhcp>
   </ip>
 </network>
-
 ```
 
 ```bash
@@ -178,8 +172,9 @@ default via 192.168.1.1 dev enp3s0f0 proto dhcp metric 100
 192.168.122.0/24 dev virbr0 proto kernel scope link src 192.168.122.1 
 ```
 
-## Docker: contenerización de aplicaciones web
-![](https://i.imgur.com/YPjNRkl.png
+## Docker de aplicaciones web
+
+![](https://i.imgur.com/YPjNRkl.png)
 *How Docker Container Networking Works[^5]*
 
 ```bash
@@ -251,7 +246,9 @@ sudo systemctl stop docker
 sudo systemctl start docker
 ```
 
-Notaremos que ahora las interfaces `vnet0` (de Kali en QEMU/KMV) y `veth77764af` (del contenedor de Docker) estan conectadas al mismo switch virtual `virbr0`.
+Notaremos que ahora las interfaces `vnet0` (de Kali en QEMU/KMV) y `veth77764af` (del contenedor de Docker) estan conectadas al mismo switch virtual `virbr0`
+
+
 ```bash
 brctl show
 bridge name     bridge id               STP enabled     interfaces

@@ -32,8 +32,12 @@ topnav_dropdowns:
           url: /calendario
     - title: Estudio
       folderitems:
+        - title: Wiki
+          url: /wiki                      
+        - title: Laboratorios, CTFs y máquinas
+          url: /lab          
         - title: Cheat sheets
-          url: /cheatsheets          
+          url: /cheatsheets                
         - title: Fundamentos Windows
           external_url: http://idratherbewriting.com/category-jekyll/      
         - title: Fundamentos Linux

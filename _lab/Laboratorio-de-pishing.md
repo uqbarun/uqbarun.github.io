@@ -5,8 +5,6 @@ tags:
  - laboratorio
  - pishing
  - redteam
-date: 2022-05-20'
-layout: post
 categories: [laboratorios]
 ---
 # Laboratorio de pishing

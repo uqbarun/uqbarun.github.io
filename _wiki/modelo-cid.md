@@ -1,3 +1,7 @@
+---
+title: Modelo CID
+---
+
 # Etimología de CIA y CIAAA
 
 ## Modelo de tríada CID
