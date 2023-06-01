@@ -11,6 +11,8 @@ topnav:
       external_url: https://uqbarun.milaulas.com/   
     - title: Podcast
       url: /podcast       
+    - title: Denunciar
+      url: /denunciar          
 
 #Topnav dropdowns
 topnav_dropdowns:
