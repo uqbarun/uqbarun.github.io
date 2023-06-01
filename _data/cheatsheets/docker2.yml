@@ -2,12 +2,31 @@ name: Docker avanzado
 platform: Docker
 items:
 
-  - name: podar imágenes no asociados a contenedores
+  - name: Tamaño de una imagen
+    code: docker inspect --format='{{.Size}}' $imagen
+    syntax: bash
+
+  - name: Podar imágenes no asociados a contenedores
     code: docker image prune -a
     syntax: bash
         
-  - name: podar contenedores parados, redes sin asociar, imágenes sueltas y cache de compilacións
+  - name: Podar contenedores parados, redes sin asociar, imágenes sueltas y cache de compilacións
     code: docker system prune
+    syntax: bash           
+
+  - name: Listar las redes virtuales
+    code: docker network ls
+    syntax: bash
+
+  - name: Inspeccionar red virutal
+    code: docker network inspect $red
+    syntax: bash             
+
+  - name: Obtener IP interna del contenedor
+    code: docker inspect --format '{{ .NetworkSettings.IPAddress }}' $contenedor
     syntax: bash            
-        
+  
+  - name: Listar puertos desde la perspectiva interna del contenedor
+    code: sudo nsenter -t $(docker inspect -f '{{.State.Pid}}' $contenedor) -n netstat -tulpn
+    syntax: bash                
   

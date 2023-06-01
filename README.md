@@ -91,7 +91,7 @@ Partiendo del hecho de que no podemos configurar HackMD.io para cambiar su rende
 * Tabla de contenidos <https://ecotrust-canada.github.io/markdown-toc/>
 * Carga de imágenes <https://imgur.com/upload>
 
-
+https://hackmd.io/c/codimd-documentation/%2F%40codimd%2Fmarkdown-syntax
 
 ## Matemática
 [head-custom.html](/_includes/head-custom.html)

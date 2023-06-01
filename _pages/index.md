@@ -11,16 +11,27 @@ Somos un grupo de entusiastas y autodidactas interesados en estudiar y divulgar 
 ![Uqbar 2018](https://i.imgur.com/42nwPbP.jpg)
 
 ## Misión
+
 El semillero Uqbar, vinculado al grupo de investigación TLON, busca contribuir a la investigación, formación y fomento de la cultura de seguridad informática en Colombia, por medio de cursos, material informativo y campañas de concientización.
 
 ## Visión
+
 Uqbar, pretende, para 2030, consolidarse como el semillero de investigación en seguridad informática con más relevancia del país, con la capacidad de gestionar proyectos de investigación que aporten al desarrollo del país y proyectos de concienciación que aumenten la cultura de seguridad informática.
 
 # Formación y producción académica
+
 > Enseñar es aprender dos veces -[Joseph Joubert](https://es.wikipedia.org/wiki/Joseph_Joubert)
 
+## Laboratorios
+
+* Web
+* Red
+* Radiofrecuencia
+
 ## Cursos
+
 ### Los que hacemos
+
 * Hack The Box Academy
 * [Cryptography I, Coursera](https://www.coursera.org/learn/crypto)
 * [Network Security, Udacity](https://www.udacity.com/course/network-security--ud199)
@@ -42,6 +53,7 @@ Uqbar, pretende, para 2030, consolidarse como el semillero de investigación en 
 
 
 ## WriteUps de CTFs
+
 Los WriteUps son redacciones en las que los participantes comparten su proceso paso a paso, las técnicas utilizadas, las herramientas empleadas y las estrategias implementadas para resolver un desafío de seguridad en particular. Estos documentos son una forma de documentar y compartir el conocimiento adquirido durante la resolución del desafío.
 
 

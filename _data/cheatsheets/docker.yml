@@ -1,9 +1,31 @@
 name: Docker básico
 platform: Docker
 items:
+
+  - name: listar imágenes
+    code: docker image ls
+    syntax: bash  
+
   - name: listar contenedores
     code: docker ps
     syntax: bash
-  - name: hola mundo
-    code: print("Hola mundo")
-    syntax: python    
+
+  - name: Correr una imagen como contenedor
+    code: docker run $image
+    syntax: bash
+
+  - name: Crear una imagen
+    code: docker build -t $image .
+    syntax: bash    
+
+  - name: Elminiar contenedores
+    code: docker rm -f $contenedor 
+    syntax: bash    
+
+  - name: Listar puertos mapeados
+    code: docker port $contenedor 
+    syntax: bash       
+
+  - name: Enlazar una shell a contenedor
+    code: docker exec -it $contenedor /bin/bash
+    syntax: bash        
