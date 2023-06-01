@@ -6,21 +6,60 @@ permalink: /index.html
 ---
 # Nosotros
 
-Somos un grupo de entusiastas y autodidactas interesados en estudiar y divulgar temas relacionados con la seguridad informática. Queremos que hagas parte de UqbarUN. Queremos hacer esta comunidad una cuna de hackers.
+Somos un grupo de entusiastas y autodidactas interesados en estudiar y divulgar temas relacionados con la seguridad informática. Queremos hacer esta comunidad una cuna de hackers.
+
+<!--- Poner carrusel de fotos --->
 
 ![Uqbar 2018](https://i.imgur.com/42nwPbP.jpg)
 
 ## Misión
 
-El semillero Uqbar, vinculado al grupo de investigación TLON, busca contribuir a la investigación, formación y fomento de la cultura de seguridad informática en Colombia, por medio de cursos, material informativo y campañas de concientización.
+El grupo estudiantil UqbarUN, vinculado al grupo de investigación TLON, busca contribuir a la investigación, formación y fomento de la cultura de seguridad informática en Colombia, por medio de cursos, material informativo y campañas de concientización.
 
 ## Visión
 
-Uqbar, pretende, para 2030, consolidarse como el semillero de investigación en seguridad informática con más relevancia del país, con la capacidad de gestionar proyectos de investigación que aporten al desarrollo del país y proyectos de concienciación que aumenten la cultura de seguridad informática.
+UqbarUN, pretende, para 2030, consolidarse como el semillero de investigación en seguridad informática con más relevancia del país, con la capacidad de gestionar proyectos de investigación que aporten al desarrollo del país y proyectos de concienciación que aumenten la cultura de seguridad informática.
 
-# Formación y producción académica
+## Formación y producción académica
 
-> Enseñar es aprender dos veces -[Joseph Joubert](https://es.wikipedia.org/wiki/Joseph_Joubert)
+> "Enseñar es aprender dos veces." - Joseph Joubert
+
+Si UqbarUN es una cuna de hackers, surge la pregunta: ¿cuándo nace o se forma un hacker?
+
+En UqbarUN, hemos establecido tres niveles de desarrollo en nuestro camino de formación: Hacker Curioso, Hacker Learner y Hacker Pro.
+
+**Hacker Curioso** es el nivel inicial en UqbarUN y se refiere a aquellos que muestran una gran curiosidad por la seguridad informática y desean aprender más. Para ser considerado un Hacker Curioso, se valoran las siguientes características y habilidades:
+
+*   Curiosidad innata por la tecnología y la seguridad informática.
+*   Interés activo en aprender nuevas herramientas y técnicas relacionadas con la seguridad.
+*   Habilidades básicas de programación y comprensión de conceptos fundamentales.
+*   Capacidad para seguir instrucciones y participar en actividades de aprendizaje en grupo.
+*   Conocimientos básicos sobre los riesgos de seguridad en línea y las medidas de protección.
+
+Es importante destacar que los Hackers Curiosos están en una etapa temprana de su viaje en seguridad informática y pueden estar relacionados con los denominados "script kiddies", aquellos que utilizan herramientas y técnicas sin comprender completamente su funcionamiento.
+
+**Hacker Learner** es el siguiente nivel en UqbarUN y se refiere a aquellos que han avanzado en su formación y han adquirido conocimientos más sólidos en el campo de la seguridad informática. Los requisitos y habilidades para ser considerado un Hacker Learner son:
+
+*   Conocimientos avanzados de programación y comprensión de lenguajes como Javascript, Python, C++, Java o Go.
+*   Familiaridad con conceptos de redes, sistemas operativos y protocolos de seguridad.
+*   Capacidad para realizar análisis de vulnerabilidades y pruebas de penetración.
+*   Experiencia en la configuración y administración de sistemas seguros.
+*   Habilidad para investigar y comprender nuevas amenazas y técnicas de ataque.
+
+Los Hackers Learners están en un nivel intermedio y están comprometidos con su formación continua en seguridad informática.
+
+**Hacker Pro** representa el nivel más alto en UqbarUN. Los Hackers Pro son aquellos que han alcanzado la excelencia en el campo de la seguridad informática y son reconocidos por sus conocimientos y habilidades sobresalientes. Para ser considerado un Hacker Pro, se requiere:
+
+*   Amplia experiencia en análisis de vulnerabilidades y pruebas de penetración en entornos complejos.
+*   Conocimientos profundos de criptografía, ingeniería inversa y técnicas avanzadas de seguridad.
+*   Capacidad para liderar proyectos de seguridad informática y aportar soluciones innovadoras.
+*   Comprensión ética y responsabilidad en el uso de sus habilidades.
+*   Certificaciones reconocidas en el campo de la seguridad informática, como CISSP, CEH, OSCP, entre otras.
+
+Los Hackers Pro en UqbarUN son referentes en la comunidad y contribuyen activamente al desarrollo y promoción de la seguridad informática.
+
+En UqbarUN, nuestro compromiso es brindar a nuestros miembros las herramientas, los recursos y las oportunidades necesarias para avanzar en su camino hacia la excelencia en la seguridad informática, sin importar en qué nivel se encuentren
+
 
 ## Laboratorios
 
