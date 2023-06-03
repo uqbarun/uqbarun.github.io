@@ -3,6 +3,26 @@ platform: Docker
 items:
 
   - name: Tamaño de una imagen
+    code: docker-compose --project-name $proyecto down
+    syntax: bash
+
+  - name: Tamaño de una imagen
+    code: docker-compose --project-name $proyecto build
+    syntax: bash
+
+  - name: Tamaño de una imagen
+    code: docker-compose --project-name $proyecto up 
+    syntax: bash
+
+  - name: Tamaño de una imagen
+    code: docker-compose --project-name $proyecto logs -f --tail 1000 
+    syntax: bash
+
+  - name: 'Mapear un hostname (e.j.: host-gateway) a la ip del host en el docker-compose.yml'
+    code: 'extra_hosts: "host.docker.internal:host-gateway"'
+    syntax: bash
+
+  - name: Tamaño de una imagen
     code: docker inspect --format='{{.Size}}' $imagen
     syntax: bash
 
@@ -20,11 +40,21 @@ items:
 
   - name: Inspeccionar red virutal
     code: docker network inspect $red
-    syntax: bash             
+    syntax: bash  
+
+  - name: Obtener información del contenedor
+    code: docker inspect $contenedor
+    syntax: bash                     
 
   - name: Obtener IP interna del contenedor
     code: docker inspect --format '{{ .NetworkSettings.IPAddress }}' $contenedor
-    syntax: bash            
+    syntax: bash         
+
+  - name: Obtener IP interna del contenedor
+    code: docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $contenedor
+    syntax: bash     
+       
+
   
   - name: Listar puertos desde la perspectiva interna del contenedor
     code: sudo nsenter -t $(docker inspect -f '{{.State.Pid}}' $contenedor) -n netstat -tulpn

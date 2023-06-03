@@ -1,0 +1,195 @@
+# IoT pentest
+
+## Introduction to IoT Network Web Services
+This course section introduces the overall problem with IoT security and examines how testing can address the problem in largely generic terms, given the multitude of IoT implementations. The first technical concepts include network recon and attacks as well as key web application issues often found with IoT devices, such as authentication bypass, RFI, and command injection. Additionally, we will examine API requests from mobile apps to back-end services and the devices themselves, then use the tools testers need to inspect and exploit network and web-based IoT.
+Exercises
+
+### Skills
+- Course introduction
+- Course methodology for testing IoT: Modified IoTA
+- Tooling for IoTA: Introducing hardware tools
+- Network discovery and recon
+- Active network discovery
+- Network exploitation for IoT
+- Web services in IoT
+- Web and API recon and discovery
+- Tools for web services
+- Web service attack types and exploitation
+
+### Steps
+- Wireshark filters and PCAP inspection
+- Nmap scan of an IoT device and exploitation with Metasploit
+- Part 1: Burp Suite interception on IoT web portal for exposed secrets
+- Part 2: Using Postman to send password data to an IoT API
+- Part 1: Exploiting an IoT portal for consumer-grade devices
+- Part 2: Injecting commands into vulnerable IoT web services
+
+## Exploting IoT Hardware Interfaces and Anbalysing Firmware
+This section will introduce key concepts to perform recon against various hardware devices for destructive and semi-destructive testing for hardware, as well as hardware identification, communication, and exploitation using various hardware tools. We will also examine ways to recover device operating systems (firmware) and analyze them to recover stored secrets and various implementation flaws.
+
+### Skills
+
+- Background and importance of IoT hardware
+- Opening the device
+- Examining and identifying components
+- Discovering and identifying ports
+- A soldering primer
+- Sniffing, interaction, and exploitation of hardware ports: Serial, SPI, JTAG
+- Recovering firmware
+- Firmware analysis
+- Pillaging the firmware
+
+### Steps
+- Obtaining and analyzing Specification Sheets
+- Sniffing serial and SPI
+- Recovering firmware from PCAP
+- Recovering filesystems with binwalk
+- Pillaging the filesystem
+
+## Explointing Wireless IoT: WiFi: BLE, Zigbee, LoRA, and SDR
+This course section focuses on the more popular and developing, documented, and standardized wireless technologies often found in IoT technology. The concepts introduced include capturing traffic, gaining access to networks and encrypted data, and interacting with and compromising IoT devices and their functions. The section will introduce the concepts to analyze and exploit non-standard and proprietary RF communications often found in IoT devices
+
+### Skills
+
+- Wi-Fi
+- Bluetooth Low Energy
+- Zigbee
+- LoRA
+- SDR
+
+### Steps
+
+- WiFi PSK cracking
+- BLE device interaction
+- Zigbee traffic capture
+- Conducting a replay transmission attack on IoT
+
+
+
+
+
+
+---
+title: IoT pentest
+---
+
+Section 1: Introduction to IoT Network Web Services
+---------------------------------------------------
+
+Skills:
+
+1.  Understand the course objectives and methodology for testing IoT
+2.  Familiarize yourself with the tools used for IoT pentesting
+3.  Learn network discovery and reconnaissance techniques
+4.  Explore network exploitation techniques specific to IoT devices
+5.  Understand web services in IoT and how to perform web and API reconnaissance
+6.  Learn about tools used for testing web services
+7.  Identify different types of web service attacks and exploitation methods
+
+Steps:
+
+1.  Learn to use Wireshark filters and inspect PCAP files
+2.  Perform an Nmap scan of an IoT device and exploit vulnerabilities using Metasploit
+3.  Part 1: Intercept secrets using Burp Suite on an IoT web portal
+4.  Part 2: Use Postman to send password data to an IoT API
+5.  Part 1: Exploit vulnerabilities in consumer-grade IoT portals
+6.  Part 2: Inject commands into vulnerable IoT web services
+
+CWE IDs list:
+
+*   CWE-200: Information Exposure
+*   CWE-287: Improper Authentication
+*   CWE-94: Improper Control of Generation of Code
+
+CAPEC IDs list:
+
+*   CAPEC-98: Authentication Abuse
+*   CAPEC-242: Relaying
+*   CAPEC-242: Command Injection
+
+CPE IDs list:
+
+*   CPE-22: Network and Web Application Testing Tools
+*   CPE-23: PCAP Analysis Tools
+*   CPE-24: Network Scanners
+*   CPE-29: Web Application Scanners
+
+Section 2: Exploiting IoT Hardware Interfaces and Analyzing Firmware
+--------------------------------------------------------------------
+
+Skills:
+
+1.  Understand the importance of IoT hardware in pentesting
+2.  Learn to open IoT devices and identify their components
+3.  Discover and identify various hardware ports
+4.  Get a primer on soldering techniques
+5.  Learn to sniff, interact with, and exploit hardware ports (Serial, SPI, JTAG)
+6.  Master the process of recovering firmware from IoT devices
+7.  Gain knowledge of firmware analysis techniques
+8.  Extract valuable information from the firmware
+
+Steps:
+
+1.  Obtain and analyze specification sheets for IoT devices
+2.  Sniff serial and SPI communication to gather data
+3.  Recover firmware from captured PCAP files
+4.  Use binwalk to extract and analyze filesystems within firmware
+5.  Extract valuable information by analyzing the filesystem
+
+CWE IDs list:
+
+*   CWE-200: Information Exposure
+*   CWE-284: Improper Access Control
+*   CWE-415: Double Free
+*   CWE-119: Buffer Overflow
+
+CAPEC IDs list:
+
+*   CAPEC-142: Accessing, Modifying or Executing Executable Files
+*   CAPEC-152: Hardware Injection
+*   CAPEC-196: Use of Standard Cryptographic Algorithm in the Wrong Mode
+
+CPE IDs list:
+
+*   CPE-27: Soldering Tools
+*   CPE-28: Firmware Analysis Tools
+
+Section 3: Exploiting Wireless IoT: WiFi, BLE, Zigbee, LoRA, and SDR
+--------------------------------------------------------------------
+
+Skills:
+
+1.  Understand the basics of Wi-Fi, Bluetooth Low Energy (BLE), Zigbee, LoRA, and Software-Defined Radio (SDR)
+2.  Learn techniques for cracking Wi-Fi pre-shared keys (PSK)
+3.  Understand BLE device interaction and exploitation
+4.  Capture and analyze Zigbee traffic
+5.  Perform replay transmission attacks on IoT devices using non-standard RF communications
+
+Steps:
+
+1.  Crack Wi-Fi pre-shared keys to gain network access
+2.  Interact with and exploit BLE devices
+3.  Capture and analyze Zigbee network traffic
+4.  Conduct replay transmission attacks on IoT devices
+
+CWE IDs list:
+
+*   CWE-521: Weak Password Requirements
+*   CWE-326: Inadequate Encryption Strength
+*   CWE-328: Reversible One-Way Hash
+*   CWE-288: Authentication Bypass Using an Alternate Path or Channel
+
+CAPEC IDs list:
+
+*   CAPEC-66: Brute Force
+*   CAPEC-75: Man-in-the-Middle Attack
+*   CAPEC-162: Capture-Replay
+
+CPE IDs list:
+
+*   CPE-30: Wi-Fi Cracking Tools
+*   CPE-31: Bluetooth Exploitation Tools
+*   CPE-32: Zigbee Traffic Capture Tools
+*   CPE-33: SDR Tools
+
+

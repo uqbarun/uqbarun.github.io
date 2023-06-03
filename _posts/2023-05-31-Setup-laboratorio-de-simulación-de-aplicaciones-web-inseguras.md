@@ -1,5 +1,4 @@
----
-title: Setup laboratorio de simulación de aplicaciones web inseguras
+-- - title: Setup laboratorio de simulación de aplicaciones web inseguras
 description: Descripción de página
 author: [UqbarUN]
 date: 2023-05-31
@@ -7,8 +6,7 @@ layout: post
 categories: [category]
 tags: [tag1, tag2]
 excerpt_separator: <!--more-->
----
-
+-- - 
 # Setup laboratorio de simulación de aplicaciones web inseguras
 ![](https://placehold.co/900x190)  
 
@@ -16,14 +14,12 @@ Abstract: poner un resumen de pocas lineas acá.
 
 <!--more-->
 
-***
-
-- [Plantilla de blog](#plantilla-de-blog)
+*** - [Plantilla de blog](#plantilla-de-blog)
   * [Sección 1](#secci-n-1)
   * [Sección 2](#secci-n-2)
   * [Referencias](#referencias)
 
-<!-- Generar tabla de contenidos con https://ecotrust-canada.github.io/markdown-toc/ -->
+<!- - Generar tabla de contenidos con https://ecotrust-canada.github.io/markdown-toc/ -->
 
 
 ## Capa 7 OSI
@@ -93,8 +89,7 @@ Uqbar@local:~$ ping -c 4 192.168.122.9
 PING 192.168.122.9 (192.168.122.9) 56(84) bytes of data.
 64 bytes from 192.168.122.9: icmp_seq=1 ttl=64 time=0.389 ms
 [...]
---- 192.168.122.9 ping statistics ---
-4 packets transmitted, 4 received, 0% packet loss, time 3061ms
+-- - 192.168.122.9 ping statistics -- - 4 packets transmitted, 4 received, 0% packet loss, time 3061ms
 rtt min/avg/max/mdev = 0.330/0.449/0.595/0.100 ms
 ```
 
@@ -105,8 +100,7 @@ Probamos comunicación Guest-Host ✅:
 PING 192.168.1.102 (192.168.1.102) 56(84) bytes of data.
 64 bytes from 192.168.1.102: icmp_seq=1 ttl=64 time=0.315 ms
 [...]
---- 192.168.1.102 ping statistics ---
-4 packets transmitted, 4 received, 0% packet loss, time 3054ms
+-- - 192.168.1.102 ping statistics -- - 4 packets transmitted, 4 received, 0% packet loss, time 3054ms
 rtt min/avg/max/mdev = 0.315/0.436/0.552/0.084 ms
 ```
 
@@ -119,8 +113,7 @@ La red predeterminada de QEMU (`--network network=default,model=virtio`) utiliza
 ```bash
 $ virsh net-list --all
  Name      State    Autostart   Persistent
---------------------------------------------
- default   active   yes         yes
+------------------------------------------- -  default   active   yes         yes
 ```
 
 | ![Virtual switch: NAT mode](https://wiki.libvirt.org/images/Virtual_network_default_network_overview.jpg) |
@@ -193,8 +186,7 @@ Intentaremos comunicación Host-Container ✅:
 uqbar@local:~$ ping -c 1 172.17.0.2
 PING 172.17.0.2 (172.17.0.2) 56(84) bytes of data.
 64 bytes from 172.17.0.2: icmp_seq=1 ttl=64 time=0.068 ms
---- 172.17.0.2 ping statistics ---
-1 packets transmitted, 1 received, 0% packet loss, time 0ms
+-- - 172.17.0.2 ping statistics -- - 1 packets transmitted, 1 received, 0% packet loss, time 0ms
 rtt min/avg/max/mdev = 0.068/0.068/0.068/0.000 ms
 ```
 
@@ -204,8 +196,7 @@ uqbar@local:~$ docker exec -it $contenedor /bin/bash
 root@7093ae1d8950:/# ping -c 1 192.168.1.102
 PING 192.168.1.102 (192.168.1.102): 56 data bytes
 64 bytes from 192.168.1.102: icmp_seq=0 ttl=64 time=0.157 ms
---- 192.168.1.102 ping statistics ---
-1 packets transmitted, 1 packets received, 0% packet loss
+-- - 192.168.1.102 ping statistics -- - 1 packets transmitted, 1 packets received, 0% packet loss
 round-trip min/avg/max/stddev = 0.157/0.157/0.157/0.000 ms
 ```
 
@@ -215,8 +206,7 @@ Intentaremos comunicación Kali-Container 🚫:
 └─$ ping -c 1 172.17.0.2
 PING 172.17.0.2 (172.17.0.2) 56(84) bytes of data.
 From 172.17.0.1 icmp_seq=1 Destination Host Unreachable
---- 172.17.0.2 ping statistics ---
-1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms
+-- - 172.17.0.2 ping statistics -- - 1 packets transmitted, 0 received, +1 errors, 100% packet loss, time 0ms
 ```
 
 Intentaremos comunicación Container-Kali ✅:
@@ -225,8 +215,7 @@ uqbar@local:~$ docker exec -it $contenedor /bin/bash
 root@7093ae1d8950:/# ping -c 1 192.168.122.9
 PING 192.168.122.9 (192.168.122.9): 56 data bytes
 64 bytes from 192.168.122.9: icmp_seq=0 ttl=63 time=0.449 ms
---- 192.168.122.9 ping statistics ---
-1 packets transmitted, 1 packets received, 0% packet loss
+-- - 192.168.122.9 ping statistics -- - 1 packets transmitted, 1 packets received, 0% packet loss
 round-trip min/avg/max/stddev = 0.449/0.449/0.449/0.000 ms
 ```
 
@@ -271,8 +260,7 @@ Así reintentaremos la comunicación anteriormente fallida Kali-Container ✅:
 └─$ ping -c 1 192.168.122.2
 PING 192.168.122.2 (192.168.122.2) 56(84) bytes of data.
 64 bytes from 192.168.122.2: icmp_seq=1 ttl=64 time=0.435 ms
---- 192.168.122.2 ping statistics ---
-1 packets transmitted, 1 received, 0% packet loss, time 0ms
+-- - 192.168.122.2 ping statistics -- - 1 packets transmitted, 1 received, 0% packet loss, time 0ms
 rtt min/avg/max/mdev = 0.435/0.435/0.435/0.000 ms
 ```
 
@@ -305,6 +293,28 @@ Ahora si solo quieres ahorrar la tarea de consultar qué IP le fue asingnada el 
 docker run --name dvwa --rm -it -p 127.9.0.1:8080:80 vulnerables/web-dvwa
 ```
 
+## Máquinas vulnerables
+
+DVWA - Ryan Dewhurst `vulnerables/web-dvwa`
+Mutillidae II - Nikolay Golub `citizenstig/nowasp`
+bWapp - Rory McCune `raesene/bwapp`
+Webgoat(s) - OWASP Project
+NodeGoat - OWASP/NodeGoat
+Juice Shop - Bjoern Kimminich `bkimminich/juice-shop`
+Vulnerable Wordpress - WPScan Team `l505/vulnerablewordpress`
+Security Ninjas - OpenDNS Security Ninjas AppSec Training
+
+
+## webgoat
+
+```bash 
+docker pull webgoat/webgoat
+docker run --name webgoat --rm -it -e TZ=America/Bogota webgoat/webgoat
+```
+
+## Nodegoat
+<https://github.com/OWASP/NodeGoat>
+  
 
 ## Damn Vulnerable Web Application (DVWA)
 
@@ -338,7 +348,7 @@ docker run --name nowasp --rm -it -e MYSQL_PASS="Chang3ME!" citizenstig/nowasp
 ```
 
 
-https://github.com/itboxltda/pentestlab/blob/master/pentestlab.sh
+https://github.com/itboxltda/pentestlab
 
 ## Referencias
 [^1]: Kali inside qemu/libvirt with virt-manager (Guest vm) \| kali linux documentation. (s. f.). Kali Linux. Recuperado 31 de mayo de 2023, de <https://www.kali.org/docs/virtualization/install-qemu-guest-vm>

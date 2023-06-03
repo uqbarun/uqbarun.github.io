@@ -2,12 +2,28 @@ name: Docker básico
 platform: Docker
 items:
 
+  - name: descargar imágen
+    code: docker pull $imagen
+    syntax: bash  
+
+  - name: eliminar imágen
+    code: docker image rm $imagen
+    syntax: bash      
+
   - name: listar imágenes
     code: docker image ls
     syntax: bash  
 
   - name: listar contenedores
     code: docker ps
+    syntax: bash
+
+  - name: Parar un contenedor
+    code: docker stop $contenedor
+    syntax: bash
+
+  - name: Mostrar logs del contenedor
+    code: docker logs --tail 1000 -f $contenedor
     syntax: bash
 
   - name: Correr una imagen como contenedor
