@@ -16,9 +16,9 @@ Descripción corta de la sesion
 
 ## 🛠️ Herramientas requeridas
 
-* Kali
-* Herramienta 1
-* Utilidad 1
+* Docker
+* SSH
+* OpenVPN
 
 ## 🔍 Conocimientos previos
 
