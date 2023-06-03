@@ -7,7 +7,7 @@ layout: post
 categories: [category]
 tags: [tag1, tag2]
 excerpt_separator: <!--more-->
--- - 
+--- 
 # Setup laboratorio de simulación de aplicaciones web inseguras
 ![](https://placehold.co/900x190)  
 
