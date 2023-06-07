@@ -71,4 +71,8 @@ curl -s https://services.nvd.nist.gov/rest/json/cves/2.0?cpeName=$cpe | jq .
 ### 
 
 
+
+
 https://makingsecuritymeasurable.mitre.org/
+
+https://makingsecuritymeasurable.mitre.org/docs/MSM_Measurement_and_Architecture_diagram_handout.pdf
