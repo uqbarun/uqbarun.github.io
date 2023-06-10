@@ -114,7 +114,8 @@ collections:
     sort_by: title
   pages:
     output: true
-    sort_by: title     
+    sort_by: title 
+    permalink: /:title       
   cheatsheets:
     output: true
     sort_by: title     

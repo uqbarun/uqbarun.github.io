@@ -46,7 +46,7 @@ topnav_dropdowns:
           external_url: http://jekyllrb.com/docs/home/
         - title: OSCP
           external_url: https://talk.jekyllrb.com          
-    - title: Eventos
+    - title: JCUN
       folderitems:
         - title: Primera Jornada de Ciberseguridad de la Universidad Nacional de Colombia 2018
           url: /          
@@ -54,5 +54,5 @@ topnav_dropdowns:
           url: /           
         - title: Tercera Jornada de Ciberseguridad de la Universidad Nacional de Colombia 2023
           url: /           
-        - title: Primera Jornada de Ciberseguridad de Colombo-Española 2024
+        - title: Cuerta Jornada de Ciberseguridad de la Universidad Nacional de Colombia y la Unión Europea 2024
           url: /                   
