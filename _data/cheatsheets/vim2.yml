@@ -2,19 +2,15 @@ name: Vim para programadores 💻
 platform: vim
 items:
   - name: Activar el mouse temporalmente.
-    syntax: vim  
     code: :set mouse=a
 
   - name: Habilitar números de línea.
-    syntax: vim  
     code: :set number
 
   - name: Desbabilitar números de línea.
-    syntax: vim  
     code: :set number!
 
   - name: Configurar identación de tab con 4 espacios.
-    syntax: vim  
     code: set expandtab ts=4 sw=4 ai 
 
 

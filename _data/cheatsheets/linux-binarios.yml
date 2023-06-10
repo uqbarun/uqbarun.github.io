@@ -1,7 +1,9 @@
 name: Análisis debinarios de Linux
 platform: Linux
+syntax: shell
 items:
   - name: Análizar dependencias de un binario
     code: objdump -p /bin/cat | grep NEEDED
+    
   - name: Análizar dependencias de un binario
     code: readelf -d /bin/cat | grep NEEDED

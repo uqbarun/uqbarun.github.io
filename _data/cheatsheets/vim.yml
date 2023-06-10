@@ -2,22 +2,18 @@ name: Vim de emergencia 🛟
 platform: vim
 items:
   - name: salir del modo actual para ir al modo COMMAND.
-    syntax: vim     
     keys:
     - Esc
 
   - name: entrar al modo INSERT.
-    syntax: vim     
     keys:
     - i
 
   - name: entrar al modo VISUAL (selección).
-    syntax: vim     
     keys:
     - v   
 
   - name: deshacer cambios.
-    syntax: vim  
     code: 
       - :u    
       - :undo
@@ -25,22 +21,18 @@ items:
     - u    
 
   - name: rehacer cambios
-    syntax: vim  
     code: 
       - :redo    
     keys:
     - u        
 
-  - name: salir sin guardar.
-    syntax: vim     
+  - name: salir sin guardar.   
     code: :q!    
 
-  - name: guardar cambios.
-    syntax: vim     
+  - name: guardar cambios.   
     code: :w        
 
-  - name: guardar cambios y salir.
-    syntax: vim     
+  - name: guardar cambios y salir.   
     code: :wq            
 
 

@@ -1,9 +1,12 @@
 name: Permisos de Linux
 platform: Linux
+syntax: shell
 items:
   - name: listar directorio y permisos
     code: ls -l $directorio
+
   - name: Agregar permisos de escritura
     code: chmod +x
+
   - name: Cambiar el dueño de un directorio
     code: chown -R $USER $directorio

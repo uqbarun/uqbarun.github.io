@@ -26,7 +26,7 @@
 				{% unless forloop.last %}&nbsp;o{% endunless %}
 			{% endfor %}		
 		{% endif %}
-		{% if item.syntax == "shell" %}
+		{% if cs.syntax == "shell" %}
 				<a href="https://explainshell.com/explain?cmd={{ item.code | url_encode }}" target="_blank">
 					<i id="tg-sb-icon" class="fa fa-question-circle"></i>
 				</a>		

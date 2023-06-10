@@ -1,5 +1,6 @@
 name: Básico de Linux
 platform: Linux
+syntax: shell
 items:
   - name: Listar directorio incluyendo archivos ocultos
     code: ls -a $directorio

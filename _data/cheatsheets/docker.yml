@@ -1,5 +1,6 @@
 name: Docker básico
 platform: Docker
+syntax: shell
 items:
 
   - name: descargar imágen
