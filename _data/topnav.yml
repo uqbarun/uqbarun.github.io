@@ -17,8 +17,9 @@ topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
     - title: Cursos
-      url: /cursos
       folderitems:
+        - title: Ver cursos
+          url: /cursos
         - title: Moodle
           external_url: https://uqbarun.milaulas.com/      
         - title: Como ser un Hacker
@@ -26,8 +27,9 @@ topnav_dropdowns:
         - title: Pentesting
           url: /cursos/pentesting                       
     - title: Sesiones
-      url: /sesiones   
-      folderitems:                  
+      folderitems:          
+        - title: Ver sesiones
+          url: /sesiones              
         - title: Material de apoyo
           external_url: https://drive.google.com/drive/folders/1UIKbe0vUiaPXU6jpBIvc40xxQUontupu?usp=sharing
         - title: Calendario
