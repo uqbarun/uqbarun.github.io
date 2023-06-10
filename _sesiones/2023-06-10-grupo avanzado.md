@@ -1,11 +1,12 @@
 ---
-title: Sesiones
-permalink: sesiones/viernes
+title: Web Application Attacks
+date: 2023-06-10
+layout: default
 ---
 
-# Sesión para próximo vienres
+# Web Application Attacks
 
-<https://meet.google.com/rmu-keon-dpr>
+<https://meet.google.com/hwg-ysjr-yiq>
 
 Descripción corta de la sesion
 
@@ -16,13 +17,12 @@ Descripción corta de la sesion
 
 ## 🛠️ Herramientas requeridas
 
-* Docker
-* SSH
-* OpenVPN
+* Kali
+* Herramienta 1
+* Utilidad 1
 
 ## 🔍 Conocimientos previos
 
 * Modelo OSI
 * Sub-netting
 * Algoritmo RSA
-

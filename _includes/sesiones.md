@@ -6,12 +6,16 @@ Nos estamos reuniendo en el edificio 454 CyT de la Universidad Nacional de Colom
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.753294818657!2d-74.08729472608934!3d4.638043142199773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bce3ed16831%3A0xf52d5d168a7e9431!2sEdificio%20454%20-%20Ciencia%20y%20Tecnolog%C3%ADa!5e0!3m2!1sen!2sco!4v1685418646001!5m2!1sen!2sco" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-## Sesiones introductorias de los viernes
+## Sesiones introductorias de los viernes del 2023
 Las sesiones de los viernes son perfectos para todos aquellxs interesados en iniciar en el mundo de la ciberseguridad. Los viernes nos estamos reuniendo en el salones del **4to piso del CyT** a las **4:00 PM GMT-5**. Solemos trasmitir la sesión del viernes en el Google Meet que podrás acceder [acá](/calendario) pero el micrófono donde se hace streaming no siempre captura adecuadamente las voces de todos.
+<https://meet.google.com/rmu-keon-dpr>
 
-* [Información próxima sesión del viernes](/sesiones/viernes)
-
-## Sesiones de investigación de los sábados
+## Sesiones de investigación de los sábados del 2023
 Las sesiones de los sábados también son abiertas a todo público pero son un poco más rápidas. Este año estamos tenemos como hoja ruta la certificación de la OSCP PEN-200. De esta hoja de ruta tenemos la responsabilidad de crear todo el material académico posible. Los sábados nos estamos reuniendo en el salones del **4to piso del CyT** a las **9:00 AM GMT-5**.
+<https://meet.google.com/hwg-ysjr-yiq>
 
-* [Información próxima sesión del sábado](/sesiones/sabado)
+## Calendario
+Puedes revisar nuestro calendario por si necesitas por ejemplo los links de una sesión virtual
+<a class="btn btn-warning" role="button" href="/calendario">
+Ir a calendario
+</a>
