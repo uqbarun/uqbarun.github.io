@@ -23,9 +23,9 @@ topnav_dropdowns:
         - title: Sesiones
           url: /sesiones      
         - title: Sesión de este sábado
-          url: /sesiones/viernes      
+          url: /sesiones/sabado 
         - title: Sesión de este viernes
-          url: /sesiones/sabado                   
+          url: /sesiones/viernes                        
         - title: Material de apoyo
           external_url: https://drive.google.com/drive/folders/1UIKbe0vUiaPXU6jpBIvc40xxQUontupu?usp=sharing
         - title: Calendario
