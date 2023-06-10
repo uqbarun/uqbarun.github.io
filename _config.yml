@@ -120,3 +120,7 @@ collections:
     output: true
     sort_by: title     
     permalink: cs/:title     
+  cursos:
+    output: true
+    sort_by: chapter     
+    permalink: cursos/:path
