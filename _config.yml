@@ -32,8 +32,8 @@ github: [metadata]
 # https://github.com/kramdown/parser-gfm
 kramdown:
   input: GFM
-  gfm_quirks: [paragraph_end]  
-  hard_wrap: true
+  #gfm_quirks: [paragraph_end]  
+  #hard_wrap: true
 
 # 
 remote_theme: pages-themes/hacker@v0.2.0
@@ -100,6 +100,9 @@ collections:
   posts:
     output: true
     permalink: blog/:categories/:year/:month/:day/:title
+  sesiones:
+    output: true
+    permalink: sesiones/:year/:month/:day/:title    
   tag:
     output: true
     sort_by: title
