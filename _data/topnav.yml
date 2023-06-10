@@ -49,10 +49,10 @@ topnav_dropdowns:
     - title: JCUN
       folderitems:
         - title: Primera Jornada de Ciberseguridad de la Universidad Nacional de Colombia 2018
-          url: /          
+          url: /jcun2018          
         - title: Segunda Jornada de Ciberseguridad de la Universidad Nacional de Colombia 2019
-          url: /           
+          url: /jcun2019           
         - title: Tercera Jornada de Ciberseguridad de la Universidad Nacional de Colombia 2023
-          url: /           
+          url: /jcun2023           
         - title: Cuerta Jornada de Ciberseguridad de la Universidad Nacional de Colombia y la Unión Europea 2024
-          url: /                   
+          url: /jcun2024                   
