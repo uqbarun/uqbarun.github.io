@@ -13,7 +13,7 @@ Los desarrolladores de aplicaciones que crean sus propias IDs de sesión con fre
 Obtener acceso a una sesión autenticada perteneciente a otra persona.
 
 ## Inicio WebGoat
-⚠️ Recuerda que las peticiones por curl deben ser autenticadas por el servidor de WebGoat, por deben ir con la cookie `JSESSIONID` de inicio de seisón que se te otorga en <http://localhost:8080/WebGoat/login>. **No la confundas** con la cookie de este reto.
+⚠️ Recuerda que las peticiones por curl deben ser autenticadas por el servidor de WebGoat, por eso las peticioens deben ir con la cookie `JSESSIONID` de inicio de seisón que se nos otorga en <http://localhost:8080/WebGoat/login>. **No la confundas** con la cookie de este reto.
 ```bash
 JSESSIONID=ltnhhpmxFIz0IJ_jkKiOK_kIEVQ6QRDCY6o-Apmm
 ```
