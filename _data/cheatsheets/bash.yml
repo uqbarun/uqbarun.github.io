@@ -1,0 +1,9 @@
+name: Básico de Linux
+platform: Linux
+syntax: shell
+items:
+  - name: Obteneruna lista de numeros del 1 al 100
+    code: seq 1 100
+
+  - name: Correr un script 10 veces
+    code: for i in {1..10}; do ./script.sh; done

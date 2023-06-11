@@ -1,0 +1,9 @@
+name: Básico de Linux
+platform: Linux
+syntax: shell
+items:
+#  - name: Mostrar windows manager y desktop enviroment
+#    code: printf 'Desktop: %s\nSession: %s\n' "$XDG_CURRENT_DESKTOP" "$GDMSESSION"
+
+  - name: Mostrar display server
+    code: ps -e | grep tty
