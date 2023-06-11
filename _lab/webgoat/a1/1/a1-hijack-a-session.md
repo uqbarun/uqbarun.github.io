@@ -573,7 +573,7 @@ Listo! la cookie era hijack_cookie=4745395612611424128-1686452114651
 }
 ```
 
-¡Y listo! hemos realizado con éxito el *secuestro cookie*.
+¡Y listo! hemos realizado con éxito el *secuestro de sessión*.
 
 Pero también tenemos dos opciones aparte de *bash scripting*
 

