@@ -1,0 +1,21 @@
+---
+layout: curso
+---
+
+{% assign path = page.path | split: '/' %}
+{% assign curso_path_root = path[0] | append: '/' | append: path[1]  %}
+{% assign cursos = site.cursos | sort: 'chapter'  %}
+{% for curso in cursos %}  
+  {% assign depth = curso.url | split: '/' | size | minus: 1%}   
+<ul>
+  {% if curso.path contains curso_path_root %}
+    {% if depth == 3 or depth == 4 %} 
+  <li><a href="{{curso.url}}">{{curso.chapter}} - {{curso.title}}</a></li>
+    {% endif %}  
+  {% endif %} 
+</ul> 
+{% endfor %}
+
+{{content}}
+
+

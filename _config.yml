@@ -83,6 +83,12 @@ defaults:
       excerpt_separator: <!--more-->
       sidebar: blog_sidebar
 
+  - 
+    scope:
+      path: "_cursos"
+    values:
+      excerpt_separator: <!--more-->
+      layout: "curso" # Plantilla por defecto
   -
     scope:
       path: "_wiki"

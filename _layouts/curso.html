@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div class="post-mark"></div><!-- para estilo de TOC de posts -->
+
+<div id="breadcrumbs">
+{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+<a href="/">Home</a>
+{% for crumb in crumbs offset: 1 %}
+  {% if forloop.last %}
+    / {{ page.title }}
+  {% else %}
+    / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+  {% endif %}
+{% endfor %}
+</div>
+
+<!-- Cuerpo del contenido del capitulo del curso -->
+{{content}}
+
+<!-- Botones de siguiente y anterior capitulo -->
+<h2>¿Qué sigue?</h2><br>
+{% assign path = page.path | split: '/' %}
+{% assign curso_path_root = crumbs[1] | append: '/' | append: crumbs[2]  %}
+{% assign chapter = page.chapter %}
+
+{% assign prev = nil %}
+{% assign actual = nil %}
+{% assign next = nil %}
+
+{% assign cursos = site.cursos | sort: 'chapter'  %}
+{% for curso in cursos %}   
+  {% if curso.path contains curso_path_root %}
+    {% assign prev = actual %}
+    {% assign actual = next %}
+    {% assign next = curso %}
+    {% if actual.path == page.path %}
+      {% break %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% if prev %}
+<a class="btn btn-warning" role="button" href="{{prev.url}}">{{prev.chapter}} {{prev.title}} << </a>
+{% endif %}
+{% if next %}
+<a class="btn btn-warning" role="button" href="{{next.url}}">>> {{next.chapter}} {{next.title}}</a>
+{% endif %}
