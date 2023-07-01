@@ -17,6 +17,18 @@ items:
   - name: Encontrar un .txt en el directorio actual
     code: find . -name "*.txt"
 
+  - name: Buscar un fichero sbd.exe con locate
+    code: locate sbd.exe
+
+  - name: Instalar un paquete .deb
+    code: sudo dpkg -i paquete.deb
+
+  - name: Lanzar un servicio
+    code: sudo systemctl start apache2
+
+  - name: Habilitar un servicio en arranque
+    code: sudo systemctl enable apache2    
+
   - name: Resaltar texto en el historial de shell
     code: history | grep -z $texto
 
@@ -37,3 +49,6 @@ items:
 
   - name: Agregar permiso de escritura a todos
     code: chmod a+w $archivo    
+
+  - name: Buscar un comando previamente utilizado
+    code: history | grep comando

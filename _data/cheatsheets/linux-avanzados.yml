@@ -5,5 +5,10 @@ items:
 #  - name: Mostrar windows manager y desktop enviroment
 #    code: printf 'Desktop: %s\nSession: %s\n' "$XDG_CURRENT_DESKTOP" "$GDMSESSION"
 
+  - name: Remplazar texto
+    code: echo "foo\nbar\n" | sed 's/\n/\t/'
+
+
   - name: Mostrar display server
     code: ps -e | grep tty
+
