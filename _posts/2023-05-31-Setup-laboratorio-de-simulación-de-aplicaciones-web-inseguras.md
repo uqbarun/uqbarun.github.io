@@ -44,6 +44,11 @@ sudo apt-get install qemu-system qemu-kvm qemu virt-viewer \
 
 ## Instalar Máquina de Pentesting con Kali
 
+* <https://kali.download/base-images/kali-2023.2/kali-linux-2023.2-qemu-amd64.7z> 
+* Peso de descarga  ~2.8 GB
+* Peso descomprimido ~13,7 GB
+
+
 Para instalar una máquina virtual de Kali Linux utilizando el comando virt-install necesitamos definir los recuros recomendados[^1] con las siguientes opciones
 
 *   `--virt-type kvm`: Especifica el tipo de virtualización, en este caso, KVM (Kernel-based Virtual Machine).
