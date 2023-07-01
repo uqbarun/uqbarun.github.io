@@ -1,6 +1,6 @@
 ---
 title: Como ser un hacker
-layout: default
+layout: curso_index
 ---
 
 # Como ser un hacker
