@@ -1,9 +1,9 @@
 ---
-title: GNU/Linux Distros
+title: Distros GNU/Linux 
 chapter: 1.3
 ---
 
-# GNU/Linux Distros
+# Distros GNU/Linux 
 
 ## La primera Distro GNU/Linux: Boot/Root
 
