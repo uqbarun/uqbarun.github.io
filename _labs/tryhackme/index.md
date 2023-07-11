@@ -1,5 +1,7 @@
 ---
 title: TryHackMe
+layout: lab_index
+chapter: 0
 ---
 
 # TryHackMe

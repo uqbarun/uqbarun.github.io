@@ -1,0 +1,21 @@
+---
+layout: lab
+---
+
+{% assign path = page.path | split: '/' %}
+{% assign lab_path_root = path[0] | append: '/' | append: path[1]  %}
+{% assign labs = site.labs | sort: 'chapter'  %}
+{% for lab in labs %}  
+  {% assign depth = lab.url | split: '/' | size | minus: 1%}   
+<ul>
+  {% if lab.path contains lab_path_root %}
+    {% if depth == 3 or depth == 4 %} 
+  <li><a href="{{lab.url}}">{{lab.chapter}} - {{lab.title}}</a></li>
+    {% endif %}  
+  {% endif %} 
+</ul> 
+{% endfor %}
+
+{{content}}
+
+

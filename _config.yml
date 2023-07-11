@@ -89,6 +89,13 @@ defaults:
     values:
       excerpt_separator: <!--more-->
       layout: "curso" # Plantilla por defecto
+
+  - 
+    scope:
+      path: "_labs"
+    values:
+      excerpt_separator: <!--more-->
+      layout: "lab" # Plantilla por defecto      
   -
     scope:
       path: "_wiki"

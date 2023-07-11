@@ -1,5 +1,6 @@
 ---
 title: THM - Picklerick
+chapter: 2
 tags: [tryhackme]
 ---
 # THM - Picklerick

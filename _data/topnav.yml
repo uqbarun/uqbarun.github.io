@@ -8,24 +8,15 @@ topnav:
     - title: Blog
       url: /blog    
     - title: Podcast
-      url: /podcast       
+      url: /podcast   
+       
     - title: Denunciar
       url: /denunciar          
 
 #Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
-  folders:
-    - title: Cursos
-      folderitems:
-        - title: Ver cursos
-          url: /cursos
-        - title: Moodle
-          external_url: https://uqbarun.milaulas.com/      
-        - title: Como ser un Hacker
-          external_url: https://youtu.be/pp2ePevoxoA
-        - title: Pentesting
-          url: /cursos/pentesting                       
+  folders:                   
     - title: Sesiones
       folderitems:          
         - title: Ver sesiones
@@ -36,10 +27,12 @@ topnav_dropdowns:
           url: /calendario
     - title: Estudio
       folderitems:
+        - title: Cursos
+          url: /cursos             
         - title: Wiki
           url: /wiki                      
         - title: Laboratorios, CTFs y máquinas
-          url: /lab          
+          url: /labs
         - title: Cheat sheets
           url: /cheatsheets                
         - title: Fundamentos Windows

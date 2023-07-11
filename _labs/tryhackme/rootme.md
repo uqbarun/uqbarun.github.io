@@ -1,5 +1,6 @@
 ---
 title: THM - RootMe
+chapter: 3
 tags: [tryhackme, web, linux, revese-shell, privilege-escalation]
 ---
 
