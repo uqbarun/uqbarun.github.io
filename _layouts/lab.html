@@ -16,25 +16,25 @@ layout: default
 {% endfor %}
 </div>
 
-<!-- Cuerpo del contenido del capitulo del curso -->
+<!-- Cuerpo del contenido del capitulo del lab -->
 {{content}}
 
 <!-- Botones de siguiente y anterior capitulo -->
 <h2>¿Qué sigue?</h2><br>
 {% assign path = page.path | split: '/' %}
-{% assign curso_path_root = crumbs[1] | append: '/' | append: crumbs[2]  %}
+{% assign lab_path_root = crumbs[1] | append: '/' | append: crumbs[2]  %}
 {% assign chapter = page.chapter %}
 
 {% assign prev = nil %}
 {% assign actual = nil %}
 {% assign next = nil %}
 
-{% assign cursos = site.cursos | sort: 'chapter'  %}
-{% for curso in cursos %}   
-  {% if curso.path contains curso_path_root %}
+{% assign labs = site.labs | sort: 'chapter'  %}
+{% for lab in labs %}   
+  {% if lab.path contains lab_path_root %}
     {% assign prev = actual %}
     {% assign actual = next %}
-    {% assign next = curso %}
+    {% assign next = lab %}
     {% if actual.path == page.path %}
       {% break %}
     {% endif %}
