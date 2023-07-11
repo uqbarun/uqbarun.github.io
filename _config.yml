@@ -115,7 +115,7 @@ collections:
   wiki:
     output: true
     sort_by: title
-  lab:
+  labs:
     output: true
     sort_by: title
   pages:
