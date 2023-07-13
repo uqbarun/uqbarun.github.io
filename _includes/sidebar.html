@@ -1,9 +1,8 @@
-{% assign sidebar = site.data.sidebars[page.sidebar].entries %}
-
 <ul id="mysidebar" class="sidebar-menu">
-
+{% if page.sidebar != "generate" %}
+    {% assign sidebar = site.data.sidebars[page.sidebar].entries %}
     {% for entry in sidebar %}
-    <a href="{{entry.home}}">{{entry.title}}</a>
+    <a href="{{entry.home}}">{{entry.title}}</a>        
     <li>
         <span class="console-input" data-prompt="uqbar@col:~$ " style="margin: 3px;">ls -al</span>
     </li>
@@ -64,7 +63,11 @@
          <p class="external">
              <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
          </p>
-         -->
+         -->    
+{% else %}
+    Generate <br>
+    {% include sidebar_toc.html html=include.html submenu_class="have-children"  minHeader=0%}  
+{% endif %}    
     <li><a class="tg-sb-link" href="#"><i class="tg-sb-icon fa fa-toggle-on"></i> Nav</a></li>
 </ul>
 

@@ -22,8 +22,8 @@
   <div class="main" id='top-anchor'>
     <div class="row">
       {% if page.sidebar %}
-      <div id="tg-sb-sidebar" class="col-md-3" >        
-          {% include sidebar.html %}                            
+      <div id="tg-sb-sidebar" class="col-md-3" >
+          {% include sidebar.html html=content %}
       </div>        
       {% endif %}          
       <div id="tg-sb-content" class="col-md-9">
