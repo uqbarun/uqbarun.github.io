@@ -579,27 +579,31 @@ div.cheatsheet-container {
   }
 }
 
-details {
+
+details.info {
   font-size: smaller;
   margin-top: -1em;
   margin-bottom: 1em;  
   padding-left: 0.5em;
   background-color: $gris-C2;
-  border: 1px $gris-C1 solid;
-  summary {
+  border: 1px $gris-C1 solid;  
+  ::marker {
     color: $verde-O1;
+  }  
+  summary::after {
+    font-family: "Font Awesome 5 Free"; 
+    color: $azul-O1;
+    content: "\f059";
+    display: inline-block;
+    padding-left: 3px;
+    vertical-align: middle;
+    /* font-weight: 900; */
   }
   div {
     background-color: $gris-C1;
     padding: 5px;
     margin-bottom: 5px;
-  }
-}
-details.info {
-  summary::after {
-    content: X;
-
-  }
+  }  
 }
 
 @media (max-width: 900px) {
