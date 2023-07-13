@@ -579,6 +579,29 @@ div.cheatsheet-container {
   }
 }
 
+details {
+  font-size: smaller;
+  margin-top: -1em;
+  margin-bottom: 1em;  
+  padding-left: 0.5em;
+  background-color: $gris-C2;
+  border: 1px $gris-C1 solid;
+  summary {
+    color: $verde-O1;
+  }
+  div {
+    background-color: $gris-C1;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+}
+details.info {
+  summary::after {
+    content: X;
+
+  }
+}
+
 @media (max-width: 900px) {
   div.cheatsheet-container {
     -moz-column-count: 2;
