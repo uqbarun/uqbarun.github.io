@@ -144,9 +144,14 @@ nav {
   }
 }
 
+.tg-sb-link {
+  text-decoration: none;
+  color: $verde; 
+}
+
 #go-top {
   display: block;
-  position: fixed;
+  /* position: fixed; */
   $side: 40px;
   width: $side;
   height: $side;
