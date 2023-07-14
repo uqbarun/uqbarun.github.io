@@ -122,6 +122,7 @@ El tamaño ideal de la imagen sería de apróximadamente 900 x 190 px
 Los autores deben poner su información en el archivo de `_data/authors.yml`
 
 # Explicaciones colapsables
+
 ~~~markdown
 ```shell
 $ hydra ssh://$IP -l jan -P /usr/share/wordlist/rockyou-7.txt
@@ -138,8 +139,16 @@ $ hydra ssh://$IP -l jan -P /usr/share/wordlist/rockyou-7.txt
 </details>
 ~~~
 
+# Imágenes centradas con pie de foto
 
-# TODOS
+~~~markdown
+| ![](https://hackmd.io/_uploads/ry4RC-rKn.png) | 
+| :--: | 
+| Captura de pantalla de la página `development` |
+~~~
+
+
+# ToDos
 * favicon
 * seachbar
 * sticky navbar
