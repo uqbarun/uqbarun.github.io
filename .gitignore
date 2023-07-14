@@ -4,5 +4,5 @@ _site
 .jekyll-metadata
 vendor
 uqbarunal.github.io.code-workspace
-.vscode/*
 .github/*
+.vscode/launch.json
