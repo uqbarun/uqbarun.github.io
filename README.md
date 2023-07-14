@@ -121,6 +121,24 @@ El tamaño ideal de la imagen sería de apróximadamente 900 x 190 px
 
 Los autores deben poner su información en el archivo de `_data/authors.yml`
 
+# Explicaciones colapsables
+~~~markdown
+```shell
+$ hydra ssh://$IP -l jan -P /usr/share/wordlist/rockyou-7.txt
+```
+
+<details class=info>
+<summary>Explicación del comando</summary>
+<div markdown="1">
+*   `hydra`: Es el comando principal utilizado para ejecutar ataques de fuerza bruta con Hydra.
+*   `ssh://$IP`: Especifica el protocolo y la dirección IP del objetivo al que se va a realizar el ataque. En este caso, se indica que se ataque al servicio SSH en la dirección IP especificada.
+*   `-l jan`: Especifica el nombre de usuario que se utilizará durante el ataque de fuerza bruta. En este ejemplo, se utiliza el nombre de usuario "jan". El nombre de usuario discrimina mayúsculas y minúsculas [^1].
+*   `-P /usr/share/wordlist/rockyou-7.txt`: Indica la ubicación del archivo de lista de contraseñas que se utilizará durante el ataque. En este caso, se utiliza el archivo "rockyou-7.txt" que se encuentra en la ruta "/usr/share/wordlist/". Este archivo contiene una lista de contraseñas comunes que se probarán durante el ataque.
+</div>
+</details>
+~~~
+
+
 # TODOS
 * favicon
 * seachbar
