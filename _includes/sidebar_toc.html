@@ -151,10 +151,17 @@
     {% assign repeatCount = minHeader | minus: 1 %}
     {% assign repeatCount = lastLevel | minus: repeatCount %}
     {% for i in (1..repeatCount) %}
-        {% capture jekyll_toc %}{{ jekyll_toc }}</li></{{ listModifier }}>{% endcapture %}
+		{% if i != repeatCount %} 
+        	{% capture jekyll_toc %}{{ jekyll_toc }}</li></{{ listModifier }}>{% endcapture %}
+		{% else %}
+			{% capture jekyll_toc %}{{ jekyll_toc }}</li>
+			<li><a class="tg-sb-link" href="#"><i class="tg-sb-icon fa fa-toggle-on"></i> Nav</a></li>
+			</{{ listModifier }}>{% endcapture %}
+		{% endif %}
     {% endfor %}
 
-    {% if jekyll_toc != '' %}
+    {% if jekyll_toc != '' %}		
+
         {% assign rootAttributes = '' %}
         {% if include.class and include.class != blank %}
             {% capture rootAttributes %} class="{{ include.class | split: '.' | join: ' ' }}"{% endcapture %}
@@ -172,7 +179,7 @@
 			<li>
 				<span class="console-input" data-prompt="uqbar@col:~$ " style="margin: 3px;">ls -al</span>
 			</li>
-			{{ nodes | shift | join: '>' }}>
+			{{ nodes | shift | join: '>' }}>			
 			{% endcapture %}
         {% endif %}
     {% endif %}
