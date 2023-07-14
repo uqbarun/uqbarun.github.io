@@ -1,5 +1,5 @@
-<ul id="mysidebar" class="sidebar-menu">
 {% if page.sidebar != "generate" %}
+    <ul id="mysidebar" class="sidebar-menu">
     {% assign sidebar = site.data.sidebars[page.sidebar].entries %}
     {% for entry in sidebar %}
     <a href="{{entry.home}}">{{entry.title}}</a>        
@@ -64,12 +64,10 @@
              <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
          </p>
          -->    
-{% else %}
-    Generate <br>
-    {% include sidebar_toc.html html=include.html submenu_class="have-children"  minHeader=0%}  
-{% endif %}    
     <li><a class="tg-sb-link" href="#"><i class="tg-sb-icon fa fa-toggle-on"></i> Nav</a></li>
-</ul>
-
+</ul>         
+{% else %}
+    {% include sidebar_toc.html id="mysidebar" class="sidebar-menu" html=include.html %}  
+{% endif %}    
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>

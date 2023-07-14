@@ -49,17 +49,28 @@
     {% capture jekyll_toc %}{% endcapture %}
     {% assign orderedList = include.ordered | default: false %}
     {% assign baseURL = include.base_url | default: include.baseurl | default: '' %}
-    {% assign skipNoIDs = include.skip_no_ids | default: include.skipNoIDs | default: false %}
-    {% assign minHeader = include.h_min | default: 1 %}
+    {% assign skipNoIDs = include.skip_no_ids | default: include.skipNoIDs | default: true %}
+    {% assign minHeader = include.h_min | default: 2 %}
     {% assign maxHeader = include.h_max | default: 6 %}
     {% assign nodes = include.html | strip | split: '<h' %}
 
     {% assign firstHeader = true %}
     {% assign currLevel = 0 %}
     {% assign lastLevel = 0 %}
+	{% assign deepestLevel = 0 %}
 
     {% capture listModifier %}{% if orderedList %}ol{% else %}ul{% endif %}{% endcapture %}
 
+    {% for node in nodes %}
+        {% if node == "" %}
+            {% continue %}
+        {% endif %}
+        {% assign currLevel = node | replace: '"', '' | slice: 0, 1 | times: 1 %}
+		{% if currLevel >= deepestLevel %}
+			{% assign deepestLevel = currLevel %}
+		{% endif %}
+	{% endfor %}	
+	
     {% for node in nodes %}
         {% if node == "" %}
             {% continue %}
@@ -131,7 +142,7 @@
             {% capture jekyll_toc %}{{ jekyll_toc }}</li>{% endcapture %}
         {% endif %}
 
-        {% capture jekyll_toc %}{{ jekyll_toc }}<li{{ listItemClass }}>{{ listItem }}{% endcapture %}
+		{% capture jekyll_toc %}{{ jekyll_toc }}<li{{ listItemClass }}>{{ listItem }}{% endcapture %}      
 
         {% assign lastLevel = currLevel %}
         {% assign firstHeader = false %}
@@ -155,7 +166,14 @@
 
         {% if rootAttributes %}
             {% assign nodes = jekyll_toc | split: '>' %}
-            {% capture jekyll_toc %}<{{ listModifier }}{{ rootAttributes }}>{{ nodes | shift | join: '>' }}>{% endcapture %}
+            {% capture jekyll_toc %}
+			<{{ listModifier }}{{ rootAttributes }}>
+			<a href="#">{{page.title}}</a>        
+			<li>
+				<span class="console-input" data-prompt="uqbar@col:~$ " style="margin: 3px;">ls -al</span>
+			</li>
+			{{ nodes | shift | join: '>' }}>
+			{% endcapture %}
         {% endif %}
     {% endif %}
-{% endcapture %}{% assign tocWorkspace = '' %}{{ deprecation_warnings }}{{ jekyll_toc -}}
+{% endcapture %}{% assign tocWorkspace = '' %}{{ deprecation_warnings }}{{ jekyll_toc -}} 

@@ -1,10 +1,19 @@
-$(document).ready(function () {
+$(document).ready(function () {	
 	var speed = 100;
-	$('.sidebar-menu li.have-children > a').click(function (e) {
-		console.log($(this).parent());
+	// Check if $('.sidebar-menu li a') has siblings and add class "has-childs"
+	$('.sidebar-menu li a').each(function () {
+		if ($(this).next().length) {
+			$(this).parent().addClass('have-children');
+		}
+	});
 
-		e.preventDefault();
-	
+	$('.sidebar-menu li a').on('click',function (e) {
+		
+		var sibblings = $(this).next().length;
+		if (sibblings) { 
+			e.preventDefault();
+		}
+
 		if (!$(this).parent().hasClass('active')) {
 
 			if (!$(this).parent().hasClass('subfolders')) {
