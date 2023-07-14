@@ -155,7 +155,7 @@
         	{% capture jekyll_toc %}{{ jekyll_toc }}</li></{{ listModifier }}>{% endcapture %}
 		{% else %}
 			{% capture jekyll_toc %}{{ jekyll_toc }}</li>
-			<li><a class="tg-sb-link" href="#"><i class="tg-sb-icon fa fa-toggle-on"></i> Nav</a></li>
+			<li><a class="tg-sb-link" href=""><i class="tg-sb-icon fa fa-toggle-on"></i> Nav</a></li>
 			</{{ listModifier }}>{% endcapture %}
 		{% endif %}
     {% endfor %}
@@ -183,4 +183,9 @@
 			{% endcapture %}
         {% endif %}
     {% endif %}
-{% endcapture %}{% assign tocWorkspace = '' %}{{ deprecation_warnings }}{{ jekyll_toc -}} 
+{% endcapture %}
+{% assign tocWorkspace = '' %}
+{{ deprecation_warnings }}
+{% if jekyll_toc != '' %}		
+    {{ jekyll_toc -}} 
+{% endif %}

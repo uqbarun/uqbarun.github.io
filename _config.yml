@@ -78,7 +78,7 @@ defaults:
   - 
     scope:
       path: "_posts"
-      type: posts   
+      type: posts
     values:
       excerpt_separator: <!--more-->
       sidebar: blog_sidebar
@@ -95,12 +95,13 @@ defaults:
       path: "_labs"
     values:
       excerpt_separator: <!--more-->
-      layout: "lab" # Plantilla por defecto      
+      layout: "lab" # Plantilla por defecto
+      sidebar: generate
   -
     scope:
       path: "_wiki"
     values:
-      sidebar: wiki_sidebar      
+      sidebar: generate
 
 # Render
 

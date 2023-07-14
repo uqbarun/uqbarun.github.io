@@ -188,7 +188,7 @@ div.navbar-toggle {
 /* Sidebar */
 $sidebar_width: 250px;
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   ul.sidebar-menu {
     min-width: 100%;
     position: initial;
@@ -208,12 +208,10 @@ $primary-a-bg: #3c363621;
 }
 
 .sidebar-menu {
-  padding: 10px 5px 20px 5px;
-  margin: 10px auto;
+  padding: 5px 5px 10px 4px;
   font-size: 14px;
   color: #ffffff;
-  position: fixed;
-  width: 250px;
+  top: 1em;
   background: $primary-bg;
 
   li {
@@ -222,7 +220,7 @@ $primary-a-bg: #3c363621;
       display: block;
       color: rgb(182, 182, 182);
       text-decoration: none;
-      padding: 5px 10px;
+      padding: 5px 20px 5px 10px;
 
       >span {
         margin-right: 30px;
@@ -232,11 +230,7 @@ $primary-a-bg: #3c363621;
     &.have-children {
       position: relative;
 
-      >a {
-        color: rgb(182, 182, 182);
-      }
-
-      &:after {
+      &::after {
         right: 15px;
         top: 3px;
         border: solid transparent;
@@ -246,6 +240,10 @@ $primary-a-bg: #3c363621;
         pointer-events: none;
         transition: all 0.2s ease;
         font-family: 'FontAwesome';
+      }
+
+      >a {
+        color: rgb(182, 182, 182);
       }
 
       a:hover {
