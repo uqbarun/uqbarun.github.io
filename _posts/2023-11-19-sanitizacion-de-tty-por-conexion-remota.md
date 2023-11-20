@@ -1,5 +1,5 @@
 --- 
-title: Sanitizacion de TTY por conexion remota
+title: Sanitización de TTY por conexión remota
 author: [UqbarUN]
 tags: [Hacking, tty, ssh]
 date: 2023-11-19
