@@ -1,5 +1,5 @@
 --- 
-title: Sanitización de TTY por conexión remota
+title: Sanitizacion de TTY por conexion remota
 author: [UqbarUN]
 tags: [Hacking, tty, ssh]
 date: 2023-11-19
@@ -83,10 +83,6 @@ rlwrap nc -nlvp ${puerto en escucha}
 	Ahí verificamos y si queremos cambiar (voy a usar mi caso personal con segunda pantalla) ponemos:
 	~~~shell
 	stty rows 43 columns 179
-	~~~
-	Ahora veremos que nuestra tty está sanitizada como debe ser.
-
-Espero que este pequeño tutorial haya sido de ayuda, pues cuando hacemos estas conexiones las primeras veces, nos percatamos de lo incómodo que es trabajar en una terminal así. Ya con esto, solo poniendo un par de comandos ya tenemos una terminal bien ajustada y lista para el trabajo.
 	~~~
 	Ahora veremos que nuestra tty está sanitizada como debe ser.
 
