@@ -6,10 +6,11 @@ date: 2023-11-19
 layout: post
 categories: [fundamentos]
 ---
+# Sanitización de TTY por conexión remota:
 
-## Sanitización de TTY por conexión remota:
-
-A la hora de conectarnos a un equipo de manera remota es una práctica muy común en el hacking, ya sea por medio se ssh, reverse shell, bind shell, etc. Al momento de establecer la conexión remota nos damos cuenta que contamos con algunas limitaciones al momento de interactuar con nuestra consola, por nombrar algunas, en el caso de un ssh vemos que no nos es posible limpiar la pantalla ni detener procesos o mandarlos a segundo plano con los atajos de teclado tradicionales, y en caso de una reverse shell no podemos siquiera retroceder con las flechas de nuestro teclado. Por esta y otras razones en la siguente entrada de blog explicaré paso a paso algunas alternativas, como sanitizar una TTY en los casos de una conexión por ssh y con una shell obtenida por medio de Netcat (puede ser reverse o bind shell, pero para generalizar la llamaremos únicamente reverse shell), siguiendo el tutorial no solamente tendremos una TTY completamente interactiva sino que incluso estará ajustada a las proporciones de nuestra pantalla y tendrá colores descriptivos para archivos y carpetas tal como probablemente los tengamos en la consola de nuestra máquina.
+A la hora de conectarnos a un equipo de manera remota es una práctica muy común en el hacking, ya sea por medio se ssh, reverse shell, bind shell, etc. 
+<!--more-->
+Al momento de establecer la conexión remota nos damos cuenta que contamos con algunas limitaciones al momento de interactuar con nuestra consola, por nombrar algunas, en el caso de un ssh vemos que no nos es posible limpiar la pantalla ni detener procesos o mandarlos a segundo plano con los atajos de teclado tradicionales, y en caso de una reverse shell no podemos siquiera retroceder con las flechas de nuestro teclado. Por esta y otras razones en la siguente entrada de blog explicaré paso a paso algunas alternativas, como sanitizar una TTY en los casos de una conexión por ssh y con una shell obtenida por medio de Netcat (puede ser reverse o bind shell, pero para generalizar la llamaremos únicamente reverse shell), siguiendo el tutorial no solamente tendremos una TTY completamente interactiva sino que incluso estará ajustada a las proporciones de nuestra pantalla y tendrá colores descriptivos para archivos y carpetas tal como probablemente los tengamos en la consola de nuestra máquina.
 
 ## Conexión por reverse shell:
 
