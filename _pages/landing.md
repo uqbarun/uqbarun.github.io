@@ -1,7 +1,7 @@
 ---
 layout: landing
 title: Sigue el conejo blanco
-permalink: /rhftd-dk-bnmdin-akzmbn
+permalink: /brpdn-j-nu-lxwnsx-kujwlx
 ---
 <span class="console-input" data-prompt="uqbar@col:~$ ">Despierta...</span> 
 <span class="console-input" data-prompt="uqbar@col:~$ ">Sigue el conejo blanco. Toc, Toc.</span> 
