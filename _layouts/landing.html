@@ -5,10 +5,21 @@ layout: empty
 <script>
     const url = '/';
     const input = document.getElementById('prompt-input');
+    async function generarHash(texto) {
+        const encoder = new TextEncoder();
+        const data = encoder.encode(texto);
+        const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        return hashHex;
+    }
     function onChangePrompt(e) {
         let valor = e.target.value.toLowerCase();
-        if (valor == "s" || valor == "si") {
+        if (valor == "s" || valor == "si") {     
             window.location.href = url;
+        } 
+        else if(valor.length == 22) {
+            generarHash(valor).then((hashGenerado) => { if(hashGenerado == "20f74e1746d1d648bcbce49426b53919e6f0e65f8bcef6bd2f56e442a495af2a") {alert("¡La encontraste!")}});                   
         }
     }
     setTimeout(function () {
