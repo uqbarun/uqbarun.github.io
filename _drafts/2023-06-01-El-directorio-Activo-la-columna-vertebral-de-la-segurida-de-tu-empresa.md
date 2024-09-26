@@ -1,5 +1,5 @@
 ---
-title: El directorio Activo: la columna vertebral de la segurida de tu empresa
+title: El directorio Activo la columna vertebral de la segurida de tu empresa
 description: Descripción de página
 author: [UqbarUN]
 date: 2023-06-01
