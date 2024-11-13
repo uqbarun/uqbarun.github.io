@@ -15,10 +15,12 @@ layout: empty
     }
     function onChangePrompt(e) {
         let valor = e.target.value.toLowerCase();
-        if (valor == "s" || valor == "si") {     
+        if (valor == "s" || valor == "si") {
+            alert("20JCUN24{4c3pt4s_l4_m1s10n???}")
             window.location.href = url;
         } 
         else if(valor.length == 22) {
+            
             generarHash(valor).then((hashGenerado) => { if(hashGenerado == "95f917ebbe812356eb00a28f4a155797a0674bf2afdcb809dc19fda9e20120e3") {alert("¡La encontraste!")}});                   
         }
     }
