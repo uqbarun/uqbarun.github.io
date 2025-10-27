@@ -29,7 +29,7 @@ CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS   
 
 ```bash
 $ contenedor=nodegoat_web_1
-$ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $contenedor 
+$ docker inspect -f '{{range .NetworkSettings.Networks}}{{IPAddress}}{{end}}' $contenedor 
 172.17.0.2
 $ ip=172.17.0.2
 ```

@@ -183,7 +183,7 @@ docker run --name dvwa --rm -it vulnerables/web-dvwa
 ### Pruebas de comunicación
 Vamos a consultar cual es la IP asignada al contenedor dentras de la NAT:
 ```bash
-$ docker inspect --format '{{ .NetworkSettings.IPAddress }}' $contenedor
+$ docker inspect --format  NetworkSettings.IPAddress  $contenedor
 172.17.0.2
 ```
 
@@ -256,7 +256,7 @@ virbr0          8000.525400e57960       yes             veth77764af
 La IP que dnsmasq de libvirt le asgina al contenedor es
 
 ```bash
-$ docker inspect --format '{{ .NetworkSettings.IPAddress }}' $contenedor
+$ docker inspect --format '{{ NetworkSettings.IPAddress }}' $contenedor
 192.168.122.2
 ```
 
